@@ -1,0 +1,26 @@
+$baseline: 1rem;
+$breakpointDesktop: 820px;
+
+$primaryTextColor: #FBF6F6;
+$primaryBackground: #4C4E5E;
+$secondaryBackground: #797C8D;
+
+$dark: #343030;
+
+$borderColor: #597EFF;
+$borderStyle: 1px solid $borderColor;
+$borderRadius: $baseline * 0.5;
+
+$shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+
+$scrollTrack: #292b2d;
+$scrollThumb: #4b4e51;
+$scrollHover: #5e6265;
+
+$margin: $baseline;
+$margin-small: calc($baseline / 2);
+$margin-large: calc($baseline * 2);
+
+$padding: $baseline;
+$padding-small: calc($baseline / 2);
+$padding-large: calc($baseline * 2);
