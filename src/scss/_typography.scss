@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Montserrat:wght@300;400;500&display=swap');
+@import "variables";
+
+:root {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: $baseline;
+    color: $primaryTextColor;
+}
+
+p,
+input,
+textarea,
+button {
+    font-family: "Montserrat";
+    font-size: $baseline;
+    line-height: 100%;
+}
+
+a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    color: $primaryTextColor;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Barlow Condensed";
+    //font-style: normal;
+    line-height: 100%;
+    //letter-spacing: 0.04em;
+    color: $primaryTextColor;
+}
+
+h1 {
+    font-size: calc($baseline * 2.5);
+    //font-weight: 900;
+}
+
+h2 {
+    font-size: calc($baseline * 2);
+    //font-weight: 600;
+}
+
+h3 {
+    font-size: calc($baseline * 1.5);
+    //font-weight: 523;
+}
