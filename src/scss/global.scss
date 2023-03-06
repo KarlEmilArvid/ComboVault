@@ -36,5 +36,5 @@ body::-webkit-scrollbar-thumb:hover {
 
 .App {
     @include maxSize;
-    background-color: $gray;
+    background-color: $primaryBackground;
 }
