@@ -9,7 +9,7 @@ import { db } from './firebase/firebase';
 import { useEffect, useState } from 'react';
 
 function App() {
-  
+
   const [ games, setGames ] = useState<any[]>();
         // Hämtar questions från firebase databasen
         useEffect(() => {
@@ -23,6 +23,7 @@ function App() {
             setGames(tempArr);
           })();
         }, []);
+
 
 
   return (

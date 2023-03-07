@@ -23,7 +23,7 @@ const Start = ({games}: Props) => {
             <main className='square-wrapper'>
                 {
                     games?.map((square, i) => {
-                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]}/>
+                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image=''/>
                     })
                 }
             </main>
