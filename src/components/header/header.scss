@@ -1,0 +1,11 @@
+@import '../../scss/layout.scss';
+
+header {
+    @include flex($justify: space-between);
+
+    .header_overlay {
+        display: none;
+    }
+
+}
+

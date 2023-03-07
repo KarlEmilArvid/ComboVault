@@ -10,7 +10,7 @@ const Header = () => {
                 <h2>/breadcrumb/goes/here</h2>
             </section>
             <Search />
-            <nav className='header-overlay'>
+            <nav className='header_overlay'>
                 <ul>
                     <li>
                         <img src="" alt="" />
