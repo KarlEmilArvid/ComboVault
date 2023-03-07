@@ -9,10 +9,12 @@ type Props = {
 
 const Start = ({games}: Props) => {
 
-    const gameName = games?.map((game) => {
-        game.map(() => {
-            //hej
-        });
+    const gameImage: string[] | undefined = games?.map((game) => {
+        return game.Game.Image;
+    })
+
+    const gameName: string[] | undefined = games?.map((name) => {
+        return name.Game.Name;
     })
 
     return (
@@ -20,8 +22,8 @@ const Start = ({games}: Props) => {
             <Header />
             <main className='square-wrapper'>
                 {
-                    games?.map((square, index) => {
-                        return <Square key={index}/>
+                    games?.map((square, i) => {
+                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]}/>
                     })
                 }
             </main>
