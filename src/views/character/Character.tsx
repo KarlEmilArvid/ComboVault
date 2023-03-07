@@ -5,6 +5,7 @@ import PostSection from '../../components/postSection/PostSection'
 import ToggleComponent from '../../components/toggleComponent/ToggleComponent'
 import './character.scss'
 
+
 const Character = () => {
     return (
         <div>

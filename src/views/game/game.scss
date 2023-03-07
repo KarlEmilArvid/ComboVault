@@ -1,0 +1,6 @@
+@import '../../scss/layout';
+
+.square-wrapper {
+    @include flex();
+    background-color: yellow;
+}
