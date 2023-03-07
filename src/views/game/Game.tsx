@@ -1,13 +1,21 @@
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './game.scss'
+import { useEffect, useState } from 'react';
 
-const Game = () => {
+type Props = {
+    games: any[] | undefined;
+}
+
+
+const Game = ({games}: Props) => {
+
+
     return (
         <>
             <Header />
             <main className='square-wrapper'>
-                <Square />
+
             </main>
         </>
     )

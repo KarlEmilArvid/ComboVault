@@ -1,13 +1,29 @@
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './start.scss'
+import { useEffect, useState } from 'react';
 
-const Start = () => {
+type Props = {
+    games: any[] | undefined;
+}
+
+const Start = ({games}: Props) => {
+
+    const gameName = games?.map((game) => {
+        game.map(() => {
+            //hej
+        });
+    })
+
     return (
         <>
             <Header />
             <main className='square-wrapper'>
-                <Square />
+                {
+                    games?.map((square, index) => {
+                        return <Square key={index}/>
+                    })
+                }
             </main>
         </>
     )
