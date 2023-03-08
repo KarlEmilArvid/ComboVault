@@ -16,13 +16,12 @@ type Props = {
 const CharacterCard = ({ character, showCharacter }: Props) => {
 
     return (
-        <section>
-
+        <section className="character-wrapper">
 
             <Square name={character.characterName} image={character.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} />
 
-            <section>
-                <h2>karaktär namn enbart i desktop</h2>
+            <section className="character-container">
+                <h2 className="character-name">karaktär namn enbart i desktop</h2>
                 <p>karaktär text goes here</p>
             </section>
         </section>

@@ -1,0 +1,19 @@
+@import '../../scss/layout.scss';
+@import '../../scss/variables.scss';
+
+.character-wrapper {
+    @include flex();
+    height: 15rem;
+    padding: $padding;
+    border: 2px solid grey;
+    width: 100%;
+
+    .character-container {
+        @include flex($direction: column, $justify: flex-start);
+        height: 100%;
+
+        .character-name {
+            display: none;
+        }
+    }
+}
