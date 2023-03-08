@@ -4,7 +4,7 @@ import './PostSection.scss'
 
 const PostSection = () => {
     return (
-        <section>
+        <section className="posts-wrapper">
             <h2>My Posts/Public Posts</h2>
             <ul>
                 <Post />

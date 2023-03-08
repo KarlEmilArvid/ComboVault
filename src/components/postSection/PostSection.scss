@@ -1,0 +1,10 @@
+@import '../../scss//layout.scss';
+
+.posts-wrapper {
+    @include flex($direction: column);
+    border: 2px solid blue;
+
+    button {
+        @include postButton;
+    }
+}

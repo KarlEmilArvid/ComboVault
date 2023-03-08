@@ -1,0 +1,10 @@
+@import '../../scss/variables.scss';
+@import '../../scss/layout.scss';
+
+li {
+        @include flex();
+        background-color: $primaryTextColor;
+        width: 80%;
+        height: 2rem;
+        margin: $margin-small;
+}
