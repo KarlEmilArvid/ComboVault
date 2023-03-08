@@ -6,7 +6,7 @@ const Search = () => {
         <section className="search_wrapper">
             <img className="search_icon" src={ search } alt="" />
             <section className="search_toggle">
-                <img src="" alt="" />
+                <img src={ search } alt="" />
                 <input type="text" />
             </section>
         </section>

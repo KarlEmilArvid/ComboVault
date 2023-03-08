@@ -1,24 +1,30 @@
 @import '../../scss/layout.scss';
 
 
-@media screen and (max-width: 820px) {
+.search_wrapper {
 
-    .search_wrapper {
+    @include flex();
 
-        @include flex();
+    .search_icon {
+        
+        align-self: center;
+        width: 1.5rem;
+        margin-right: .5rem;
 
-        .search_icon {
+    }
+
+    .search_toggle {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 820px) {
+
+    .search_icon {
             
-            align-self: center;
-            width: 1.5rem;
-            margin-right: .5rem;
+        opacity: 0;
 
-        }
-
-        .search_toggle {
-            display: none;
-        }
-    
     }
 
 }
