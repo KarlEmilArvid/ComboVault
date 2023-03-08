@@ -1,32 +1,61 @@
 @import '../../scss/layout.scss';
+@import '../../scss/variables.scss';
 
 header {
-    @include flex($justify: space-between);
     height: 5rem;
     margin-bottom: 1rem;
 
-    .gearwheel_icon {
-        width: 1.5rem;
-        margin-left: .5rem;
-    }
+    .header_container {
 
-    section {
-        
-        h1, h2 {
-            text-align: center;
+        @include flex($justify: space-between);
+
+        .gearwheel_icon {
+            width: 1.5rem;
+            margin-left: .5rem;
+            cursor: pointer;
+        }
+    
+        section {
+            
+            h1, h2 {
+                text-align: center;
+            }
+    
         }
 
     }
 
+
     .header_overlay-false {
         opacity: 0;
         position: absolute;
+        z-index: -1;
     }
 
     .header_overlay-true {
         opacity: 1;
+        top: 0;
+        z-index: 1;
         position: absolute;
-        background-color: yellow;
+        background-color: $primaryBackground;
+        @include maxSize;
+
+        ul {
+            margin-top: 2rem;
+            @include flex($direction: column, $align: start);
+            li {
+                margin-left: 2rem;
+                padding: 1.5rem 0;
+                @include flex();
+                .gearwheel_icon {
+                    cursor: pointer;
+                }
+
+                h2, h3 {
+                    margin-left: 1rem;
+                }
+            }
+        }
     }
 
 }
