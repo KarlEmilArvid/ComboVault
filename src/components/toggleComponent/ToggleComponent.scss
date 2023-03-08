@@ -1,5 +1,5 @@
 @import '../../scss//layout.scss';
-@import '../../scss//variables.scss';
+@import '../../scss/variables.scss';
 
 .toggle-wrapper {
     @include flex($wrap: wrap);
@@ -9,16 +9,14 @@
     margin: $margin auto;
     background-color: $secondaryBackground;
 
-    button, figure {
-        background-color: $primaryTextColor;
-        width: 40%;
-        height: 2rem;
-        margin: $margin-small;
+    button {
+        @include postButton;
     }
 
     figure {
         @include flex();
         background: transparent;
+        height: 2rem;
         p {
             margin-top: .2rem;
         }

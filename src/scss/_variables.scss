@@ -24,3 +24,10 @@ $margin-large: calc($baseline * 2);
 $padding: $baseline;
 $padding-small: calc($baseline / 2);
 $padding-large: calc($baseline * 2);
+
+@mixin postButton {
+    background-color: $primaryTextColor;
+    width: 40%;
+    height: 2rem;
+    margin: $margin-small;
+}
