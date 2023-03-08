@@ -1,0 +1,26 @@
+@import '../../scss//layout.scss';
+@import '../../scss//variables.scss';
+
+.toggle-wrapper {
+    @include flex($wrap: wrap);
+    width: 90%;
+    border: 2px solid blue;
+    border-radius: .4rem;
+    margin: $margin auto;
+    background-color: $secondaryBackground;
+
+    button, figure {
+        background-color: $primaryTextColor;
+        width: 40%;
+        height: 2rem;
+        margin: $margin-small;
+    }
+
+    figure {
+        @include flex();
+        background: transparent;
+        p {
+            margin-top: .2rem;
+        }
+    }
+}
