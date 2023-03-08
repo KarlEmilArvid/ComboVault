@@ -1,0 +1,20 @@
+@import '../../scss/layout.scss';
+
+
+.search_wrapper {
+
+    @include flex();
+
+    .search_icon {
+        
+        align-self: center;
+        width: 1.5rem;
+        margin-right: .5rem;
+
+    }
+
+    .search_toggle {
+        display: none;
+    }
+
+}

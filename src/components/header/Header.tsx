@@ -1,36 +1,48 @@
 import Search from '../search/Search'
+import kugghjul from '../../images/kugghjul.svg';
 import './header.scss'
+import { useState } from 'react';
 
 const Header = () => {
+
+    const [ overlay, setOverlay ] = useState<boolean>(false);
+
+    const openOverlay = () => {
+        console.log(overlay);
+        setOverlay(!overlay);
+    }
+
     return (
         <header>
-            <button>Kuggis</button>
-            <section>
-                <h1>Game Name - karaktär namn - visas ej i desktop vy</h1>
-                <h2>/breadcrumb/goes/here</h2>
+            <section className="header_container">
+                <img onClick={openOverlay} className="gearwheel_icon" src={ kugghjul } alt="" />
+                <section>
+                    <h1>Game Name</h1>
+                    <h3>/Game/GameName</h3>
+                </section>
+                <Search />
             </section>
-            <Search />
-            <nav className='header_overlay'>
+            <nav className={'header_overlay' + `-${ overlay }`}>
                 <ul>
                     <li>
-                        <img src="" alt="" />
-                        <p>Options</p>
+                        <img className="gearwheel_icon" onClick={ openOverlay } src={ kugghjul } alt="" />
+                        <h2>Options</h2>
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <p>Home</p>
+                        <h3>Home</h3>
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <p>Favourites</p>
+                        <h3>Favourites</h3>
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <p>About us</p>
+                        <h3>About us</h3>
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <p>Log in/out</p>
+                        <h3>Log in/out</h3>
                     </li>
                 </ul>
             </nav>
