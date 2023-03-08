@@ -16,7 +16,7 @@ type CharacterType = {
 function App() {
 
 	const [games, setGames] = useState<any[]>();
-	const [character, setCharacter] = useState<CharacterType>();
+	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' });
 
 	// Hämtar questions från firebase databasen
 	useEffect(() => {
@@ -32,10 +32,10 @@ function App() {
 	}, []);
 
 	const showCharacter = (name: string, image: string) => {
-		setCharacter({ characterName: name, characterImage: image });
+    if (name !== undefined && image !== undefined) {
+      setCharacter({ characterName: name, characterImage: image });
+    }
 	}
-
-
 
 	return (
 		<div className="App">

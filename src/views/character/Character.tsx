@@ -12,7 +12,7 @@ type CharacterType = {
 
 type Props = {
     showCharacter: (name: string, image: string) => void;
-    character: CharacterType | undefined;
+    character: CharacterType;
 }
 
 

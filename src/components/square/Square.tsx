@@ -7,10 +7,9 @@ type Props = {
     name: string;
     image: string;
     showCharacter: (name: string, image: string) => void;
-
 }
 
-const Square = ({gameImage, gameName, name, image, showCharacter} : Props) => {
+const Square = ({gameImage, gameName, name, image, showCharacter } : Props) => {
 
     const navigate = useNavigate();
 
@@ -24,7 +23,6 @@ const Square = ({gameImage, gameName, name, image, showCharacter} : Props) => {
     }
 
 
-
     return (
         <div>
             { window.location.href.includes('/Game') ? (
@@ -34,18 +32,18 @@ const Square = ({gameImage, gameName, name, image, showCharacter} : Props) => {
                         <span>{name}</span>
                     </figure>
                 </>
-            ): window.location.href.includes('') ? (
-                <>
-                    <figure onClick={ pickGame }>
-                        <img src={gameImage} title={gameName} />
-                        <span>{gameName}</span>
-                    </figure>
-                </>
             ): window.location.href.includes('/Character') ? (
                 <>
                     <figure >
                         <img src={image} title={name} />
                         <span>{name}</span>
+                    </figure>
+                </>
+            ): window.location.href.includes('') ? (
+                <>
+                    <figure onClick={ pickGame }>
+                        <img src={gameImage} title={gameName} />
+                        <span>{gameName}</span>
                     </figure>
                 </>
             ): null }
