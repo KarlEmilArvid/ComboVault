@@ -1,13 +1,13 @@
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './start.scss'
-import { useEffect, useState } from 'react';
 
 type Props = {
     games: any[] | undefined;
+    showCharacter: (name: string, image: string) => void;
 }
 
-const Start = ({games}: Props) => {
+const Start = ({games, showCharacter}: Props) => {
 
     const gameImage: string[] | undefined = games?.map((game) => {
         return game.Game.Image;
@@ -17,13 +17,15 @@ const Start = ({games}: Props) => {
         return name.Game.Name;
     })
 
+    console.log(games);
+
     return (
         <>
             <Header />
             <main className='square-wrapper'>
                 {
                     games?.map((square, i) => {
-                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image=''/>
+                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter}/>
                     })
                 }
             </main>
