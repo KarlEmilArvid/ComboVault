@@ -5,12 +5,24 @@ import PostSection from '../../components/postSection/PostSection'
 import ToggleComponent from '../../components/toggleComponent/ToggleComponent'
 import './character.scss'
 
+type CharacterType = {
+	characterName: string;
+	characterImage: string;
+}
 
-const Character = () => {
+type Props = {
+    showCharacter: (name: string, image: string) => void;
+    character: CharacterType | undefined;
+}
+
+
+const Character = ({ character, showCharacter }: Props) => {
+    
+    
     return (
         <div>
             <Header />
-            <CharacterCard />
+            <CharacterCard character={character} showCharacter={showCharacter}/>
             <ToggleComponent />
             <PostSection />
             <InformationSection />
