@@ -3,8 +3,16 @@
 .posts-wrapper {
     @include flex($direction: column);
     border: 2px solid blue;
+    width: 90%;
+    margin: auto;
+    background-color: $secondaryBackground;
 
-    button {
+    .new-post-button {
         @include postButton;
+        margin: $margin-large;
+    }
+
+    .posts-list {
+        width: 80%;
     }
 }

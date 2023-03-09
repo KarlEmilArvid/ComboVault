@@ -14,15 +14,18 @@ type Props = {
 }
 
 const CharacterCard = ({ character, showCharacter }: Props) => {
+    const [validCharacter, setValidCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
+
+    useEffect(() => {
+        setValidCharacter(character)
+    }, [])
 
     return (
         <section className="character-wrapper">
-
-            <Square name={character.characterName} image={character.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} />
-
+            <Square name={validCharacter.characterName} image={validCharacter.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} />
             <section className="character-container">
                 <h2 className="character-name">karaktär namn enbart i desktop</h2>
-                <p>karaktär text goes here</p>
+                <p className='character-intro'>karaktär text goes here, sträng med text kommer visas här</p>
             </section>
         </section>
     )

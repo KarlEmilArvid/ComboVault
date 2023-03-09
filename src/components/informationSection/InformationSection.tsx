@@ -2,7 +2,7 @@ import './InformationSection.scss'
 
 const InformationSection = () => {
     return (
-        <section>
+        <section className='information-wrapper'>
             <h2></h2>
             <p></p>
             <section>

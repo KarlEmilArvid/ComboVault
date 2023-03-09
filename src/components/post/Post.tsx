@@ -4,9 +4,9 @@ import accordionArrow from '../../images/accordionArrow.svg';
 
 const Post = () => {
     return (
-        <li>
-            <h3></h3>
-            <img src={accordionArrow} alt="down-button" />
+        <li className='post-container'>
+            <h3>post title</h3>
+            <img className='accordion' src={accordionArrow} alt="down-button" />
             <img src={star} alt="star" />
             {/**dragspels funktion goes here */}
         </li>

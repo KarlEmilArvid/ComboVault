@@ -6,10 +6,13 @@ const PostSection = () => {
     return (
         <section className="posts-wrapper">
             <h2>My Posts/Public Posts</h2>
-            <ul>
+            <ul className='posts-list'>
+                <Post />
+                <Post />
+                <Post />
                 <Post />
             </ul>
-            <button>New Post</button>
+            <button className='new-post-button'>New Post</button>
             <PostOverlay />
         </section>
     )
