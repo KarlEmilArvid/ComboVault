@@ -1,34 +1,40 @@
 import Search from '../search/Search'
 import kugghjul from '../../images/kugghjul.svg';
-import './header.scss'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './header.scss'
 
 const Header = () => {
 
-    const [ overlay, setOverlay ] = useState<boolean>(false);
+    const [overlay, setOverlay] = useState<boolean>(false);
+    const navigate = useNavigate()
 
     const openOverlay = () => {
         console.log(overlay);
         setOverlay(!overlay);
     }
 
+    const goHome = () => {
+        navigate('/')
+    }
+
     return (
         <header>
             <section className="header_container">
-                <img onClick={openOverlay} className="gearwheel_icon" src={ kugghjul } alt="" />
+                <img onClick={openOverlay} className="gearwheel_icon" src={kugghjul} alt="" />
                 <section>
                     <h1>Game Name</h1>
                     <h3>/Game/GameName</h3>
                 </section>
                 <Search />
             </section>
-            <nav className={'header_overlay' + `-${ overlay }`}>
+            <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>
                     <li>
-                        <img className="gearwheel_icon" onClick={ openOverlay } src={ kugghjul } alt="" />
+                        <img className="gearwheel_icon" onClick={openOverlay} src={kugghjul} alt="" />
                         <h2>Options</h2>
                     </li>
-                    <li>
+                    <li onClick={goHome}>
                         <img src="" alt="" />
                         <h3>Home</h3>
                     </li>

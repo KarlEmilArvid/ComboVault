@@ -1,20 +1,23 @@
 import './InformationSection.scss'
 
 const InformationSection = () => {
+
     return (
         <section className='information-wrapper'>
-            <h2></h2>
-            <p></p>
-            <section>
+            <section className='information-section'>
+                <h2>Information</h2>
+                <p>text goes here, text ska visas här, infromation ska skrivas här, text ska renderas här</p>
+            </section>
+            <section className='link-section'>
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="">en länk</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="">två länk</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="">tre länk</a>
                     </li>
                 </ul>
             </section>

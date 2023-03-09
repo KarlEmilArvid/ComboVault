@@ -9,16 +9,13 @@
     margin: $margin auto;
     background-color: $secondaryBackground;
 
-    button {
-        @include postButton;
-    }
-
     figure {
         @include flex();
         width: 40%;
         background: transparent;
-        height: 2rem;
+        height: calc($baseline * 2);
         margin: $margin-small;
+
         p {
             margin-top: .2rem;
         }
