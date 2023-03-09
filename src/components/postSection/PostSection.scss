@@ -7,4 +7,8 @@
     button {
         @include postButton;
     }
+
+    .posts-list {
+        width: 80%;
+    }
 }

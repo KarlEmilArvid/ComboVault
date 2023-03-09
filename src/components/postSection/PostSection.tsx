@@ -6,7 +6,7 @@ const PostSection = () => {
     return (
         <section className="posts-wrapper">
             <h2>My Posts/Public Posts</h2>
-            <ul>
+            <ul className='posts-list'>
                 <Post />
             </ul>
             <button>New Post</button>

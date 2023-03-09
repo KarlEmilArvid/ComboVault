@@ -15,8 +15,10 @@
 
     figure {
         @include flex();
+        width: 40%;
         background: transparent;
         height: 2rem;
+        margin: $margin-small;
         p {
             margin-top: .2rem;
         }
