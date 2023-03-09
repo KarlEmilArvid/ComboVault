@@ -2,7 +2,7 @@ import './PostOverlay.scss'
 
 const PostOverlay = () => {
     return (
-        <div className='postOverlay-wrapper'>
+        <div className='post-overlay-wrapper'>
             <button>X</button>
             <section>
                 <h2>Create/Edit Post</h2>

@@ -6,7 +6,9 @@
     background-color: $primaryTextColor;
     width: 80%;
     height: 2rem;
-    margin: $margin-small;
+    margin: $margin auto;
+    border: 2px solid aqua;
+    cursor: pointer;
 
     h3 {
         color: black;
