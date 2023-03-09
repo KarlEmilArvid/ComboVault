@@ -2,29 +2,26 @@
 @import '../../scss/variables.scss';
 
 header {
-    height: 5rem;
-    margin-bottom: 1rem;
+    height: calc($baseline * 5);
+    margin-bottom: $margin;
 
     .header_container {
-
         @include flex($justify: space-between);
 
         .gearwheel_icon {
             width: 1.5rem;
-            margin-left: .5rem;
+            margin-left: $margin-small;
             cursor: pointer;
         }
-    
+
         section {
-            
-            h1, h2 {
+
+            h1,
+            h2 {
                 text-align: center;
             }
-    
         }
-
     }
-
 
     .header_overlay-false {
         opacity: 0;
@@ -33,30 +30,29 @@ header {
     }
 
     .header_overlay-true {
+        @include maxSize;
+        position: absolute;
+        background-color: $primaryBackground;
         opacity: 1;
         top: 0;
         z-index: 1;
-        position: absolute;
-        background-color: $primaryBackground;
-        @include maxSize;
 
         ul {
-            margin-top: 2rem;
             @include flex($direction: column, $align: start);
-            li {
-                margin-left: 2rem;
-                padding: 1.5rem 0;
-                @include flex();
-                .gearwheel_icon {
-                    cursor: pointer;
-                }
+            margin-top: $margin-large;
 
-                h2, h3 {
-                    margin-left: 1rem;
+            li {
+                @include flex();
+                margin-left: $margin-large;
+                padding: 1.5rem 0;
+                cursor: pointer;
+
+                h2,
+                h3 {
+                    margin-left: $margin;
                 }
             }
         }
     }
 
 }
-

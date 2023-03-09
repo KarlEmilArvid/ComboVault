@@ -2,10 +2,15 @@ import Post from '../post/Post'
 import PostOverlay from '../postOverlay/PostOverlay'
 import './PostSection.scss'
 
-const PostSection = () => {
+type Props = {
+    name: string
+}
+
+const PostSection = ({ name }: Props) => {
+
     return (
         <section className="posts-wrapper">
-            <h2>My Posts/Public Posts</h2>
+            <h2>{name}</h2>
             <ul className='posts-list'>
                 <Post />
                 <Post />

@@ -1,3 +1,36 @@
+@import '../../scss//layout.scss';
+
 .information-wrapper {
-    display: none;
+    @include flex($direction: row-reverse);
+    border: 2px solid blue;
+    width: 90%;
+    margin: auto;
+    background-color: $secondaryBackground;
+
+    .information-section {
+        @include flex($direction: column);
+        margin: auto;
+
+        h2 {
+            margin: $margin;
+        }
+
+        p {
+            margin: $margin;
+            padding: $padding;
+        }
+    }
+
+    .link-section {
+        width: 30%;
+        height: 300px;
+        margin: $margin;
+        background-color: $primaryBackground;
+        border: 2px solid black;
+
+        li {
+            list-style: none;
+            margin: $margin-small;
+        }
+    }
 }
