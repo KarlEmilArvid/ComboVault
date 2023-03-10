@@ -9,11 +9,19 @@ type Props = {
     setOverlay: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+type PostType = {
+        Name: string;
+        PostText: string | undefined;
+        PostTitle: string | undefined;
+        Private: boolean;
+}
+
 const PostOverlay = ({ overlay, setOverlay }: Props) => {
     
     const [ showOverlay, setShowOverlay ] = useState<string>('post-overlay-wrapper');
     const [ postTitle, setPostTitle ] = useState<string>();
     const [ postText, setPostText ] = useState<string>();
+    const [ posts, setPosts ] = useState<PostType[]>([]);
 
     useEffect(() => {
         overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper');
@@ -24,6 +32,12 @@ const PostOverlay = ({ overlay, setOverlay }: Props) => {
     }
 
     const addPost = () => {
+
+        setPosts([...posts, { Name: 'Skullgirls', PostText: postText, PostTitle: postTitle, Private: true }]);
+
+    }
+
+    useEffect(() => {
         if (postTitle !== undefined && postText !== undefined) {
             if (postTitle.length > 0 && postText.length > 0) {
                 (async () => {
@@ -31,12 +45,14 @@ const PostOverlay = ({ overlay, setOverlay }: Props) => {
                     const user: string | undefined = auth.currentUser?.uid;
 
                     await setDoc(doc(db, 'Posts', `${user}`), {
-                        Post: { Name: "Skullgirls", PostText: postText, PostTitle: postTitle, Private: true }
+                        Post: posts
                     });
                 })();
             }
         }
-    }
+    }, [posts]);
+
+    console.log(posts);
 
 
     return (
