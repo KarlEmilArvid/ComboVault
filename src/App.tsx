@@ -1,30 +1,21 @@
-import { Route, Routes } from 'react-router-dom'
-import './scss/global.scss'
 import Start from './views/start/Start'
 import Game from './views/game/Game'
 import Character from './views/character/Character'
 import About from './views/about/About'
+import { Route, Routes } from 'react-router-dom'
 import { getDocs, collection, doc } from 'firebase/firestore';
 import { db } from './firebase/firebase';
 import { useEffect, useState } from 'react';
+import './scss/global.scss'
 
 type CharacterType = {
 	characterName: string;
 	characterImage: string;
 }
 
-type PostType = {
-	MyPostTitle: string;
-	PublicPostTitle: string;
-	MyPostText: string;
-	PublicPostText: string;
-}
-
 function App() {
-
 	const [games, setGames] = useState<any[]>();
 	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' });
-	const [characterPost, setCharacterPost] = useState<PostType>({ MyPostTitle: '', PublicPostTitle: '', MyPostText: '', PublicPostText: '' })
 
 	// Hämtar questions från firebase databasen
 	useEffect(() => {

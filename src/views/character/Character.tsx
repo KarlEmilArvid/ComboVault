@@ -32,7 +32,7 @@ const Character = ({ character, showCharacter, games }: Props) => {
     return (
         <div>
             <Header />
-            <CharacterCard character={character} showCharacter={showCharacter} />
+            <CharacterCard games={games} character={character} showCharacter={showCharacter} />
             <ToggleComponent getName={getName} />
             {
                 name === 'My Post' ? <PostSection name={name} games={games} characterName={character.characterName} /> :
