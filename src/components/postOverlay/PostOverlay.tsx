@@ -1,15 +1,69 @@
+import { useState, useEffect } from 'react';
 import './PostOverlay.scss'
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '../../firebase/firebase';
+import { auth } from '../../firebase/firebase';
 
-const PostOverlay = () => {
+type Props = {
+    overlay: boolean;
+    setOverlay: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+type PostType = {
+        Name: string;
+        PostText: string | undefined;
+        PostTitle: string | undefined;
+        Private: boolean;
+}
+
+const PostOverlay = ({ overlay, setOverlay }: Props) => {
+    
+    const [ showOverlay, setShowOverlay ] = useState<string>('post-overlay-wrapper');
+    const [ postTitle, setPostTitle ] = useState<string>();
+    const [ postText, setPostText ] = useState<string>();
+    const [ posts, setPosts ] = useState<PostType[]>([]);
+
+    useEffect(() => {
+        overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper');
+    }, []);
+
+    const closeOverlay = () => {
+        setOverlay(false);
+    }
+
+    const addPost = () => {
+
+        setPosts([...posts, { Name: 'Skullgirls', PostText: postText, PostTitle: postTitle, Private: true }]);
+
+    }
+
+    useEffect(() => {
+        if (postTitle !== undefined && postText !== undefined) {
+            if (postTitle.length > 0 && postText.length > 0) {
+                (async () => {
+
+                    const user: string | undefined = auth.currentUser?.uid;
+
+                    await setDoc(doc(db, 'Posts', `${user}`), {
+                        Post: posts
+                    });
+                })();
+            }
+        }
+    }, [posts]);
+
+    console.log(posts);
+
+
     return (
-        <div className='post-overlay-wrapper'>
-            <button>X</button>
-            <section>
+        <div className={ showOverlay }>
+            <button className="close-button" onClick={ closeOverlay }>X</button>
+            <section className="create-post-container">
                 <h2>Create/Edit Post</h2>
-                <input type="text" placeholder='post name:' />
-                <input type="text" placeholder='post text goes here...' />
+                <input type="text" placeholder='post name:' onChange={ (e) => setPostTitle(e.target.value) }/>
+                <textarea className="text-input" placeholder='post text goes here...' onChange={ (e) => setPostText(e.target.value) }/>
                 <button>Public/Private</button>
-                <button>Submit/Save</button>
+                <button onClick={ addPost }>Submit/Save</button>
             </section>
         </div>
     )

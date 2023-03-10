@@ -1,3 +1,65 @@
+@import '../../scss/layout.scss';
+@import '../../scss/variables.scss';
+
 .post-overlay-wrapper {
     display: none;
+}
+
+.post-overlay-wrapper-show {
+    @include flex($align: flex-start);
+    padding-top: calc($padding * 3);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: $primaryBackground;
+
+    .close-button {
+        width: calc($baseline * 2);
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        font-size: calc($baseline * 3);
+        color: $primaryTextColor;
+        top: $baseline;
+        left: calc($baseline* 2);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .create-post-container {
+        @include flex($direction: column);
+        border-radius: calc( $baseline / 2);
+        position: relative;
+        width: 80%;
+        top: calc( $baseline * 2 );
+
+        .text-input {
+            min-height: 5rem;
+            width: 100%;
+            resize: none;
+        }
+
+        h2, button {
+            text-align: center;
+            width: 100%;
+            margin: $margin;
+        }
+
+        button {
+            @include postButton;
+            width: 100%;
+        }
+
+        input {
+            text-align: start;
+            width: 100%;
+            margin: $margin;
+        }
+
+    }
+
+
 }

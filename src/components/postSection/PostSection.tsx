@@ -12,6 +12,7 @@ type Props = {
 const PostSection = ({ name, characterName, games }: Props) => {
 
     const [postArray, setPostArray] = useState<any[]>()
+    const [ overlay, setOverlay ] = useState<boolean>(false);
 
     useEffect(() => {
         games?.map((game, i) => {
@@ -34,8 +35,9 @@ const PostSection = ({ name, characterName, games }: Props) => {
         })
     }, [name])
 
-    console.log(postArray)
-    console.log(games)
+    const openOverlay = () => {
+        setOverlay(true);
+    }
 
     //console.log(postArray![0][0].PostTitle)
 
@@ -50,8 +52,13 @@ const PostSection = ({ name, characterName, games }: Props) => {
                 })
                 }
             </ul>
-            <button className='new-post-button'>New Post</button>
-            <PostOverlay />
+            <button onClick={ openOverlay } className='new-post-button'>New Post</button>
+            {
+                overlay ?
+                    <PostOverlay overlay={ overlay } setOverlay={setOverlay}/>
+                    :
+                    null
+            }
         </section>
     )
 }

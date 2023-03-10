@@ -29,21 +29,18 @@ const Square = ({gameImage, gameName, name, image, showCharacter } : Props) => {
                 <>
                     <figure className="square-border" onClick={ () => pickCharacter(name, image) }>
                         <img src={image} title={name} />
-                        <span>{name}</span>
                     </figure>
                 </>
             ): window.location.href.includes('/Character') ? (
                 <>
                     <figure className="square-border">
                         <img src={image} title={name} />
-                        <span>{name}</span>
                     </figure>
                 </>
             ): window.location.href.includes('') ? (
                 <>
                     <figure className="square-border" onClick={ pickGame }>
                         <img src={gameImage} title={gameName} />
-                        <span>{gameName}</span>
                     </figure>
                 </>
             ): null }
