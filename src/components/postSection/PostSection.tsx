@@ -19,10 +19,14 @@ const PostSection = ({ name, characterName, games }: Props) => {
                 const tempArray: any[] = []
                 game.Characters.map((character: { Name: string; Posts: { MyPosts: any; PublicPosts: any; }; }) => {
                     if (character.Name === characterName && name === 'My Post') {
-                        tempArray.push(character.Posts.MyPosts)
+                        character.Posts.MyPosts.map((post: any) => {
+                            tempArray.push(post)
+                        })
                     }
                     else if (character.Name === characterName && name === 'Public Post') {
-                        tempArray.push(character.Posts.PublicPosts)
+                        character.Posts.PublicPosts.map((post: any) => {
+                            tempArray.push(post)
+                        })
                     }
                 })
                 setPostArray(tempArray)
@@ -33,19 +37,21 @@ const PostSection = ({ name, characterName, games }: Props) => {
     console.log(postArray)
     console.log(games)
 
-    console.log(postArray![0][0].PostTitle)
+    //console.log(postArray![0][0].PostTitle)
+
+
 
 
     return (
         <section className="posts-wrapper">
             <h2>{name}</h2>
             <ul className='posts-list'>
-                <>
-                    {postArray?.map((post) => {
-                        <Post PostTitle={post.PostTitle} PostText={post.PostText} />
-                    })
-                    }
-                </>
+                {postArray?.map((post, i) => {
+                    return (
+                        <Post key={i} PostTitle={post.PostTitle} PostText={post.PostText} />
+                    )
+                })
+                }
             </ul>
             <button className='new-post-button'>New Post</button>
             <PostOverlay />

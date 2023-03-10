@@ -16,6 +16,9 @@ const Post = ({ PostTitle, PostText }: Props) => {
         setAccordion(true);
     }, [])
 
+    console.log(PostTitle)
+    console.log(PostText)
+
     return (
         <li onClick={() => setAccordion(!accordion)} className='post-container'>
 
