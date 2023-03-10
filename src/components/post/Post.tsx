@@ -33,7 +33,7 @@ const Post = ({ PostTitle, PostText }: Props) => {
                     <h3>{PostTitle}</h3>
                     <img className='accordion' src={accordionArrow} alt="down-button" />
                     <img src={star} alt="star" />
-                    <section>
+                    <section className='post-section'>
                         <p>{PostText}</p>
                     </section>
                 </>

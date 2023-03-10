@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './InformationSection.scss'
 
 type Props = {
@@ -6,12 +7,27 @@ type Props = {
 }
 
 const InformationSection = ({ characterName, games }: Props) => {
+    const [information, setInformation] = useState<string>('')
+
+    useEffect(() => {
+        games?.map((game, i) => {
+            if (i === 1) {
+                let tempString: string = ''
+                game.Characters.map((character: { Name: string; Information: string; }) => {
+                    if (character.Name === characterName) {
+                        tempString = character.Information
+                    }
+                })
+                setInformation(tempString)
+            }
+        })
+    }, [])
 
     return (
         <section className='information-wrapper'>
             <section className='information-section'>
                 <h2>Information</h2>
-                <p>text goes here, text ska visas här, infromation ska skrivas här, text ska renderas här</p>
+                <p>{information}</p>
             </section>
             <section className='link-section'>
                 <ul>

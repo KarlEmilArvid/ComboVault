@@ -39,9 +39,6 @@ const PostSection = ({ name, characterName, games }: Props) => {
 
     //console.log(postArray![0][0].PostTitle)
 
-
-
-
     return (
         <section className="posts-wrapper">
             <h2>{name}</h2>
