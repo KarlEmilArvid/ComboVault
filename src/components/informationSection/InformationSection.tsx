@@ -1,6 +1,11 @@
 import './InformationSection.scss'
 
-const InformationSection = () => {
+type Props = {
+    characterName: string;
+    games: any[] | undefined;
+}
+
+const InformationSection = ({ characterName, games }: Props) => {
 
     return (
         <section className='information-wrapper'>

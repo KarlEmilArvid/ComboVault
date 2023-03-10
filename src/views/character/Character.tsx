@@ -15,9 +15,10 @@ type CharacterType = {
 type Props = {
     showCharacter: (name: string, image: string) => void;
     character: CharacterType;
+    games: any[] | undefined;
 }
 
-const Character = ({ character, showCharacter }: Props) => {
+const Character = ({ character, showCharacter, games }: Props) => {
 
     const [name, setName] = useState<string>('My Post')
 
@@ -34,9 +35,9 @@ const Character = ({ character, showCharacter }: Props) => {
             <CharacterCard character={character} showCharacter={showCharacter} />
             <ToggleComponent getName={getName} />
             {
-                name === 'My Post' ? <PostSection name={name} /> :
-                    name === 'Public Post' ? <PostSection name={name} /> :
-                        name === 'Information' ? <InformationSection /> :
+                name === 'My Post' ? <PostSection name={name} games={games} characterName={character.characterName} /> :
+                    name === 'Public Post' ? <PostSection name={name} games={games} characterName={character.characterName} /> :
+                        name === 'Information' ? <InformationSection games={games} characterName={character.characterName} /> :
                             null
             }
         </div>

@@ -13,10 +13,18 @@ type CharacterType = {
 	characterImage: string;
 }
 
+type PostType = {
+	MyPostTitle: string;
+	PublicPostTitle: string;
+	MyPostText: string;
+	PublicPostText: string;
+}
+
 function App() {
 
 	const [games, setGames] = useState<any[]>();
 	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' });
+	const [characterPost, setCharacterPost] = useState<PostType>({ MyPostTitle: '', PublicPostTitle: '', MyPostText: '', PublicPostText: '' })
 
 	// Hämtar questions från firebase databasen
 	useEffect(() => {
@@ -32,17 +40,17 @@ function App() {
 	}, []);
 
 	const showCharacter = (name: string, image: string) => {
-    if (name !== undefined && image !== undefined) {
-      setCharacter({ characterName: name, characterImage: image });
-    }
+		if (name !== undefined && image !== undefined) {
+			setCharacter({ characterName: name, characterImage: image });
+		}
 	}
 
 	return (
 		<div className="App">
 			<Routes>
-				<Route path='/' element={<Start games={games} showCharacter={showCharacter}/>} />
-				<Route path='/game' element={<Game games={games} showCharacter={showCharacter}/>} />
-				<Route path='/character' element={<Character character={character} showCharacter={showCharacter}/>} />
+				<Route path='/' element={<Start games={games} showCharacter={showCharacter} />} />
+				<Route path='/game' element={<Game games={games} showCharacter={showCharacter} />} />
+				<Route path='/character' element={<Character games={games} character={character} showCharacter={showCharacter} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>
