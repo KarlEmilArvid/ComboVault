@@ -8,22 +8,22 @@ import { auth } from '../../firebase/firebase';
 type Props = {
     overlay: boolean;
     setOverlay: React.Dispatch<React.SetStateAction<boolean>>;
+    characterName: string;
 }
 
 type PostType = {
-        Name: string;
-        PostText: string | undefined;
-        PostTitle: string | undefined;
-        Private: boolean;
+    Name: string;
+    PostText: string | undefined;
+    PostTitle: string | undefined;
+    Private: boolean;
 }
 
-const PostOverlay = ({ overlay, setOverlay }: Props) => {
-    
-    const [ showOverlay, setShowOverlay ] = useState<string>('post-overlay-wrapper');
-    const [ postTitle, setPostTitle ] = useState<string>();
-    const [ postText, setPostText ] = useState<string>();
-    const [ characterName, setCharacterName ] = useState<string>('Big Band');
-    const [ privatePost, setPrivatePost ] = useState<boolean>(true);
+const PostOverlay = ({ overlay, setOverlay, characterName }: Props) => {
+
+    const [showOverlay, setShowOverlay] = useState<string>('post-overlay-wrapper');
+    const [postTitle, setPostTitle] = useState<string>();
+    const [postText, setPostText] = useState<string>();
+    const [privatePost, setPrivatePost] = useState<boolean>(true);
 
     useEffect(() => {
 
@@ -35,7 +35,7 @@ const PostOverlay = ({ overlay, setOverlay }: Props) => {
     const closeOverlay = () => {
         setOverlay(false);
     }
-    
+
     const addPost = () => {
 
         (async () => {
@@ -59,14 +59,14 @@ const PostOverlay = ({ overlay, setOverlay }: Props) => {
 
 
     return (
-        <div className={ showOverlay }>
-            <button className="close-button" onClick={ closeOverlay }>X</button>
+        <div className={showOverlay}>
+            <button className="close-button" onClick={closeOverlay}>X</button>
             <section className="create-post-container">
                 <h2>Create/Edit Post</h2>
-                <input type="text" placeholder='post name:' onChange={ (e) => setPostTitle(e.target.value) }/>
-                <textarea className="text-input" placeholder='post text goes here...' onChange={ (e) => setPostText(e.target.value) }/>
-                <button onClick={ () => setPrivatePost(!privatePost) }>Public/Private</button>
-                <button onClick={ addPost }>Submit/Save</button>
+                <input type="text" placeholder='post name:' onChange={(e) => setPostTitle(e.target.value)} />
+                <textarea className="text-input" placeholder='post text goes here...' onChange={(e) => setPostText(e.target.value)} />
+                <button onClick={() => setPrivatePost(!privatePost)}>Public/Private</button>
+                <button onClick={addPost}>Submit/Save</button>
             </section>
         </div>
     )

@@ -12,10 +12,10 @@ type Props = {
 
 const PostSection = ({ name, characterName }: Props) => {
 
-    const [ overlay, setOverlay ] = useState<boolean>(false);
+    const [overlay, setOverlay] = useState<boolean>(false);
     const [posts, setPosts] = useState<any[]>();
-    const [ privatePosts, setPrivatePosts ] = useState<any[]>();
-    const [ publicPosts, setPublicPosts ] = useState<any[]>();
+    const [privatePosts, setPrivatePosts] = useState<any[]>();
+    const [publicPosts, setPublicPosts] = useState<any[]>();
 
     useEffect(() => {
 
@@ -25,11 +25,11 @@ const PostSection = ({ name, characterName }: Props) => {
             querySnapshot.forEach((doc: any) => {
                 tempArr.push(doc.data());
             });
-    
+
             setPosts(tempArr);
         })();
 
-    }, []);
+    }, [overlay]);
 
 
     useEffect(() => {
@@ -37,7 +37,7 @@ const PostSection = ({ name, characterName }: Props) => {
         setPrivatePosts(privatePost);
         const publicPost = posts?.filter(post => post.Name === characterName && !post.Private);
         setPublicPosts(publicPost);
-      }, [characterName, posts]);
+    }, [characterName, posts]);
 
 
     const openOverlay = () => {
@@ -55,19 +55,19 @@ const PostSection = ({ name, characterName }: Props) => {
                             <Post key={i} PostTitle={post.PostTitle} PostText={post.PostText} />
                         )
                     })
-                    :
-                    name === 'Public Posts' ? publicPosts?.map((post, i) => {
-                        return (
-                            <Post key={i} PostTitle={post.PostTitle} PostText={post.PostText} />
-                        )
-                    })
-                    : null
+                        :
+                        name === 'Public Posts' ? publicPosts?.map((post, i) => {
+                            return (
+                                <Post key={i} PostTitle={post.PostTitle} PostText={post.PostText} />
+                            )
+                        })
+                            : null
                 }
             </ul>
-            <button onClick={ openOverlay } className='new-post-button'>New Post</button>
+            <button onClick={openOverlay} className='new-post-button'>New Post</button>
             {
                 overlay ?
-                    <PostOverlay overlay={ overlay } setOverlay={setOverlay}/>
+                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} />
                     :
                     null
             }
