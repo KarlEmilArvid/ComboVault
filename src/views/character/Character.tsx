@@ -20,14 +20,13 @@ type Props = {
 
 const Character = ({ character, showCharacter, games }: Props) => {
 
-    const [name, setName] = useState<string>('My Post')
+    const [name, setName] = useState<string>('My Posts')
 
     const getName = (name: string) => {
-        console.log('här tar vi emot name')
+
         setName(name)
     }
 
-    console.log(name)
 
     return (
         <div>
@@ -35,8 +34,8 @@ const Character = ({ character, showCharacter, games }: Props) => {
             <CharacterCard games={games} character={character} showCharacter={showCharacter} />
             <ToggleComponent getName={getName} />
             {
-                name === 'My Post' ? <PostSection name={name} games={games} characterName={character.characterName} /> :
-                    name === 'Public Post' ? <PostSection name={name} games={games} characterName={character.characterName} /> :
+                name === 'My Posts' ? <PostSection name={name}  characterName={character.characterName} /> :
+                    name === 'Public Posts' ? <PostSection name={name} characterName={character.characterName} /> :
                         name === 'Information' ? <InformationSection games={games} characterName={character.characterName} /> :
                             null
             }

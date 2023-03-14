@@ -3,9 +3,10 @@ import Game from './views/game/Game'
 import Character from './views/character/Character'
 import About from './views/about/About'
 import { Route, Routes } from 'react-router-dom'
-import { getDocs, collection, doc } from 'firebase/firestore';
+import { getDocs, collection, doc, setDoc } from 'firebase/firestore';
 import { db } from './firebase/firebase';
 import { useEffect, useState } from 'react';
+import { auth } from './firebase/firebase';
 import './scss/global.scss'
 
 type CharacterType = {
@@ -28,6 +29,7 @@ function App() {
 
 			setGames(tempArr);
 		})();
+
 	}, []);
 
 	const showCharacter = (name: string, image: string) => {
