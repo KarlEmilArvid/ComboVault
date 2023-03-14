@@ -29,7 +29,7 @@ const PostSection = ({ name, characterName }: Props) => {
             setPosts(tempArr);
         })();
 
-    }, [overlay]);
+    }, [characterName, overlay]);
 
 
     useEffect(() => {
