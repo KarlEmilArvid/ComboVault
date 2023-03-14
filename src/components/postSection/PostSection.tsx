@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
-import Post from '../post/Post'
-import PostOverlay from '../postOverlay/PostOverlay'
-import './PostSection.scss'
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../../firebase/firebase';
+import { useDispatch, useSelector } from 'react-redux';
+import PostOverlay from '../postOverlay/PostOverlay'
+import Post from '../post/Post'
+import './PostSection.scss'
+import { actions as games } from '../../redux/gamesReducer'
 
 type Props = {
     name: string;
@@ -39,9 +41,14 @@ const PostSection = ({ name, characterName }: Props) => {
         setPublicPosts(publicPost);
     }, [characterName, posts]);
 
+    const dispatch = useDispatch()
+    const gameReducer = dispatch(games.checkGames())
+    const updateReducer = useSelector((state: any) => state.games)
 
     const openOverlay = () => {
         setOverlay(true);
+        console.log(gameReducer)
+        console.log(updateReducer)
     }
 
 
@@ -76,3 +83,7 @@ const PostSection = ({ name, characterName }: Props) => {
 }
 
 export default PostSection
+
+function dispatch(arg0: { payload: undefined; type: "check games"; }) {
+    throw new Error('Function not implemented.');
+}

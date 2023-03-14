@@ -7,7 +7,7 @@ type Props = {
     showCharacter: (name: string, image: string) => void;
 }
 
-const Start = ({games, showCharacter}: Props) => {
+const Start = ({ games, showCharacter }: Props) => {
 
     const gameImage: string[] | undefined = games?.map((game) => {
         return game.Game.Image;
@@ -17,15 +17,13 @@ const Start = ({games, showCharacter}: Props) => {
         return name.Game.Name;
     })
 
-    console.log(games);
-
     return (
         <>
             <Header />
             <main className='square-wrapper'>
                 {
                     games?.map((square, i) => {
-                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter}/>
+                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter} />
                     })
                 }
             </main>
