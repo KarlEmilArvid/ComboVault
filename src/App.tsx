@@ -3,10 +3,12 @@ import Game from './views/game/Game'
 import Character from './views/character/Character'
 import About from './views/about/About'
 import { Route, Routes } from 'react-router-dom'
-import { getDocs, collection, doc, setDoc } from 'firebase/firestore';
-import { db } from './firebase/firebase';
-import { useEffect, useState } from 'react';
-import { auth } from './firebase/firebase';
+import { getDocs, collection, doc, setDoc, DocumentData } from 'firebase/firestore'
+import { db } from './firebase/firebase'
+//import { auth } from './firebase/firebase'
+import { SetStateAction, useEffect, useState } from 'react'
+import { actions as games } from './redux/gamesReducer'
+import { useDispatch } from 'react-redux'
 import './scss/global.scss'
 
 type CharacterType = {
@@ -15,22 +17,21 @@ type CharacterType = {
 }
 
 function App() {
-	const [games, setGames] = useState<any[]>();
-	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' });
+	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
+	const dispatch = useDispatch()
 
-	// Hämtar questions från firebase databasen
 	useEffect(() => {
 		(async () => {
-			const querySnapshot = await getDocs(collection(db, "Games"));
-			const tempArr: any[] = [];
+			const querySnapshot = await getDocs(collection(db, 'Games'))
+			const tempArray: any[] = [];
 			querySnapshot.forEach((doc) => {
-				tempArr.push(doc.data());
-			});
+				tempArray.push(doc.data())
+			})
 
-			setGames(tempArr);
-		})();
-
-	}, []);
+			console.log(tempArray)
+			dispatch(games.getGames(tempArray))
+		})()
+	}, [])
 
 	const showCharacter = (name: string, image: string) => {
 		if (name !== undefined && image !== undefined) {
@@ -39,11 +40,11 @@ function App() {
 	}
 
 	return (
-		<div className="App">
+		<div className='App'>
 			<Routes>
-				<Route path='/' element={<Start games={games} showCharacter={showCharacter} />} />
-				<Route path='/game' element={<Game games={games} showCharacter={showCharacter} />} />
-				<Route path='/character' element={<Character games={games} character={character} showCharacter={showCharacter} />} />
+				<Route path='/' element={<Start showCharacter={showCharacter} />} />
+				<Route path='/game' element={<Game showCharacter={showCharacter} />} />
+				<Route path='/character' element={<Character character={character} showCharacter={showCharacter} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>

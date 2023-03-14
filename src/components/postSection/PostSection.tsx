@@ -42,12 +42,12 @@ const PostSection = ({ name, characterName }: Props) => {
     }, [characterName, posts]);
 
     const dispatch = useDispatch()
-    const gameReducer = dispatch(games.checkGames())
+    //const gameReducer = dispatch(games.getGames())
     const updateReducer = useSelector((state: any) => state.games)
 
     const openOverlay = () => {
         setOverlay(true);
-        console.log(gameReducer)
+        //console.log(gameReducer)
         console.log(updateReducer)
     }
 
