@@ -6,9 +6,10 @@ import './start.scss'
 
 type Props = {
     showCharacter: (name: string, image: string) => void;
+    pickGame:(gameName: string, gameImage: string) => void
 }
 
-const Start = ({ showCharacter }: Props) => {
+const Start = ({ showCharacter, pickGame }: Props) => {
     const [games, setGames] = useState<[]>()
 
     const dispatchedGames = useSelector((state: any) => state.games)
@@ -33,7 +34,7 @@ const Start = ({ showCharacter }: Props) => {
             <main className='square-wrapper'>
                 {
                     games?.map((square: any, i: number) => {
-                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter} />
+                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
                     })
                 }
             </main>

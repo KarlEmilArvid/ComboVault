@@ -4,11 +4,18 @@ import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './game.scss'
 
-type Props = {
-    showCharacter: (name: string, image: string) => void
+type GameType = {
+	gameName: string;
+	gameImage: string;
 }
 
-const Game = ({ showCharacter }: Props) => {
+type Props = {
+    showCharacter: (name: string, image: string) => void
+    games: GameType;
+    pickGame:(gameName: string, gameImage: string) => void
+}
+
+const Game = ({ showCharacter, games, pickGame }: Props) => {
     /*
     const characterImage: string[] | undefined = games?.map((game) => {
         return game.Characters.Image;
@@ -17,6 +24,8 @@ const Game = ({ showCharacter }: Props) => {
     const [character, setCharacter] = useState<[]>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
+    console.log(games.gameName);
+
     useEffect(() => {
         setCharacter(dispatchedGames)
     }, [dispatchedGames])
@@ -24,7 +33,8 @@ const Game = ({ showCharacter }: Props) => {
     const characterArray: any = []
 
     const characterMap = character?.map((game: any, i: number) => {
-        if (i === 1) {
+
+        if (games.gameName === game.Game.Name) {
             game.Characters.map((character: any) => {
                 characterArray.push({ name: character.Name, image: character.Image })
             })
@@ -38,7 +48,7 @@ const Game = ({ showCharacter }: Props) => {
             <Header />
             <main className='square-wrapper'>
                 {characterArray.map((char: any, i: number) => {
-                    return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} />
+                    return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame}/>
                 })}
 
             </main>

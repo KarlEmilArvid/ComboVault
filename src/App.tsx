@@ -2,7 +2,7 @@ import Start from './views/start/Start'
 import Game from './views/game/Game'
 import Character from './views/character/Character'
 import About from './views/about/About'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useNavigate } from 'react-router-dom'
 import { getDocs, collection, doc, setDoc, DocumentData } from 'firebase/firestore'
 import { db } from './firebase/firebase'
 //import { auth } from './firebase/firebase'
@@ -16,9 +16,16 @@ type CharacterType = {
 	characterImage: string;
 }
 
+type GameType = {
+	gameName: string;
+	gameImage: string;
+}
+
 function App() {
 	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
+	const [ game, setGame ] = useState<GameType>({ gameName: '', gameImage: '' })
 	const dispatch = useDispatch()
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		(async () => {
@@ -38,13 +45,18 @@ function App() {
 			setCharacter({ characterName: name, characterImage: image });
 		}
 	}
+	
+	const pickGame = (name: string, image: string) => {
+		setGame({ gameName: name, gameImage: image })
+        navigate('/Game');
+    }
 
 	return (
 		<div className='App'>
 			<Routes>
-				<Route path='/' element={<Start showCharacter={showCharacter} />} />
-				<Route path='/game' element={<Game showCharacter={showCharacter} />} />
-				<Route path='/character' element={<Character character={character} showCharacter={showCharacter} />} />
+				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame}/>} />
+				<Route path='/game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame}/>}/>
+				<Route path='/character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame}/>} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>

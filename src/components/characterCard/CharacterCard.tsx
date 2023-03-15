@@ -12,9 +12,10 @@ type CharacterType = {
 type Props = {
     showCharacter: (name: string, image: string) => void
     character: CharacterType
+    pickGame:(gameName: string, gameImage: string) => void
 }
 
-const CharacterCard = ({ character, showCharacter }: Props) => {
+const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
     const [validCharacter, setValidCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
     const [intro, setIntro] = useState<string>('')
 
@@ -40,7 +41,7 @@ const CharacterCard = ({ character, showCharacter }: Props) => {
 
     return (
         <section className='character-wrapper'>
-            <Square name={validCharacter.characterName} image={validCharacter.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} />
+            <Square name={validCharacter.characterName} image={validCharacter.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} pickGame={pickGame}/>
             <section className='character-container'>
                 <h2 className='character-name'>{validCharacter.characterName}</h2>
                 <p className='character-intro'>{intro}</p>
