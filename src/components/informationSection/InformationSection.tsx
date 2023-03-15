@@ -1,16 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import './InformationSection.scss'
 
 type Props = {
-    characterName: string;
-    games: any[] | undefined;
+    characterName: string
 }
 
-const InformationSection = ({ characterName, games }: Props) => {
+const InformationSection = ({ characterName }: Props) => {
     const [information, setInformation] = useState<string>('')
+    const games = useSelector((state: any) => state.games)
 
     useEffect(() => {
-        games?.map((game, i) => {
+        games?.map((game: any, i: number) => {
             if (i === 1) {
                 let tempString: string = ''
                 game.Characters.map((character: { Name: string; Information: string; }) => {
@@ -32,13 +33,13 @@ const InformationSection = ({ characterName, games }: Props) => {
             <section className='link-section'>
                 <ul>
                     <li>
-                        <a href="">en länk</a>
+                        <a href=''>en länk</a>
                     </li>
                     <li>
-                        <a href="">två länk</a>
+                        <a href=''>två länk</a>
                     </li>
                     <li>
-                        <a href="">tre länk</a>
+                        <a href=''>tre länk</a>
                     </li>
                 </ul>
             </section>

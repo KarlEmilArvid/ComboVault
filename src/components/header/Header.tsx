@@ -1,17 +1,18 @@
 import Search from '../search/Search'
-import kugghjul from '../../images/kugghjul.svg';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import kugghjul from '../../images/kugghjul.svg'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './header.scss'
 
 const Header = () => {
-
-    const [overlay, setOverlay] = useState<boolean>(false);
+    const [overlay, setOverlay] = useState<boolean>(false)
+    //state här för "game name" men byt till mer lämpligt namn då det blir både game och character
+    //breadcrumbs state här
     const navigate = useNavigate()
 
     const openOverlay = () => {
-        console.log(overlay);
-        setOverlay(!overlay);
+        console.log(overlay)
+        setOverlay(!overlay)
     }
 
     const goHome = () => {

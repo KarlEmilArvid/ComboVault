@@ -1,39 +1,50 @@
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './game.scss'
 
-type Props = {
-    games: any[] | undefined;
-    showCharacter: (name: string, image: string) => void;
+type GameType = {
+    gameName: string;
+    gameImage: string;
 }
 
-const Game = ({games, showCharacter}: Props) => {
-    /*
-    const characterImage: string[] | undefined = games?.map((game) => {
-        return game.Characters.Image;
-    }); */
+type Props = {
+    showCharacter: (name: string, image: string) => void
+    games: GameType;
+    pickGame: (gameName: string, gameImage: string) => void
+}
 
-    const characterArray: any = [];
+const Game = ({ showCharacter, games, pickGame }: Props) => {
+    const [character, setCharacter] = useState<[]>()
+    const dispatchedGames = useSelector((state: any) => state.games)
 
-    const gameCharacters: any = games?.map((game, i) => {
-        if ( i === 1) {
+    console.log(games.gameName)
+
+    useEffect(() => {
+        setCharacter(dispatchedGames)
+    }, [dispatchedGames])
+
+    const characterArray: any = []
+
+    const characterMap = character?.map((game: any, i: number) => {
+
+        if (games.gameName === game.Game.Name) {
             game.Characters.map((character: any) => {
-                characterArray.push({name: character.Name, image: character.Image})
-            });
+                characterArray.push({ name: character.Name, image: character.Image })
+            })
         }
     })
 
-    console.log(characterArray);
-
+    //char används inte? pröva att ändra
 
     return (
         <>
             <Header />
             <main className='square-wrapper'>
-                { characterArray.map((char: any, i: any) => {
-                    return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter}/>
-                }) }
-
+                {characterArray.map((char: any, i: number) => {
+                    return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />
+                })}
             </main>
         </>
     )

@@ -4,39 +4,36 @@ import Header from '../../components/header/Header'
 import InformationSection from '../../components/informationSection/InformationSection'
 import PostSection from '../../components/postSection/PostSection'
 import ToggleComponent from '../../components/toggleComponent/ToggleComponent'
-import ToggleButton from '../../components/toggleButton/ToggleButton'
+//import ToggleButton from '../../components/toggleButton/ToggleButton'
 import './character.scss'
 
 type CharacterType = {
-    characterName: string;
-    characterImage: string;
+    characterName: string
+    characterImage: string
 }
 
 type Props = {
-    showCharacter: (name: string, image: string) => void;
-    character: CharacterType;
-    games: any[] | undefined;
+    showCharacter: (name: string, image: string) => void
+    character: CharacterType
+    pickGame: (gameName: string, gameImage: string) => void
 }
 
-const Character = ({ character, showCharacter, games }: Props) => {
-
+const Character = ({ character, showCharacter, pickGame }: Props) => {
     const [name, setName] = useState<string>('My Posts')
 
     const getName = (name: string) => {
-
         setName(name)
     }
-
 
     return (
         <div>
             <Header />
-            <CharacterCard games={games} character={character} showCharacter={showCharacter} />
+            <CharacterCard character={character} showCharacter={showCharacter} pickGame={pickGame} />
             <ToggleComponent getName={getName} />
             {
-                name === 'My Posts' ? <PostSection name={name}  characterName={character.characterName} /> :
+                name === 'My Posts' ? <PostSection name={name} characterName={character.characterName} /> :
                     name === 'Public Posts' ? <PostSection name={name} characterName={character.characterName} /> :
-                        name === 'Information' ? <InformationSection games={games} characterName={character.characterName} /> :
+                        name === 'Information' ? <InformationSection characterName={character.characterName} /> :
                             null
             }
         </div>

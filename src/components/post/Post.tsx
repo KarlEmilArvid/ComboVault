@@ -1,27 +1,22 @@
+import star from '../../images/star.svg'
+import accordionArrow from '../../images/accordionArrow.svg'
+import { useEffect, useState } from 'react'
 import './Post.scss'
-import star from '../../images/star.svg';
-import accordionArrow from '../../images/accordionArrow.svg';
-import { useEffect, useState } from 'react';
 
 type Props = {
-    PostTitle: string;
-    PostText: string;
+    PostTitle: string
+    PostText: string
 }
 
 const Post = ({ PostTitle, PostText }: Props) => {
-
     const [accordion, setAccordion] = useState<boolean>(false)
 
     useEffect(() => {
-        setAccordion(true);
+        setAccordion(true)
     }, [])
-
-    console.log(PostTitle)
-    console.log(PostText)
 
     return (
         <li onClick={() => setAccordion(!accordion)} className='post-container'>
-
             {accordion ?
                 <>
                     <h3>{PostTitle}</h3>
