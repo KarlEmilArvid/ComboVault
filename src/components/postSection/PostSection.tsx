@@ -5,50 +5,55 @@ import { useDispatch, useSelector } from 'react-redux';
 import PostOverlay from '../postOverlay/PostOverlay'
 import Post from '../post/Post'
 import './PostSection.scss'
-import { actions as games } from '../../redux/gamesReducer'
+import { actions as posts } from '../../redux/postsReducer';
 
 type Props = {
     name: string;
     characterName: string;
 }
 
+type Posts = {
+    Name: string;
+    PostText: string;
+    PostTitle: string;
+    Private: boolean;
+    User: string;
+}
+
 const PostSection = ({ name, characterName }: Props) => {
 
     const [overlay, setOverlay] = useState<boolean>(false);
-    const [posts, setPosts] = useState<any[]>();
+    const [allPosts, setAllPosts] = useState<Posts[]>([]);
     const [privatePosts, setPrivatePosts] = useState<any[]>();
     const [publicPosts, setPublicPosts] = useState<any[]>();
 
-    useEffect(() => {
-
-        (async () => {
-            const querySnapshot = await getDocs(collection(db, "Posts"));
-            const tempArr: any[] = [];
-            querySnapshot.forEach((doc: any) => {
-                tempArr.push(doc.data());
-            });
-
-            setPosts(tempArr);
-        })();
-
-    }, [characterName, overlay]);
-
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        const privatePost = posts?.filter(post => post.Name === characterName && post.Private);
+		(async () => {
+			const querySnapshot = await getDocs(collection(db, 'Posts'))
+			const tempArray: any[] = [];
+			querySnapshot.forEach((doc) => {
+				tempArray.push(doc.data())
+			})
+            dispatch(posts.getPosts(allPosts))
+            setAllPosts(tempArray);
+		})()
+
+	}, [])
+
+
+    useEffect(() => {
+        const privatePost = allPosts?.filter(post => post.Name === characterName && post.Private);
         setPrivatePosts(privatePost);
-        const publicPost = posts?.filter(post => post.Name === characterName && !post.Private);
+        const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private);
         setPublicPosts(publicPost);
-    }, [characterName, posts]);
+    }, [characterName, allPosts]);
 
-    const dispatch = useDispatch()
-    //const gameReducer = dispatch(games.getGames())
-    const updateReducer = useSelector((state: any) => state.games)
 
     const openOverlay = () => {
         setOverlay(true);
-        //console.log(gameReducer)
-        console.log(updateReducer)
+
     }
 
 
@@ -59,13 +64,13 @@ const PostSection = ({ name, characterName }: Props) => {
                 {
                     name === 'My Posts' ? privatePosts?.map((post, i) => {
                         return (
-                            <Post key={i} PostTitle={post.PostTitle} PostText={post.PostText} />
+                            <Post key={i} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText}/>
                         )
                     })
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} PostTitle={post.PostTitle} PostText={post.PostText} />
+                                <Post key={i} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText}/>
                             )
                         })
                             : null
@@ -84,6 +89,3 @@ const PostSection = ({ name, characterName }: Props) => {
 
 export default PostSection
 
-function dispatch(arg0: { payload: undefined; type: "check games"; }) {
-    throw new Error('Function not implemented.');
-}
