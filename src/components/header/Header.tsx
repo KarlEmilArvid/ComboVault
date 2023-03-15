@@ -7,6 +7,8 @@ import './header.scss'
 const Header = () => {
 
     const [overlay, setOverlay] = useState<boolean>(false);
+    //state här för "game name" men byt till mer lämpligt namn då det blir både game och character
+    //breadcrumbs state här
     const navigate = useNavigate()
 
     const openOverlay = () => {
