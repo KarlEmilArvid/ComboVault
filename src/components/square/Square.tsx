@@ -14,7 +14,6 @@ const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: P
 
     const navigate = useNavigate();
     const param = useParams();
-    console.log(param.game?.replace(/\s+/g, '-'));
 
     const pickCharacter = (name: string, image: string) => {
         showCharacter(name, image);
