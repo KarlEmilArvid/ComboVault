@@ -5,27 +5,24 @@ import Square from '../../components/square/Square'
 import './start.scss'
 
 type Props = {
-    showCharacter: (name: string, image: string) => void;
-    pickGame:(gameName: string, gameImage: string) => void
+    showCharacter: (name: string, image: string) => void
+    pickGame: (gameName: string, gameImage: string) => void
 }
 
 const Start = ({ showCharacter, pickGame }: Props) => {
     const [games, setGames] = useState<[]>()
-
     const dispatchedGames = useSelector((state: any) => state.games)
 
     useEffect(() => {
         setGames(dispatchedGames)
     }, [dispatchedGames])
 
-    console.log(games)
-
     const gameImage: string[] | undefined = games?.map((game: any) => {
-        return game.Game.Image;
+        return game.Game.Image
     })
 
     const gameName: string[] | undefined = games?.map((name: any) => {
-        return name.Game.Name;
+        return name.Game.Name
     })
 
     return (

@@ -1,6 +1,6 @@
-import { createAction, createReducer } from '@reduxjs/toolkit';
-import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../firebase/firebase';
+import { createAction, createReducer } from '@reduxjs/toolkit'
+import { collection, getDocs } from 'firebase/firestore'
+import { db } from '../firebase/firebase'
 
 type GameItems = {
     characters: [

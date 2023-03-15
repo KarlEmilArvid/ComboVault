@@ -6,7 +6,6 @@ type Props = {
 }
 
 const ToggleButton = ({ name, getName }: Props) => {
-
     const toggle = () => {
         getName(name)
     }

@@ -1,61 +1,56 @@
-import { useEffect, useState } from 'react';
-import { getDocs, collection } from 'firebase/firestore';
-import { db } from '../../firebase/firebase';
-import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react'
+import { getDocs, collection } from 'firebase/firestore'
+import { db } from '../../firebase/firebase'
+import { useDispatch, useSelector } from 'react-redux'
+import { actions as posts } from '../../redux/postsReducer'
 import PostOverlay from '../postOverlay/PostOverlay'
 import Post from '../post/Post'
 import './PostSection.scss'
-import { actions as posts } from '../../redux/postsReducer';
 
 type Props = {
-    name: string;
-    characterName: string;
+    name: string
+    characterName: string
 }
 
 type Posts = {
-    Name: string;
-    PostText: string;
-    PostTitle: string;
-    Private: boolean;
-    User: string;
+    Name: string
+    PostText: string
+    PostTitle: string
+    Private: boolean
+    User: string
 }
 
 const PostSection = ({ name, characterName }: Props) => {
+    const [overlay, setOverlay] = useState<boolean>(false)
+    const [allPosts, setAllPosts] = useState<Posts[]>([])
+    const [privatePosts, setPrivatePosts] = useState<any[]>()
+    const [publicPosts, setPublicPosts] = useState<any[]>()
 
-    const [overlay, setOverlay] = useState<boolean>(false);
-    const [allPosts, setAllPosts] = useState<Posts[]>([]);
-    const [privatePosts, setPrivatePosts] = useState<any[]>();
-    const [publicPosts, setPublicPosts] = useState<any[]>();
-
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
 
     useEffect(() => {
-		(async () => {
-			const querySnapshot = await getDocs(collection(db, 'Posts'))
-			const tempArray: any[] = [];
-			querySnapshot.forEach((doc) => {
-				tempArray.push(doc.data())
-			})
+        (async () => {
+            const querySnapshot = await getDocs(collection(db, 'Posts'))
+            const tempArray: any[] = []
+            querySnapshot.forEach((doc) => {
+                tempArray.push(doc.data())
+            })
             dispatch(posts.getPosts(allPosts))
-            setAllPosts(tempArray);
-		})()
-
-	}, [])
-
+            setAllPosts(tempArray)
+        })()
+    }, [])
 
     useEffect(() => {
-        const privatePost = allPosts?.filter(post => post.Name === characterName && post.Private);
-        setPrivatePosts(privatePost);
-        const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private);
-        setPublicPosts(publicPost);
-    }, [characterName, allPosts]);
-
+        const privatePost = allPosts?.filter(post => post.Name === characterName && post.Private)
+        setPrivatePosts(privatePost)
+        const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private)
+        setPublicPosts(publicPost)
+    }, [characterName, allPosts])
 
     const openOverlay = () => {
         setOverlay(true);
 
     }
-
 
     return (
         <section className="posts-wrapper">
@@ -64,13 +59,13 @@ const PostSection = ({ name, characterName }: Props) => {
                 {
                     name === 'My Posts' ? privatePosts?.map((post, i) => {
                         return (
-                            <Post key={i} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText}/>
+                            <Post key={i} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} />
                         )
                     })
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText}/>
+                                <Post key={i} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} />
                             )
                         })
                             : null

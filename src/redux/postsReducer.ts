@@ -1,4 +1,4 @@
-import { createAction, createReducer } from "@reduxjs/toolkit";
+import { createAction, createReducer } from '@reduxjs/toolkit'
 
 type Posts = {
     Name: string;
@@ -9,8 +9,8 @@ type Posts = {
 }
 
 //Reducer
-let initialState: string = 'get posts';
-const getPosts = createAction<Posts[]>('get posts');
+let initialState: string = 'get posts'
+const getPosts = createAction<Posts[]>('get posts')
 const actions = { getPosts, }
 
 //hämta posts

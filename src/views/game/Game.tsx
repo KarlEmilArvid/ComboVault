@@ -5,26 +5,21 @@ import Square from '../../components/square/Square'
 import './game.scss'
 
 type GameType = {
-	gameName: string;
-	gameImage: string;
+    gameName: string;
+    gameImage: string;
 }
 
 type Props = {
     showCharacter: (name: string, image: string) => void
     games: GameType;
-    pickGame:(gameName: string, gameImage: string) => void
+    pickGame: (gameName: string, gameImage: string) => void
 }
 
 const Game = ({ showCharacter, games, pickGame }: Props) => {
-    /*
-    const characterImage: string[] | undefined = games?.map((game) => {
-        return game.Characters.Image;
-    }); */
-
     const [character, setCharacter] = useState<[]>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
-    console.log(games.gameName);
+    console.log(games.gameName)
 
     useEffect(() => {
         setCharacter(dispatchedGames)
@@ -48,9 +43,8 @@ const Game = ({ showCharacter, games, pickGame }: Props) => {
             <Header />
             <main className='square-wrapper'>
                 {characterArray.map((char: any, i: number) => {
-                    return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame}/>
+                    return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />
                 })}
-
             </main>
         </>
     )

@@ -23,7 +23,7 @@ type GameType = {
 
 function App() {
 	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
-	const [ game, setGame ] = useState<GameType>({ gameName: '', gameImage: '' })
+	const [game, setGame] = useState<GameType>({ gameName: '', gameImage: '' })
 	const dispatch = useDispatch()
 	const navigate = useNavigate();
 
@@ -42,21 +42,21 @@ function App() {
 
 	const showCharacter = (name: string, image: string) => {
 		if (name !== undefined && image !== undefined) {
-			setCharacter({ characterName: name, characterImage: image });
+			setCharacter({ characterName: name, characterImage: image })
 		}
 	}
-	
+
 	const pickGame = (name: string, image: string) => {
 		setGame({ gameName: name, gameImage: image })
-        navigate('/Game');
-    }
+		navigate('/Game')
+	}
 
 	return (
 		<div className='App'>
 			<Routes>
-				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame}/>} />
-				<Route path='/game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame}/>}/>
-				<Route path='/character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame}/>} />
+				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame} />} />
+				<Route path='/game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame} />} />
+				<Route path='/character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>

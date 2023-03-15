@@ -8,7 +8,6 @@ type Props = {
 
 const InformationSection = ({ characterName }: Props) => {
     const [information, setInformation] = useState<string>('')
-
     const games = useSelector((state: any) => state.games)
 
     useEffect(() => {
