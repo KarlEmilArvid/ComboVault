@@ -3,11 +3,16 @@ import accordionArrow from '../../images/accordionArrow.svg'
 import { useEffect, useState } from 'react'
 import './Post.scss'
 
+type CurrentPost = {
+    postTitle: string;
+    postText: string;
+}
+
 type Props = {
     PostTitle: string
     PostText: string
     name: string
-    openOverlay: (overlayTitle: string) => void;
+    openOverlay: (overlayTitle: string, currentPost: CurrentPost) => void;
 }
 
 const Post = ({ PostTitle, PostText, name, openOverlay }: Props) => {
@@ -40,7 +45,7 @@ const Post = ({ PostTitle, PostText, name, openOverlay }: Props) => {
                     <section className='post-section'>
                         <p>{PostText}</p>
                         <section className='button-section'>
-                            <button onClick={() => openOverlay(overlayTitle)} className='post-buttons'>edit</button>
+                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle })} className='post-buttons'>edit</button>
                             <button className='post-buttons'>delete</button>
                         </section>
                     </section>

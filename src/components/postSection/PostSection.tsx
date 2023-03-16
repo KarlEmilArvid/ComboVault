@@ -20,12 +20,18 @@ type Posts = {
     User: string
 }
 
+type CurrentPost = {
+    postTitle: string;
+    postText: string;
+}
+
 const PostSection = ({ name, characterName }: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
     const [allPosts, setAllPosts] = useState<Posts[]>([])
     const [privatePosts, setPrivatePosts] = useState<any[]>()
     const [publicPosts, setPublicPosts] = useState<any[]>()
     const [ pickedTitle, setPickedTitle ] = useState<string>()
+    const [ currentPost, setCurrentPost ] = useState<CurrentPost>({ postTitle: '', postText: '' });
     
     const overlayTitle = 'New Post';
 
@@ -51,8 +57,9 @@ const PostSection = ({ name, characterName }: Props) => {
     }, [characterName, allPosts])
     
 
-    const openOverlay = (overlayTitle: string) => {
+    const openOverlay = (overlayTitle: string, post: CurrentPost) => {
         setPickedTitle(overlayTitle);
+        setCurrentPost(post);
         setOverlay(true);
     }
 
@@ -75,10 +82,10 @@ const PostSection = ({ name, characterName }: Props) => {
                             : null
                 }
             </ul>
-            <button onClick={ () => openOverlay(overlayTitle)} className='new-post-button'>New Post</button>
+            <button onClick={ () => openOverlay(overlayTitle, { postText: '', postTitle: '' })} className='new-post-button'>New Post</button>
             {
                 overlay ?
-                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} />
+                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost}/>
                     :
                     null
             }
