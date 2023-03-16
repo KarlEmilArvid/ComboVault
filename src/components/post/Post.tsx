@@ -6,14 +6,15 @@ import './Post.scss'
 type Props = {
     PostTitle: string
     PostText: string
+    name: string
 }
 
-const Post = ({ PostTitle, PostText }: Props) => {
+const Post = ({ PostTitle, PostText, name }: Props) => {
     const [accordion, setAccordion] = useState<boolean>(false)
 
     useEffect(() => {
         setAccordion(true)
-    }, [])
+    }, [name])
 
     return (
         <li onClick={() => setAccordion(!accordion)} className='post-container'>

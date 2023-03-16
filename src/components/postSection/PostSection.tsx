@@ -49,7 +49,6 @@ const PostSection = ({ name, characterName }: Props) => {
 
     const openOverlay = () => {
         setOverlay(true);
-
     }
 
     return (
@@ -59,13 +58,13 @@ const PostSection = ({ name, characterName }: Props) => {
                 {
                     name === 'My Posts' ? privatePosts?.map((post, i) => {
                         return (
-                            <Post key={i} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} />
+                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} />
                         )
                     })
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} />
+                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} />
                             )
                         })
                             : null
