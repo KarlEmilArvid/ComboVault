@@ -8,6 +8,7 @@ type Props = {
     overlay: boolean
     setOverlay: React.Dispatch<React.SetStateAction<boolean>>
     characterName: string
+    pickedTitle: string | undefined;
 }
 
 type PostType = {
@@ -17,7 +18,7 @@ type PostType = {
     Private: boolean
 }
 
-const PostOverlay = ({ overlay, setOverlay, characterName }: Props) => {
+const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle }: Props) => {
     const [showOverlay, setShowOverlay] = useState<string>('post-overlay-wrapper')
     const [postTitle, setPostTitle] = useState<string>()
     const [postText, setPostText] = useState<string>()
@@ -49,7 +50,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName }: Props) => {
         <div className={showOverlay}>
             <button className="close-button" onClick={closeOverlay}>X</button>
             <section className="create-post-container">
-                <h2>Create/Edit Post</h2>
+                <h2>{ pickedTitle }</h2>
                 <input type="text" placeholder='post name:' onChange={(e) => setPostTitle(e.target.value)} />
                 <textarea className="text-input" placeholder='post text goes here...' onChange={(e) => setPostText(e.target.value)} />
                 <button onClick={() => setPrivatePost(!privatePost)}>Public/Private</button>

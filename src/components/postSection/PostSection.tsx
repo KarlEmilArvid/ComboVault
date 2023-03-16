@@ -25,6 +25,9 @@ const PostSection = ({ name, characterName }: Props) => {
     const [allPosts, setAllPosts] = useState<Posts[]>([])
     const [privatePosts, setPrivatePosts] = useState<any[]>()
     const [publicPosts, setPublicPosts] = useState<any[]>()
+    const [ pickedTitle, setPickedTitle ] = useState<string>()
+    
+    const overlayTitle = 'New Post';
 
     const dispatch = useDispatch()
 
@@ -46,8 +49,10 @@ const PostSection = ({ name, characterName }: Props) => {
         const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
     }, [characterName, allPosts])
+    
 
-    const openOverlay = () => {
+    const openOverlay = (overlayTitle: string) => {
+        setPickedTitle(overlayTitle);
         setOverlay(true);
     }
 
@@ -58,22 +63,22 @@ const PostSection = ({ name, characterName }: Props) => {
                 {
                     name === 'My Posts' ? privatePosts?.map((post, i) => {
                         return (
-                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} />
+                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} />
                         )
                     })
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} />
+                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} />
                             )
                         })
                             : null
                 }
             </ul>
-            <button onClick={openOverlay} className='new-post-button'>New Post</button>
+            <button onClick={ () => openOverlay(overlayTitle)} className='new-post-button'>New Post</button>
             {
                 overlay ?
-                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} />
+                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} />
                     :
                     null
             }

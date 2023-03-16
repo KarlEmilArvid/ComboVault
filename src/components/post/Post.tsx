@@ -7,14 +7,18 @@ type Props = {
     PostTitle: string
     PostText: string
     name: string
+    openOverlay: (overlayTitle: string) => void;
 }
 
-const Post = ({ PostTitle, PostText, name }: Props) => {
+const Post = ({ PostTitle, PostText, name, openOverlay }: Props) => {
     const [accordion, setAccordion] = useState<boolean>(false)
+
+    const overlayTitle = 'Edit';
 
     useEffect(() => {
         setAccordion(true)
     }, [name])
+
 
     return (
         <li className='post-container'>
@@ -36,7 +40,7 @@ const Post = ({ PostTitle, PostText, name }: Props) => {
                     <section className='post-section'>
                         <p>{PostText}</p>
                         <section className='button-section'>
-                            <button className='post-buttons'>edit</button>
+                            <button onClick={() => openOverlay(overlayTitle)} className='post-buttons'>edit</button>
                             <button className='post-buttons'>delete</button>
                         </section>
                     </section>
