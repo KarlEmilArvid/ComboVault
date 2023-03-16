@@ -8,16 +8,23 @@ type Props = {
     overlay: boolean
     setOverlay: React.Dispatch<React.SetStateAction<boolean>>
     characterName: string
+    pickedTitle: string | undefined;
+    currentPost: CurrentPost;
+}
+
+type CurrentPost = {
+    postTitle: string;
+    postText: string;
 }
 
 type PostType = {
     Name: string
     PostText: string | undefined
     PostTitle: string | undefined
-    Private: boolean
+    Private: boolean | undefined
 }
 
-const PostOverlay = ({ overlay, setOverlay, characterName }: Props) => {
+const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentPost }: Props) => {
     const [showOverlay, setShowOverlay] = useState<string>('post-overlay-wrapper')
     const [postTitle, setPostTitle] = useState<string>()
     const [postText, setPostText] = useState<string>()
@@ -49,9 +56,9 @@ const PostOverlay = ({ overlay, setOverlay, characterName }: Props) => {
         <div className={showOverlay}>
             <button className="close-button" onClick={closeOverlay}>X</button>
             <section className="create-post-container">
-                <h2>Create/Edit Post</h2>
-                <input type="text" placeholder='post name:' onChange={(e) => setPostTitle(e.target.value)} />
-                <textarea className="text-input" placeholder='post text goes here...' onChange={(e) => setPostText(e.target.value)} />
+                <h2>{ pickedTitle }</h2>
+                <input type="text" placeholder='post name:' value={ currentPost.postTitle } onChange={(e) => setPostTitle(e.target.value)} />
+                <textarea className="text-input" placeholder='post text goes here...' value={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
                 <button onClick={() => setPrivatePost(!privatePost)}>Public/Private</button>
                 <button onClick={addPost}>Submit/Save</button>
             </section>
