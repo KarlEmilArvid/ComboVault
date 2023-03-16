@@ -17,18 +17,22 @@ const Post = ({ PostTitle, PostText, name }: Props) => {
     }, [name])
 
     return (
-        <li onClick={() => setAccordion(!accordion)} className='post-container'>
+        <li className='post-container'>
             {accordion ?
                 <>
-                    <h3>{PostTitle}</h3>
-                    <img className='accordion' src={accordionArrow} alt="down-button" />
-                    <img src={star} alt="star" />
+                    <section onClick={() => setAccordion(!accordion)} className='post-information'>
+                        <h3>{PostTitle}</h3>
+                        <img className='accordion' src={accordionArrow} alt="down-button" />
+                        <img src={star} alt="star" />
+                    </section>
                 </>
                 :
                 <>
-                    <h3>{PostTitle}</h3>
-                    <img className='accordion' src={accordionArrow} alt="down-button" />
-                    <img src={star} alt="star" />
+                    <section onClick={() => setAccordion(!accordion)} className='post-information'>
+                        <h3>{PostTitle}</h3>
+                        <img className='accordion' src={accordionArrow} alt="down-button" />
+                        <img src={star} alt="star" />
+                    </section>
                     <section className='post-section'>
                         <p>{PostText}</p>
                     </section>
