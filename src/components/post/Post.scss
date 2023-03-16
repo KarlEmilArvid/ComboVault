@@ -19,11 +19,24 @@
     }
 
     .post-section {
+        @include flex($direction: column, $align: start);
         color: black;
         min-height: 8rem;
         width: 100%;
         background-color: silver;
         cursor: default;
+
+        .button-section {
+            @include flex;
+            width: 100%;
+            margin: auto 0 1rem 0;
+
+            .post-buttons {
+                cursor: pointer;
+                margin: .5rem;
+            }
+
+        }
     }
 
     .accordion {

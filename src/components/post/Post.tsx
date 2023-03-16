@@ -35,6 +35,10 @@ const Post = ({ PostTitle, PostText, name }: Props) => {
                     </section>
                     <section className='post-section'>
                         <p>{PostText}</p>
+                        <section className='button-section'>
+                            <button className='post-buttons'>edit</button>
+                            <button className='post-buttons'>delete</button>
+                        </section>
                     </section>
                 </>
             }
