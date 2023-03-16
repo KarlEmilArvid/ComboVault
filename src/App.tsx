@@ -6,7 +6,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom'
 import { getDocs, collection, doc, setDoc, DocumentData } from 'firebase/firestore'
 import { db } from './firebase/firebase'
 //import { auth } from './firebase/firebase'
-import { SetStateAction, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { actions as games } from './redux/gamesReducer'
 import { useDispatch } from 'react-redux'
 import './scss/global.scss'
@@ -48,15 +48,15 @@ function App() {
 
 	const pickGame = (name: string, image: string) => {
 		setGame({ gameName: name, gameImage: image })
-		navigate('/Game')
+		navigate(`/${name?.replace(/\s+/g, '-')}`);
 	}
 
 	return (
 		<div className='App'>
 			<Routes>
 				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame} />} />
-				<Route path='/game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame} />} />
-				<Route path='/character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame} />} />
+				<Route path='/:game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame} />} />
+				<Route path='/:game/:character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>

@@ -2,6 +2,7 @@ import Search from '../search/Search'
 import kugghjul from '../../images/kugghjul.svg'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import './header.scss'
 
 const Header = () => {
@@ -9,6 +10,9 @@ const Header = () => {
     //state här för "game name" men byt till mer lämpligt namn då det blir både game och character
     //breadcrumbs state här
     const navigate = useNavigate()
+
+    const param = useParams();
+    console.log(param);
 
     const openOverlay = () => {
         console.log(overlay)
@@ -25,7 +29,14 @@ const Header = () => {
                 <img onClick={openOverlay} className="gearwheel_icon" src={kugghjul} alt="" />
                 <section>
                     <h1>Game Name</h1>
-                    <h3>/Game/GameName</h3>
+                    {
+                        param.hasOwnProperty('game') && param.hasOwnProperty('character') ?
+                        <h3>{ `${param.game?.replaceAll('-', ' ')}` + `/${param.character?.replaceAll('-', ' ')}` }</h3>
+                        : param.hasOwnProperty('game') ?
+                        <h3>{ `${param.game?.replaceAll('-', ' ')}` }</h3>
+                        :
+                        null
+                    }
                 </section>
                 <Search />
             </section>
