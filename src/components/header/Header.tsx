@@ -15,8 +15,9 @@ const Header = () => {
     console.log(param);
 
     const openOverlay = () => {
-        console.log(overlay)
+
         setOverlay(!overlay)
+        
     }
 
     const goHome = () => {

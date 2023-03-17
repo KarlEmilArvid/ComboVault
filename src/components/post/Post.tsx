@@ -12,13 +12,16 @@ type Props = {
     PostTitle: string
     PostText: string
     name: string
-    openOverlay: (overlayTitle: string, currentPost: CurrentPost) => void;
+    openOverlay: (overlayTitle: string, currentPost: CurrentPost, currentButton: string, Id: number) => void;
+    Id: number;
 }
 
-const Post = ({ PostTitle, PostText, name, openOverlay }: Props) => {
+const Post = ({ PostTitle, PostText, name, openOverlay, Id }: Props) => {
     const [accordion, setAccordion] = useState<boolean>(false)
 
     const overlayTitle = 'Edit';
+    const editButton = 'Save Changes';
+    const deleteButton = 'Delete';
 
     useEffect(() => {
         setAccordion(true)
@@ -45,8 +48,8 @@ const Post = ({ PostTitle, PostText, name, openOverlay }: Props) => {
                     <section className='post-section'>
                         <p>{PostText}</p>
                         <section className='button-section'>
-                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle })} className='post-buttons'>edit</button>
-                            <button className='post-buttons'>delete</button>
+                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, editButton, Id)} className='post-buttons'>edit</button>
+                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, deleteButton, Id)} className='post-buttons'>delete</button>
                         </section>
                     </section>
                 </>

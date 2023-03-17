@@ -18,6 +18,7 @@ type Posts = {
     PostTitle: string
     Private: boolean
     User: string
+    PostId: number
 }
 
 type CurrentPost = {
@@ -31,9 +32,12 @@ const PostSection = ({ name, characterName }: Props) => {
     const [privatePosts, setPrivatePosts] = useState<any[]>()
     const [publicPosts, setPublicPosts] = useState<any[]>()
     const [ pickedTitle, setPickedTitle ] = useState<string>()
+    const [ overlayButton, setOverlayButton ] = useState<string>()
+    const [ postId, setPostId ] = useState<number>(0);
     const [ currentPost, setCurrentPost ] = useState<CurrentPost>({ postTitle: '', postText: '' });
     
     const overlayTitle = 'New Post';
+    const currentButton = 'Create Post';
 
     const dispatch = useDispatch()
 
@@ -44,22 +48,40 @@ const PostSection = ({ name, characterName }: Props) => {
             querySnapshot.forEach((doc) => {
                 tempArray.push(doc.data())
             })
-            dispatch(posts.getPosts(allPosts))
             setAllPosts(tempArray)
+
         })()
+        dispatch(posts.getPosts(allPosts))
     }, [])
+
+    useEffect(() => {
+        (async () => {
+            const querySnapshot = await getDocs(collection(db, 'Posts'))
+            const tempArray: any[] = []
+            querySnapshot.forEach((doc) => {
+                tempArray.push(doc.data())
+            })
+
+            setAllPosts(tempArray)
+
+        })()
+
+    }, [overlay]);
+
 
     useEffect(() => {
         const privatePost = allPosts?.filter(post => post.Name === characterName && post.Private)
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
-    }, [characterName, allPosts])
+    }, [characterName, allPosts, overlay])
     
 
-    const openOverlay = (overlayTitle: string, post: CurrentPost) => {
+    const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
         setPickedTitle(overlayTitle);
+        setOverlayButton(currentButton);
         setCurrentPost(post);
+        setPostId(Id);
         setOverlay(true);
     }
 
@@ -70,22 +92,22 @@ const PostSection = ({ name, characterName }: Props) => {
                 {
                     name === 'My Posts' ? privatePosts?.map((post, i) => {
                         return (
-                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} />
+                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} Id={privatePosts[i].PostId} />
                         )
                     })
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} />
+                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId}/>
                             )
                         })
                             : null
                 }
             </ul>
-            <button onClick={ () => openOverlay(overlayTitle, { postText: '', postTitle: '' })} className='new-post-button'>New Post</button>
+            <button onClick={ () => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
             {
                 overlay ?
-                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost}/>
+                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={ postId }/>
                     :
                     null
             }
