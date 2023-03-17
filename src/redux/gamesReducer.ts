@@ -29,10 +29,6 @@ const getGames = createAction<GAMES[]>('namngivning utav actionet');
 
 const actions = { getGames, }
 
-console.log(initialState)
-
-//hämta character{}
-
 const reducer = createReducer(initialState, {
     [getGames.toString()]: (state, action) => {
         console.log(action.payload)
