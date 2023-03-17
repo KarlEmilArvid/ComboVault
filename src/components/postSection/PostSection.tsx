@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getDocs, collection } from 'firebase/firestore'
-import { db } from '../../firebase/firebase'
+import { auth, db } from '../../firebase/firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
 import PostOverlay from '../postOverlay/PostOverlay'
@@ -31,11 +31,11 @@ const PostSection = ({ name, characterName }: Props) => {
     const [allPosts, setAllPosts] = useState<Posts[]>([])
     const [privatePosts, setPrivatePosts] = useState<any[]>()
     const [publicPosts, setPublicPosts] = useState<any[]>()
-    const [ pickedTitle, setPickedTitle ] = useState<string>()
-    const [ overlayButton, setOverlayButton ] = useState<string>()
-    const [ postId, setPostId ] = useState<number>(0);
-    const [ currentPost, setCurrentPost ] = useState<CurrentPost>({ postTitle: '', postText: '' });
-    
+    const [pickedTitle, setPickedTitle] = useState<string>()
+    const [overlayButton, setOverlayButton] = useState<string>()
+    const [postId, setPostId] = useState<number>(0);
+    const [currentPost, setCurrentPost] = useState<CurrentPost>({ postTitle: '', postText: '' });
+
     const overlayTitle = 'New Post';
     const currentButton = 'Create Post';
 
@@ -70,12 +70,12 @@ const PostSection = ({ name, characterName }: Props) => {
 
 
     useEffect(() => {
-        const privatePost = allPosts?.filter(post => post.Name === characterName && post.Private)
+        const privatePost = allPosts?.filter(post => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
     }, [characterName, allPosts, overlay])
-    
+
 
     const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
         setPickedTitle(overlayTitle);
@@ -98,16 +98,16 @@ const PostSection = ({ name, characterName }: Props) => {
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId}/>
+                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId} />
                             )
                         })
                             : null
                 }
             </ul>
-            <button onClick={ () => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
+            <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
             {
                 overlay ?
-                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={ postId }/>
+                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={postId} />
                     :
                     null
             }

@@ -3,6 +3,7 @@ import kugghjul from '../../images/kugghjul.svg'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
+import { auth, signIn } from '../../firebase/firebase';
 import './header.scss'
 
 const Header = () => {
@@ -10,32 +11,41 @@ const Header = () => {
     //state här för "game name" men byt till mer lämpligt namn då det blir både game och character
     //breadcrumbs state här
     const navigate = useNavigate()
-
     const param = useParams();
     console.log(param);
 
     const openOverlay = () => {
-        console.log(overlay)
         setOverlay(!overlay)
     }
 
     const goHome = () => {
         navigate('/')
+        setOverlay(!overlay)
     }
+
+    const connectUser = () => {
+        signIn()
+        navigate('/')
+    }
+
+    const gameParam = param.game?.replaceAll('-', ' ')
+    const characterParam = param.character?.replaceAll('-', ' ')
+
+    console.log(auth.currentUser?.uid)
 
     return (
         <header>
             <section className="header_container">
                 <img onClick={openOverlay} className="gearwheel_icon" src={kugghjul} alt="" />
                 <section>
-                    <h1>Game Name</h1>
+                    {param.character ? <h1 className='game-name'>{characterParam}</h1> : <h1 className='game-name'>{gameParam}</h1>}
                     {
                         param.hasOwnProperty('game') && param.hasOwnProperty('character') ?
-                        <h3>{ `${param.game?.replaceAll('-', ' ')}` + `/${param.character?.replaceAll('-', ' ')}` }</h3>
-                        : param.hasOwnProperty('game') ?
-                        <h3>{ `${param.game?.replaceAll('-', ' ')}` }</h3>
-                        :
-                        null
+                            <h3>{`${gameParam}` + `/${characterParam}`}</h3>
+                            : param.hasOwnProperty('game') ?
+                                <h3>{`${param.game?.replaceAll('-', ' ')}`}</h3>
+                                :
+                                null
                     }
                 </section>
                 <Search />
@@ -60,7 +70,7 @@ const Header = () => {
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <h3>Log in/out</h3>
+                        <h3 onClick={connectUser}>Sign in</h3>
                     </li>
                 </ul>
             </nav>
