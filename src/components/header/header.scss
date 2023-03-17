@@ -2,11 +2,11 @@
 @import '../../scss/variables.scss';
 
 header {
-    height: calc($baseline * 5);
     margin-bottom: $margin;
 
     .header_container {
         @include flex($justify: space-between);
+        min-height: calc($baseline * 5);
 
         .gearwheel_icon {
             width: 1.5rem;
@@ -19,6 +19,10 @@ header {
             h1,
             h2 {
                 text-align: center;
+            }
+
+            .game-name {
+                margin-bottom: .5rem;
             }
         }
     }

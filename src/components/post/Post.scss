@@ -19,23 +19,28 @@
     }
 
     .post-section {
-        @include flex($direction: column, $align: start);
+        @include flex($justify: flex-start, $align: flex-start);
         color: black;
         min-height: 8rem;
         width: 100%;
         background-color: silver;
         cursor: default;
 
-        .button-section {
-            @include flex;
-            width: 100%;
-            margin: auto 0 1rem 0;
+        p {
+            margin: .5rem;
+        }
+    }
 
-            .post-buttons {
-                cursor: pointer;
-                margin: .5rem;
-            }
+    .button-section {
+        @include flex;
+        width: 100%;
+        border-top: 2px solid black;
+        background-color: silver;
+        cursor: default;
 
+        .post-buttons {
+            cursor: pointer;
+            margin: .5rem;
         }
     }
 

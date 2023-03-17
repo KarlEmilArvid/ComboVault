@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { useParams } from 'react-router'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './game.scss'
@@ -18,13 +19,16 @@ type Props = {
 const Game = ({ showCharacter, games, pickGame }: Props) => {
     const [character, setCharacter] = useState<[]>()
     const dispatchedGames = useSelector((state: any) => state.games)
-    const characterArray: any = []
+
+    console.log(games.gameName)
+    const param = useParams();
     
 
     useEffect(() => {
         setCharacter(dispatchedGames)
     }, [dispatchedGames])
 
+    const characterArray: any = []
 
     const characterMap = character?.map((game: any, i: number) => {
 
@@ -35,6 +39,7 @@ const Game = ({ showCharacter, games, pickGame }: Props) => {
         }
     })
 
+    //char används inte? pröva att ändra
 
     return (
         <>
