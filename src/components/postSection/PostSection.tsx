@@ -49,6 +49,7 @@ const PostSection = ({ name, characterName }: Props) => {
                 tempArray.push(doc.data())
             })
             setAllPosts(tempArray)
+
         })()
         dispatch(posts.getPosts(allPosts))
     }, [])
@@ -60,8 +61,11 @@ const PostSection = ({ name, characterName }: Props) => {
             querySnapshot.forEach((doc) => {
                 tempArray.push(doc.data())
             })
+
             setAllPosts(tempArray)
+
         })()
+
     }, [overlay]);
 
 
@@ -70,7 +74,7 @@ const PostSection = ({ name, characterName }: Props) => {
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
-    }, [characterName, allPosts])
+    }, [characterName, allPosts, overlay])
     
 
     const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {

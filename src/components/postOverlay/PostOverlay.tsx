@@ -35,6 +35,12 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
 
     useEffect(() => {
         overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper')
+
+        if (overlayButton == 'Save Changes') {
+            setPostTitle(currentPost.postTitle);
+            setPostText(currentPost.postText);
+        }
+
     }, [])
 
     const closeOverlay = () => {
@@ -54,6 +60,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     Private: privatePost,
                     PostId: Id
                 })
+                setOverlay(false)
             })()
         }
 
@@ -71,6 +78,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     Private: privatePost,
                     PostId: postId
                 })
+                setOverlay(false)
             })()
         }
 
@@ -79,13 +87,10 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             (async () => {
 
                 await deleteDoc(doc(db, 'Posts', `${Id}`));
-
+                setOverlay(false)
             })()
-
+        
         }
-
-        setOverlay(false)
-
     }
 
     return (
