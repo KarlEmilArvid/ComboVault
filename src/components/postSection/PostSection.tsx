@@ -18,7 +18,7 @@ type Posts = {
     PostTitle: string
     Private: boolean
     User: string
-    PostId: string
+    PostId: number
 }
 
 type CurrentPost = {
@@ -33,7 +33,7 @@ const PostSection = ({ name, characterName }: Props) => {
     const [publicPosts, setPublicPosts] = useState<any[]>()
     const [ pickedTitle, setPickedTitle ] = useState<string>()
     const [ overlayButton, setOverlayButton ] = useState<string>()
-    const [ postId, setPostId ] = useState<string>('');
+    const [ postId, setPostId ] = useState<number>(0);
     const [ currentPost, setCurrentPost ] = useState<CurrentPost>({ postTitle: '', postText: '' });
     
     const overlayTitle = 'New Post';
@@ -53,7 +53,16 @@ const PostSection = ({ name, characterName }: Props) => {
         dispatch(posts.getPosts(allPosts))
     }, [])
 
-    console.log(allPosts);
+    useEffect(() => {
+        (async () => {
+            const querySnapshot = await getDocs(collection(db, 'Posts'))
+            const tempArray: any[] = []
+            querySnapshot.forEach((doc) => {
+                tempArray.push(doc.data())
+            })
+            setAllPosts(tempArray)
+        })()
+    }, [overlay]);
 
 
     useEffect(() => {
@@ -64,11 +73,11 @@ const PostSection = ({ name, characterName }: Props) => {
     }, [characterName, allPosts])
     
 
-    const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, postId: string) => {
+    const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
         setPickedTitle(overlayTitle);
         setOverlayButton(currentButton);
         setCurrentPost(post);
-        setPostId(postId);
+        setPostId(Id);
         setOverlay(true);
     }
 
@@ -79,13 +88,13 @@ const PostSection = ({ name, characterName }: Props) => {
                 {
                     name === 'My Posts' ? privatePosts?.map((post, i) => {
                         return (
-                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} postId={privatePosts[i].PostId} />
+                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} Id={privatePosts[i].PostId} />
                         )
                     })
                         :
                         name === 'Public Posts' ? publicPosts?.map((post, i) => {
                             return (
-                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} postId={publicPosts[i].PostId}/>
+                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId}/>
                             )
                         })
                             : null
@@ -94,7 +103,7 @@ const PostSection = ({ name, characterName }: Props) => {
             <button onClick={ () => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
             {
                 overlay ?
-                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} postId={ postId }/>
+                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={ postId }/>
                     :
                     null
             }

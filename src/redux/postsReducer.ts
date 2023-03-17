@@ -6,7 +6,7 @@ type Posts = {
     PostTitle: string;
     Private: boolean;
     User: string;
-    PostId: string;
+    PostId: number;
 }
 
 //Reducer

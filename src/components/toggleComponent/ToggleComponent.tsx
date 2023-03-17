@@ -1,7 +1,7 @@
 import ToggleButton from '../toggleButton/ToggleButton'
 import star from '../../images/star.svg'
 import './ToggleComponent.scss'
-import { useState } from 'react'
+
 
 type Props = {
     getName: (name: string) => void
