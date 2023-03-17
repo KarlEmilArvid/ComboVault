@@ -1,6 +1,7 @@
 @import '../../scss/layout';
 
 .square-wrapper {
-    @include flex();
-    background-color: yellow;
+    @include flex($wrap: wrap);
+    max-width: 90%;
+    margin: auto;
 }
