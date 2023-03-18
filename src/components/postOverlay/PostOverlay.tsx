@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import './PostOverlay.scss'
-import { doc, setDoc, getDocs, collection, getDoc, updateDoc, deleteDoc } from 'firebase/firestore'
+import { doc, setDoc, updateDoc, deleteDoc } from 'firebase/firestore'
 import { db } from '../../firebase/firebase'
 import { auth } from '../../firebase/firebase'
+import './PostOverlay.scss'
 
 type Props = {
     overlay: boolean
@@ -31,7 +31,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     const [postTitle, setPostTitle] = useState<string>()
     const [postText, setPostText] = useState<string>()
     const [privatePost, setPrivatePost] = useState<boolean>(true)
-
+    const [activeButton, setActiveButton] = useState<string>('post-button')
 
     useEffect(() => {
         overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper')
@@ -43,12 +43,16 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
 
     }, [])
 
+    useEffect(() => {
+        privatePost ? setActiveButton('post-button-active') : setActiveButton('post-button')
+    }, [privatePost])
+
     const closeOverlay = () => {
         setOverlay(false)
     }
 
     const addPost = () => {
-        if ( overlayButton == 'Save Changes' ) {
+        if (overlayButton == 'Save Changes') {
 
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
@@ -64,7 +68,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             })()
         }
 
-        if ( overlayButton == 'Create Post' ) {
+        if (overlayButton == 'Create Post') {
 
             const postId = Math.random() * 1000 ** 100;
 
@@ -82,34 +86,38 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             })()
         }
 
-        if ( overlayButton == 'Delete' ) {
+        if (overlayButton == 'Delete') {
 
             (async () => {
 
                 await deleteDoc(doc(db, 'Posts', `${Id}`));
                 setOverlay(false)
             })()
-        
+
         }
     }
+
+    console.log(privatePost)
 
     return (
         <div className={showOverlay}>
             <button className="close-button" onClick={closeOverlay}>X</button>
             <section className="create-post-container">
-                { overlayButton == 'Save Changes' || overlayButton == 'Create Post' ?
-                <>
-                    <h2>{ pickedTitle }</h2>
-                    <input type="text" placeholder='post name:' defaultValue={ currentPost.postTitle } onChange={(e) => setPostTitle(e.target.value)} />
-                    <textarea className="text-input" placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
-                    <button onClick={() => setPrivatePost(!privatePost)}>Public/Private</button>
-                    <button onClick={addPost}>{ overlayButton }</button>
-                </>
-                :
-                <>
-                    <button onClick={addPost}>YES</button>
-                    <button onClick={ () => setOverlay(false) }>NO</button>
-                </>
+                {overlayButton == 'Save Changes' || overlayButton == 'Create Post' ?
+                    <>
+                        <h2>{pickedTitle}</h2>
+                        <input type="text" placeholder='post name:' defaultValue={currentPost.postTitle} onChange={(e) => setPostTitle(e.target.value)} />
+                        <textarea className="text-input" placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
+                        <section className='button-section'>
+                            <button className={activeButton} onClick={() => setPrivatePost(!privatePost)}>Public / Private</button>
+                        </section>
+                        <button onClick={addPost}>{overlayButton}</button>
+                    </>
+                    :
+                    <>
+                        <button onClick={addPost}>YES</button>
+                        <button onClick={() => setOverlay(false)}>NO</button>
+                    </>
                 }
             </section>
         </div>

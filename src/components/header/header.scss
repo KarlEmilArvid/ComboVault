@@ -35,7 +35,7 @@ header {
 
     .header_overlay-true {
         @include maxSize;
-        position: absolute;
+        position: fixed;
         background-color: $secondaryBackground;
         opacity: 1;
         top: 0;
@@ -58,5 +58,4 @@ header {
             }
         }
     }
-
 }
