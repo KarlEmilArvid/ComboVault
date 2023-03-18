@@ -61,6 +61,10 @@
                 width: 100%;
                 margin-top: $margin-large;
                 border-left: 3px solid red;
+
+                span:nth-child(1) {
+                    color: red;
+                }
             }
 
             .post-button-active {
@@ -68,6 +72,10 @@
                 width: 100%;
                 margin-top: $margin-large;
                 border-right: 3px solid red;
+
+                span:nth-child(2) {
+                    color: red;
+                }
             }
         }
 
