@@ -52,13 +52,23 @@
             margin: $margin;
         }
 
+        .delete-section {
+            @include flex ($direction: column);
+            margin-top: 8rem;
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
+        }
+
         .button-section {
             @include flex;
-            width: 70%;
+            width: 100%;
 
             .post-button {
                 @include postButton;
-                width: 100%;
+                width: 70%;
                 margin-top: $margin-large;
                 border-left: 3px solid red;
 
@@ -69,7 +79,7 @@
 
             .post-button-active {
                 @include postButton;
-                width: 100%;
+                width: 70%;
                 margin-top: $margin-large;
                 border-right: 3px solid red;
 

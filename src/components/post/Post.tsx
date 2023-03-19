@@ -50,8 +50,8 @@ const Post = ({ PostTitle, PostText, name, openOverlay, Id }: Props) => {
                     </section>
                     {name === 'My Posts' ?
                         <section className='button-section'>
-                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, editButton, Id)} className='post-buttons'>edit</button>
-                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, deleteButton, Id)} className='post-buttons'>delete</button>
+                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, editButton, Id)} className='edit-buttons'>edit</button>
+                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, deleteButton, Id)} className='edit-buttons'>delete</button>
                         </section>
                         : null
                     }

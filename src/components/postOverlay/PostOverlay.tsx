@@ -114,10 +114,10 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                         <button onClick={addPost}>{overlayButton}</button>
                     </>
                     :
-                    <>
+                    <section className='delete-section'>
                         <button onClick={addPost}>YES</button>
                         <button onClick={() => setOverlay(false)}>NO</button>
-                    </>
+                    </section>
                 }
             </section>
         </div>
