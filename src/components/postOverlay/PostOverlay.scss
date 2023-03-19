@@ -8,7 +8,7 @@
 .post-overlay-wrapper-show {
     @include flex($align: flex-start);
     padding-top: calc($padding * 3);
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -31,26 +31,68 @@
 
     .create-post-container {
         @include flex($direction: column);
-        border-radius: calc( $baseline / 2);
+        border-radius: calc($baseline / 2);
         position: relative;
         width: 80%;
-        top: calc( $baseline * 2 );
+        margin: calc($baseline * 5);
+
+        input {
+            min-height: calc($baseline * 2);
+        }
 
         .text-input {
-            min-height: 5rem;
+            min-height: calc($baseline * 10);
             width: 100%;
             resize: none;
         }
 
-        h2, button {
+        h2 {
             text-align: center;
             width: 100%;
             margin: $margin;
         }
 
+        .delete-section {
+            @include flex ($direction: column);
+            margin-top: 8rem;
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
+        }
+
+        .button-section {
+            @include flex;
+            width: 100%;
+
+            .post-button {
+                @include postButton;
+                width: 70%;
+                margin-top: $margin-large;
+                border-left: 3px solid red;
+
+                span:nth-child(1) {
+                    color: red;
+                }
+            }
+
+            .post-button-active {
+                @include postButton;
+                width: 70%;
+                margin-top: $margin-large;
+                border-right: 3px solid red;
+
+                span:nth-child(2) {
+                    color: red;
+                }
+            }
+        }
+
         button {
             @include postButton;
-            width: 100%;
+            width: 70%;
+            margin-top: $margin-large;
         }
 
         input {
@@ -58,8 +100,5 @@
             width: 100%;
             margin: $margin;
         }
-
     }
-
-
 }
