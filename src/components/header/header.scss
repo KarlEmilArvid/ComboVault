@@ -21,6 +21,14 @@ header {
                 text-align: center;
             }
 
+            h3 {
+                display: inline;
+            }
+
+            .home-param, .game-param {
+                cursor: pointer;
+            }
+
             .game-name {
                 margin-bottom: .5rem;
             }
@@ -54,6 +62,7 @@ header {
                 h2,
                 h3 {
                     margin-left: $margin;
+                    cursor: pointer;
                 }
             }
         }

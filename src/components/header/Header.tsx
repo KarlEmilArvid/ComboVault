@@ -40,12 +40,19 @@ const Header = () => {
                 <section>
                     {param.character ? <h1 className='game-name'>{characterParam}</h1> : <h1 className='game-name'>{gameParam}</h1>}
                     {
-                        param.hasOwnProperty('game') && param.hasOwnProperty('character') ?
-                            <h3>{`${gameParam}` + `/${characterParam}`}</h3>
+                        param.hasOwnProperty('game') && param.hasOwnProperty('character') && param ?
+                            <>
+                                <h3 onClick={ () => navigate('/') } className="home-param">/Home/</h3>
+                                <h3 onClick={ () => navigate(-1) } className="game-param">{`${gameParam}`}</h3>
+                                <h3>{`/${characterParam}`}</h3>
+                            </>
                             : param.hasOwnProperty('game') ?
+                            <>
+                                <h3 onClick={ () => navigate(-1) } className="home-param">/Home/</h3>
                                 <h3>{`${param.game?.replaceAll('-', ' ')}`}</h3>
+                            </>
                                 :
-                                null
+                                <h3>/Home</h3>
                     }
                 </section>
                 <Search />
