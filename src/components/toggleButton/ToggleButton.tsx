@@ -12,7 +12,11 @@ const ToggleButton = ({ name, getName }: Props) => {
 
     return (
         <>
-            <button className="toggle-button" onClick={toggle}>{name}</button>
+            <div className="toggle-border">
+
+                <button className="toggle-button" onClick={toggle}>{name}</button>
+
+            </div>
         </>
     )
 }

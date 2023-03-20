@@ -1,6 +1,17 @@
 @import '../../scss/variables.scss';
+@import '../../scss/layout.scss';
 
-.toggle-button {
-    @include postButton;
-    margin: .5rem;
+.toggle-border {
+
+    width: 40%;
+    margin: $baseline;
+    @include containerBorder;
+
+    .toggle-button {
+        @include postButton;
+        color: $secondaryTextColor;
+        font-weight: 600;
+        background-color: $container-background;
+    }
+
 }

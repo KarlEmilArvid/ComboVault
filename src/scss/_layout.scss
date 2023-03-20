@@ -23,7 +23,16 @@
 
 @mixin squareContainer {
 
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(190, 187, 187);
     transform: translateX(6px) translateY(6px);
 
 }
+
+@mixin containerBorder {
+
+    background: $container-gradient;
+    padding: .2rem;
+    border-radius: .2rem;
+    
+}
+

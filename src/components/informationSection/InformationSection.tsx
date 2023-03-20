@@ -25,25 +25,35 @@ const InformationSection = ({ characterName }: Props) => {
     }, [])
 
     return (
-        <section className='information-wrapper'>
-            <section className='information-section'>
-                <h2>Information</h2>
-                <p>{information}</p>
+        <div className="information-wrapper--border">
+
+            <section className='information-wrapper'>
+                
+                <section className='information-section'>
+                    <h2>Information</h2>
+                    <p>{information}</p>
+                </section>
+
+                <div className="link-section--border">
+
+                    <section className='link-section'>
+                        <ul>
+                            <li>
+                                <a href=''>en länk</a>
+                            </li>
+                            <li>
+                                <a href=''>två länk</a>
+                            </li>
+                            <li>
+                                <a href=''>tre länk</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
             </section>
-            <section className='link-section'>
-                <ul>
-                    <li>
-                        <a href=''>en länk</a>
-                    </li>
-                    <li>
-                        <a href=''>två länk</a>
-                    </li>
-                    <li>
-                        <a href=''>tre länk</a>
-                    </li>
-                </ul>
-            </section>
-        </section>
+
+        </div>
     )
 }
 

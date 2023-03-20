@@ -1,51 +1,70 @@
 @import '../../scss/variables.scss';
 @import '../../scss/layout.scss';
 
-.post-container {
-    @include flex($justify: flex-start, $direction: column);
-    background-color: $primaryTextColor;
+
+.post-container--border {
+
     width: 80%;
     margin: $margin auto;
-    border: 2px solid aqua;
-    cursor: pointer;
+    @include containerBorder;
 
-    .post-information {
-        @include flex($justify: space-between);
+    .post-container {
+        @include flex($justify: flex-start, $direction: column);
+        background-color: $primaryTextColor;
         width: 100%;
-
-        h3 {
-            color: black;
-        }
-    }
-
-    .post-section {
-        @include flex($justify: flex-start, $align: flex-start);
-        color: black;
-        min-height: 8rem;
-        width: 100%;
-        background-color: silver;
-        cursor: default;
-
-        p {
-            margin: .5rem;
-        }
-    }
-
-    .button-section {
-        @include flex;
-        width: 100%;
-        border-top: 2px solid black;
-        background-color: silver;
-        cursor: default;
-
-        .edit-buttons {
-            cursor: pointer;
-            margin: .5rem;
-        }
-    }
-
-    .accordion {
-        margin-left: auto;
         cursor: pointer;
+    
+        .post-information {
+            @include flex($justify: space-between);
+            width: 100%;
+            background-color: $container-background;
+    
+            h3 {
+                color: $secondaryTextColor;
+            }
+        }
+    
+        .post-section {
+            @include flex($justify: flex-start, $align: flex-start);
+            color: black;
+            min-height: 8rem;
+            width: 100%;
+            background-color: $container-background;
+            cursor: default;
+    
+            p {
+                color: $secondaryTextColor;
+                margin: .5rem;
+            }
+        }
+    
+        .button-section {
+            @include flex;
+            width: 100%;
+            background-color: $container-background;
+            cursor: default;
+    
+            .edit-buttons--border {
+                @include flex;
+                width: 15%;
+                margin: calc($baseline / 2);
+                @include containerBorder;
+
+                .edit-buttons {
+                    cursor: pointer;
+                    width: 100%;
+                    color: $primaryTextColor;
+                    background-color: $primaryBackground;
+                    font-weight: 600;
+                    height: calc($baseline * 1.5);
+                    border: none;
+                }
+            }
+        }
+    
+        .accordion {
+            margin-left: auto;
+            cursor: pointer;
+        }
     }
 }

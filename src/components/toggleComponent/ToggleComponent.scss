@@ -1,23 +1,35 @@
 @import '../../scss//layout.scss';
 @import '../../scss/variables.scss';
 
-.toggle-wrapper {
-    @include flex($wrap: wrap);
+.toggle-wrapper--border {
+
     width: 90%;
-    border: 2px solid blue;
-    border-radius: .4rem;
     margin: $margin auto;
-    background-color: $secondaryBackground;
+    @include containerBorder;
+    border-radius: 0.4rem;
 
-    figure {
-        @include flex();
-        width: 40%;
-        background: transparent;
-        height: calc($baseline * 2);
-        margin: $margin-small;
-
-        p {
-            margin-top: .2rem;
+    .toggle-wrapper {
+        @include flex($wrap: wrap);
+        width: 100%;
+        border-radius: .2rem;
+        background-color: $secondaryBackground;
+    
+        figure {
+            @include flex();
+            @include postButton;
+            width: calc(40% + 1rem);
+            margin: $baseline;
+            background: transparent;
+            height: calc($baseline * 2);
+            margin: $margin-small;
+    
+            img {
+                padding-right: $baseline;
+            }
+    
+            p {
+                margin-top: .2rem;
+            }
         }
     }
 }

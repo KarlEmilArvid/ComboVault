@@ -1,18 +1,37 @@
 @import '../../scss//layout.scss';
 
-.posts-wrapper {
-    @include flex($direction: column);
-    border: 2px solid blue;
+.posts-wrapper--border {
+
     width: 90%;
     margin: auto;
-    background-color: $secondaryBackground;
+    @include containerBorder;
 
-    .new-post-button {
-        @include postButton;
-        margin: $margin-large;
-    }
+    .posts-wrapper {
+        @include flex($direction: column);
+        width: 100%;
+        background-color: $secondaryBackground;
 
-    .posts-list {
-        width: 80%;
+        h2 {
+            margin-top: $baseline;
+        }
+    
+        .new-post-button--border {
+
+            width: 40%;
+            @include containerBorder;
+            margin: $margin-large;
+
+            .new-post-button {
+                @include postButton;
+                font-weight: 600;
+                color: $secondaryTextColor;
+                background-color: $container-background;
+            }
+
+        }
+    
+        .posts-list {
+            width: 80%;
+        }
     }
 }
