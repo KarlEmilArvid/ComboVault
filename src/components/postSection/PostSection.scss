@@ -35,3 +35,24 @@
         }
     }
 }
+
+.posts-wrapper--loggedout {
+    @include flex();
+    min-height: 8rem;
+    background-color: $secondaryBackground;
+
+    .sign-in-button--border {
+
+        @include containerBorder;
+
+        .sign-in-button {
+            height: 2rem;
+            width: 6rem;
+            border: none;
+            color: $secondaryTextColor;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+}

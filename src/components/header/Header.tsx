@@ -3,8 +3,9 @@ import kugghjul from '../../images/kugghjul.svg'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
-import { auth, signIn, signOutFunction } from '../../firebase/firebase';
+import { auth, signIn } from '../../firebase/firebase';
 import './header.scss'
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
     const [overlay, setOverlay] = useState<boolean>(false)
@@ -27,12 +28,14 @@ const Header = () => {
         signIn()
         navigate('/')
     }
-
+    
     const disconnectUser = () => {
         
-        signOutFunction();
-        setOverlay(!overlay)
-        navigate('/');
+        signOut(auth).then(() => {
+            console.log(auth.currentUser?.uid, 'has signed out');
+          }).catch((error: any) => {
+            console.log(error);
+          });
 
     }
 

@@ -46,6 +46,7 @@ export const signIn = () => {
       // ...
     })
 }
+/*
 export const signOutFunction = () => {
 
   signOut(auth).then(() => {
@@ -53,4 +54,4 @@ export const signOutFunction = () => {
   }).catch((error) => {
     console.log(error);
   });
-}
+}*/
