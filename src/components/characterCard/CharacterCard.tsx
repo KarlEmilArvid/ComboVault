@@ -43,7 +43,7 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
         <section className='character-wrapper'>
             <Square name={validCharacter.characterName} image={validCharacter.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} pickGame={pickGame} />
             <section className='character-container'>
-                <h2 className='character-name'>{validCharacter.characterName}</h2>
+                <h2 className='character-name'>{validCharacter.characterName.slice(2)}</h2>
                 <p className='character-intro'>{intro}</p>
             </section>
         </section>
