@@ -46,6 +46,7 @@
                 min-height: calc($baseline * 2);
                 width: 100%;
                 margin: 0;
+                border: none;
             }
         }
 
@@ -53,11 +54,13 @@
 
             @include containerBorder;
             width: 100%;
+            @include flex;
             
             .text-input {
                 min-height: calc($baseline * 10);
                 width: 100%;
                 resize: none;
+                border: none;
             }
         }
 
