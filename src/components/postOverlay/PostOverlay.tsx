@@ -105,18 +105,34 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             <section className="create-post-container">
                 {overlayButton == 'Save Changes' || overlayButton == 'Create Post' ?
                     <>
+
                         <h2>{pickedTitle}</h2>
-                        <input type="text" placeholder='post name:' defaultValue={currentPost.postTitle} onChange={(e) => setPostTitle(e.target.value)} />
-                        <textarea className="text-input" placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
+                        
+                        <section className="input-border">
+                            <input type="text" placeholder='post name:' defaultValue={currentPost.postTitle} onChange={(e) => setPostTitle(e.target.value)} />
+                        </section>
+
+                        <section className="text-border">
+                            <textarea className="text-input" placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
+                        </section>
+
                         <section className='button-section'>
                             <button className={activeButton} onClick={() => setPrivatePost(!privatePost)}><span>Public</span> / <span>Private</span></button>
                         </section>
-                        <button onClick={addPost}>{overlayButton}</button>
+
+                        <section className="create-button--border">
+                            <button onClick={addPost}>{overlayButton}</button>
+                        </section>
                     </>
                     :
                     <section className='delete-section'>
-                        <button onClick={addPost}>YES</button>
-                        <button onClick={() => setOverlay(false)}>NO</button>
+
+                        <section className="delete-button--border">
+                            <button onClick={addPost}>YES</button>
+                        </section>
+                        <section className="delete-button--border">
+                            <button onClick={() => setOverlay(false)}>NO</button>
+                        </section>
                     </section>
                 }
             </section>
