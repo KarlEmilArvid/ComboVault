@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import { auth, signIn } from '../../firebase/firebase';
 import './header.scss'
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
     const [overlay, setOverlay] = useState<boolean>(false)
@@ -25,8 +26,23 @@ const Header = () => {
 
     const connectUser = () => {
         signIn()
+        setOverlay(!overlay);
         navigate('/')
     }
+    
+    const disconnectUser = () => {
+        
+        signOut(auth).then(() => {
+            console.log(auth.currentUser?.uid, 'has signed out');
+          }).catch((error) => {
+            console.log(error);
+          });
+          setOverlay(!overlay);
+
+          navigate('/');
+
+    }
+
 
     const gameParam = param.game?.replaceAll('-', ' ')
     const characterParam = param.character?.replaceAll('-', ' ')
@@ -77,7 +93,11 @@ const Header = () => {
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <h3 onClick={connectUser}>Sign in</h3>
+                        { auth.currentUser?.uid == undefined ?
+                            <h3 onClick={connectUser}>Sign in</h3>
+                            :
+                            <h3 onClick={disconnectUser}>Sign Out</h3>
+                        }
                     </li>
                 </ul>
             </nav>

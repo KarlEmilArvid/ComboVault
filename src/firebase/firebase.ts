@@ -2,7 +2,7 @@
 import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 import { getFirestore } from 'firebase/firestore'
-import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, signInWithRedirect } from 'firebase/auth'
+import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, signInWithRedirect, signOut, signInWithPopup } from 'firebase/auth'
 import { useNavigate } from 'react-router';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -33,7 +33,7 @@ export const signIn = () => {
   const provider = new GoogleAuthProvider()
   setPersistence(auth, browserLocalPersistence)
     .then(() => {
-      return signInWithRedirect(auth, provider)
+      return signInWithPopup(auth, provider)
     })
     .catch((error) => {
       // Handle Errors here.
