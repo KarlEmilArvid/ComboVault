@@ -26,6 +26,7 @@ const Header = () => {
 
     const connectUser = () => {
         signIn()
+        setOverlay(!overlay);
         navigate('/')
     }
     
@@ -33,9 +34,12 @@ const Header = () => {
         
         signOut(auth).then(() => {
             console.log(auth.currentUser?.uid, 'has signed out');
-          }).catch((error: any) => {
+          }).catch((error) => {
             console.log(error);
           });
+          setOverlay(!overlay);
+
+          navigate('/');
 
     }
 
