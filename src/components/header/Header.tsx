@@ -3,7 +3,7 @@ import kugghjul from '../../images/kugghjul.svg'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
-import { auth, signIn } from '../../firebase/firebase';
+import { auth, signIn, signOutFunction } from '../../firebase/firebase';
 import './header.scss'
 
 const Header = () => {
@@ -27,6 +27,15 @@ const Header = () => {
         signIn()
         navigate('/')
     }
+
+    const disconnectUser = () => {
+        
+        signOutFunction();
+        setOverlay(!overlay)
+        navigate('/');
+
+    }
+
 
     const gameParam = param.game?.replaceAll('-', ' ')
     const characterParam = param.character?.replaceAll('-', ' ')
@@ -77,7 +86,11 @@ const Header = () => {
                     </li>
                     <li>
                         <img src="" alt="" />
-                        <h3 onClick={connectUser}>Sign in</h3>
+                        { auth.currentUser?.uid == undefined ?
+                            <h3 onClick={connectUser}>Sign in</h3>
+                            :
+                            <h3 onClick={disconnectUser}>Sign Out</h3>
+                        }
                     </li>
                 </ul>
             </nav>

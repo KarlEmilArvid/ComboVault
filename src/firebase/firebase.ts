@@ -2,7 +2,7 @@
 import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 import { getFirestore } from 'firebase/firestore'
-import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, signInWithRedirect } from 'firebase/auth'
+import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, signInWithRedirect, signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -45,4 +45,12 @@ export const signIn = () => {
       const credential = GoogleAuthProvider.credentialFromError(error)
       // ...
     })
+}
+export const signOutFunction = () => {
+
+  signOut(auth).then(() => {
+    console.log(auth.currentUser?.uid, 'has signed out');
+  }).catch((error) => {
+    console.log(error);
+  });
 }
