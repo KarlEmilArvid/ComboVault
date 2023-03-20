@@ -24,20 +24,32 @@ const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: P
         <div>
             {window.location.href.includes(`/${gameName}`) ? (
                 <>
-                    <figure className="square-border" onClick={() => pickCharacter(name, image)}>
-                        <img src={image} title={name} />
+                    <figure className="square-border">
+
+                        <figure className="square-container" onClick={() => pickCharacter(name, image)}>
+                            <img src={image} title={name} />
+
+                        </figure>
                     </figure>
                 </>
             ) : window.location.href.includes(`/${param.game?.replace(/\s+/g, '-')}/${name?.replace(/\s+/g, '-')}`) ? (
                 <>
                     <figure className="square-border">
-                        <img src={image} title={name} />
+
+                        <figure className="square-container">
+                            <img src={image} title={name} />
+                        </figure>
+                        
                     </figure>
                 </>
             ) : window.location.href.includes('') ? (
                 <>
-                    <figure className="square-border" onClick={() => pickGame(gameName, gameImage)}>
-                        <img src={gameImage} title={gameName} />
+                    <figure className="square-border">
+
+                        <figure className="square-container" onClick={() => pickGame(gameName, gameImage)}>
+                            <img src={gameImage} title={gameName} />
+                        </figure>
+                        
                     </figure>
                 </>
             ) : null}

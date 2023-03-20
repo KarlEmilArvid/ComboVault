@@ -14,6 +14,16 @@
     min-height: 100vh;
 }
 
-@mixin squareWrapper {
-    //square wrapper goes here
+@mixin squareBorder {
+
+    transform: rotate(45deg);
+    background: linear-gradient(to right, #020202, #2138B1, #859BEB);
+
+}
+
+@mixin squareContainer {
+
+    background-color: rgb(238, 238, 238);
+    transform: translateX(6px) translateY(6px);
+
 }
