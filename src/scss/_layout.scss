@@ -22,9 +22,10 @@
 }
 
 @mixin squareContainer {
-
-    background-color: rgb(190, 187, 187);
+    overflow: hidden;
+    background-color: $secondaryBackground;
     transform: translateX(6px) translateY(6px);
+    box-shadow: inset 0 0 .5rem black;
 
 }
 
