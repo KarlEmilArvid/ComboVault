@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getDocs, collection } from 'firebase/firestore'
-import { auth, db } from '../../firebase/firebase'
+import { auth, db, signIn } from '../../firebase/firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
 import PostOverlay from '../postOverlay/PostOverlay'
@@ -54,6 +54,10 @@ const PostSection = ({ name, characterName }: Props) => {
         dispatch(posts.getPosts(allPosts))
     }, [])
 
+    const connectUser = () => {
+        signIn()
+    }
+
     useEffect(() => {
         (async () => {
             const querySnapshot = await getDocs(collection(db, 'Posts'))
@@ -63,7 +67,7 @@ const PostSection = ({ name, characterName }: Props) => {
             })
             setAllPosts(tempArray)
         })()
-    }, [overlay]);
+    }, [overlay, connectUser]);
 
     useEffect(() => {
         const privatePost = allPosts?.filter(post => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
@@ -79,6 +83,7 @@ const PostSection = ({ name, characterName }: Props) => {
         setPostId(Id);
         setOverlay(true);
     }
+
 
     return (
         <div className="posts-wrapper--border">
@@ -111,7 +116,7 @@ const PostSection = ({ name, characterName }: Props) => {
                         :
                         <section className="posts-wrapper--loggedout">
                             <section className="sign-in-button--border">
-                                <button className="sign-in-button">Sign in</button>
+                                <button onClick={ connectUser } className="sign-in-button">Sign in</button>
                             </section>
                         </section>
                     }
