@@ -29,35 +29,43 @@ const Post = ({ PostTitle, PostText, name, openOverlay, Id }: Props) => {
 
 
     return (
-        <li className='post-container'>
-            {accordion ?
-                <>
-                    <section onClick={() => setAccordion(!accordion)} className='post-information'>
-                        <h3>{PostTitle}</h3>
-                        <img className='accordion' src={accordionArrow} alt="down-button" />
-                        <img src={star} alt="star" />
-                    </section>
-                </>
-                :
-                <>
-                    <section onClick={() => setAccordion(!accordion)} className='post-information'>
-                        <h3>{PostTitle}</h3>
-                        <img className='accordion' src={accordionArrow} alt="down-button" />
-                        <img src={star} alt="star" />
-                    </section>
-                    <section className='post-section'>
-                        <p>{PostText}</p>
-                    </section>
-                    {name === 'My Posts' ?
-                        <section className='button-section'>
-                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, editButton, Id)} className='edit-buttons'>edit</button>
-                            <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, deleteButton, Id)} className='edit-buttons'>delete</button>
+        <div className='post-container--border'>
+
+            <li className='post-container'>
+                {accordion ?
+                    <>
+                        <section onClick={() => setAccordion(!accordion)} className='post-information'>
+                            <h3>{PostTitle}</h3>
+                            <img className='accordion' src={accordionArrow} alt="down-button" />
+                            <img src={star} alt="star" />
                         </section>
-                        : null
-                    }
-                </>
-            }
-        </li>
+                    </>
+                    :
+                    <>
+                        <section onClick={() => setAccordion(!accordion)} className='post-information'>
+                            <h3>{PostTitle}</h3>
+                            <img className='accordion' src={accordionArrow} alt="down-button" />
+                            <img src={star} alt="star" />
+                        </section>
+                        <section className='post-section'>
+                            <p>{PostText}</p>
+                        </section>
+                        {name === 'My Posts' ?
+                            <section className='button-section'>
+                                <div className="edit-buttons--border">
+                                    <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, editButton, Id)} className='edit-buttons'>Edit</button>
+                                </div>
+                                <div className="edit-buttons--border">
+                                    <button onClick={() => openOverlay(overlayTitle, { postText: PostText, postTitle: PostTitle }, deleteButton, Id)} className='edit-buttons'>Delete</button>
+                                </div>
+                            </section>
+                            : null
+                        }
+                    </>
+                }
+            </li>
+
+        </div>
     )
 }
 

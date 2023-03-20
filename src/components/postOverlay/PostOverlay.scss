@@ -36,15 +36,52 @@
         width: 80%;
         margin: calc($baseline * 5);
 
-        input {
-            min-height: calc($baseline * 2);
+        .input-border {
+
+            @include containerBorder;
+            width: 100%;
+            margin: $baseline;
+
+            input {
+                min-height: calc($baseline * 2);
+                width: 100%;
+                margin: 0;
+                border: none;
+            }
         }
 
-        .text-input {
-            min-height: calc($baseline * 10);
+        .text-border {
+
+            @include containerBorder;
             width: 100%;
-            resize: none;
+            @include flex;
+            
+            .text-input {
+                min-height: calc($baseline * 10);
+                width: 100%;
+                resize: none;
+                border: none;
+            }
         }
+
+
+        .create-button--border {
+
+            @include containerBorder;
+            @include flex ($direction: column);
+            margin-top: 8rem;
+            width: 25%;
+
+            button {
+                margin-top: 0;
+                background-color: $container-background;
+                color: $secondaryTextColor;
+                font-weight: 600;
+                width: 100%;
+            }
+
+        }
+        
 
         h2 {
             text-align: center;
@@ -54,12 +91,25 @@
 
         .delete-section {
             @include flex ($direction: column);
-            margin-top: 8rem;
             width: 100%;
 
-            button {
-                width: 100%;
+            .delete-button--border {
+
+                @include containerBorder;
+                @include flex ($direction: column);
+                margin-top: 8rem;
+                width: 25%;
+
+                button {
+                    margin-top: 0;
+                    background-color: $container-background;
+                    color: $secondaryTextColor;
+                    font-weight: 600;
+                    width: 100%;
+                }
+
             }
+
         }
 
         .button-section {

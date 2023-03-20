@@ -1,36 +1,50 @@
 @import '../../scss//layout.scss';
 
-.information-wrapper {
-    @include flex($direction: row-reverse);
-    border: 2px solid blue;
+.information-wrapper--border {
+
     width: 90%;
     margin: auto;
-    background-color: $secondaryBackground;
+    @include containerBorder;
+    border-radius: .4rem;
 
-    .information-section {
-        @include flex($direction: column);
-        margin: auto;
-
-        h2 {
-            margin: $margin;
+    .information-wrapper {
+        @include flex($direction: row-reverse);
+        width: 100%;
+        background-color: $secondaryBackground;
+        border-radius: .2rem;
+    
+        .information-section {
+            @include flex($direction: column);
+            margin: auto;
+    
+            h2 {
+                margin: $margin;
+            }
+    
+            p {
+                margin: $margin;
+                padding: $padding;
+            }
         }
+    
+        .link-section--border {
 
-        p {
+            @include containerBorder;
+            width: 30%;
             margin: $margin;
-            padding: $padding;
-        }
-    }
+            border-radius: .4rem;
 
-    .link-section {
-        width: 30%;
-        height: 300px;
-        margin: $margin;
-        background-color: $primaryBackground;
-        border: 2px solid black;
-
-        li {
-            list-style: none;
-            margin: $margin-small;
+            .link-section {
+                width: 100%;
+                height: 300px;
+                background-color: $primaryBackground;
+                border-radius: .2rem;
+        
+                li {
+                    list-style: none;
+                    padding: $padding-small;
+                }
+            }
         }
     }
 }

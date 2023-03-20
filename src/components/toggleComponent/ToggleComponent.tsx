@@ -10,15 +10,19 @@ type Props = {
 const ToggleComponent = ({ getName }: Props) => {
 
     return (
-        <section className="toggle-wrapper">
-            <ToggleButton name='My Posts' getName={getName} />
-            <ToggleButton name='Public Posts' getName={getName} />
-            <ToggleButton name='Information' getName={getName} />
-            <figure>
-                <img src={star} alt="Favourites/Starred" />
-                <p>Favourites/Starred</p>
-            </figure>
-        </section >
+        <div className="toggle-wrapper--border">
+
+            <section className="toggle-wrapper">
+                <ToggleButton name='My Posts' getName={getName} />
+                <ToggleButton name='Public Posts' getName={getName} />
+                <ToggleButton name='Information' getName={getName} />
+                <figure>
+                    <img src={star} alt="Favourites/Starred" />
+                    <p>Favourites/Starred</p>
+                </figure>
+            </section >
+            
+        </div>
     )
 }
 

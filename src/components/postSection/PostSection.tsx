@@ -81,32 +81,40 @@ const PostSection = ({ name, characterName }: Props) => {
     }
 
     return (
-        <section className="posts-wrapper">
-            <h2>{name}</h2>
-            <ul className='posts-list'>
-                {
-                    name === 'My Posts' ? privatePosts?.map((post, i) => {
-                        return (
-                            <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} Id={privatePosts[i].PostId} />
-                        )
-                    })
-                        :
-                        name === 'Public Posts' ? publicPosts?.map((post, i) => {
+        <div className="posts-wrapper--border">
+
+            <section className="posts-wrapper">
+                <h2>{name}</h2>
+                <ul className='posts-list'>
+                    {
+                        name === 'My Posts' ? privatePosts?.map((post, i) => {
                             return (
-                                <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId} />
+                                <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} Id={privatePosts[i].PostId} />
                             )
                         })
-                            : null
+                            :
+                            name === 'Public Posts' ? publicPosts?.map((post, i) => {
+                                return (
+                                    <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId} />
+                                )
+                            })
+                                : null
+                    }
+                </ul>
+                <section className="new-post-button--border">
+
+                    <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
+                    
+                </section>
+                {
+                    overlay ?
+                        <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={postId} />
+                        :
+                        null
                 }
-            </ul>
-            <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
-            {
-                overlay ?
-                    <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={postId} />
-                    :
-                    null
-            }
-        </section>
+            </section>
+
+        </div>
     )
 }
 
