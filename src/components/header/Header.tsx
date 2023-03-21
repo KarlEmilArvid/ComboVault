@@ -9,8 +9,6 @@ import { signOut } from 'firebase/auth';
 
 const Header = () => {
     const [overlay, setOverlay] = useState<boolean>(false)
-    //state här för "game name" men byt till mer lämpligt namn då det blir både game och character
-    //breadcrumbs state här
     const navigate = useNavigate()
     const param = useParams();
     console.log(param);
@@ -29,17 +27,17 @@ const Header = () => {
         setOverlay(!overlay);
         navigate('/')
     }
-    
+
     const disconnectUser = () => {
-        
+
         signOut(auth).then(() => {
             console.log(auth.currentUser?.uid, 'has signed out');
-          }).catch((error) => {
+        }).catch((error) => {
             console.log(error);
-          });
-          setOverlay(!overlay);
+        });
+        setOverlay(!overlay);
 
-          navigate('/');
+        navigate('/');
 
     }
 
@@ -58,17 +56,17 @@ const Header = () => {
                     {
                         param.hasOwnProperty('game') && param.hasOwnProperty('character') && param ?
                             <>
-                                <h3 onClick={ () => navigate('/') } className="home-param">/Home/</h3>
-                                <h3 onClick={ () => navigate(-1) } className="game-param">{`${gameParam}`}</h3>
+                                <h3 onClick={() => navigate('/')} className="home-param">/Home/</h3>
+                                <h3 onClick={() => navigate(-1)} className="game-param">{`${gameParam}`}</h3>
                                 <h3>{`/${characterParam}`}</h3>
                             </>
                             : param.hasOwnProperty('game') ?
-                            <>
-                                <h3 onClick={ () => navigate(-1) } className="home-param">/Home/</h3>
-                                <h3>{`${param.game?.replaceAll('-', ' ')}`}</h3>
-                            </>
+                                <>
+                                    <h3 onClick={() => navigate(-1)} className="home-param">/Home/</h3>
+                                    <h3>{`${param.game?.replaceAll('-', ' ')}`}</h3>
+                                </>
                                 :
-                                <h3>/Home</h3>
+                                null
                     }
                 </section>
                 <Search />
@@ -93,7 +91,7 @@ const Header = () => {
                     </li>
                     <li>
                         <img src="" alt="" />
-                        { auth.currentUser?.uid == undefined ?
+                        {auth.currentUser?.uid == undefined ?
                             <h3 onClick={connectUser}>Sign in</h3>
                             :
                             <h3 onClick={disconnectUser}>Sign Out</h3>

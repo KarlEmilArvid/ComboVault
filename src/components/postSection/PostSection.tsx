@@ -41,6 +41,7 @@ const PostSection = ({ name, characterName }: Props) => {
 
     const dispatch = useDispatch()
 
+    //TODO: flytta till app
     useEffect(() => {
         (async () => {
             const querySnapshot = await getDocs(collection(db, 'Posts'))
@@ -57,17 +58,18 @@ const PostSection = ({ name, characterName }: Props) => {
     const connectUser = () => {
         signIn()
     }
-
-    useEffect(() => {
-        (async () => {
-            const querySnapshot = await getDocs(collection(db, 'Posts'))
-            const tempArray: any[] = []
-            querySnapshot.forEach((doc) => {
-                tempArray.push(doc.data())
-            })
-            setAllPosts(tempArray)
-        })()
-    }, [overlay, connectUser]);
+    /*
+        useEffect(() => {
+            (async () => {
+                const querySnapshot = await getDocs(collection(db, 'Posts'))
+                const tempArray: any[] = []
+                querySnapshot.forEach((doc) => {
+                    tempArray.push(doc.data())
+                })
+                setAllPosts(tempArray)
+            })()
+        }, [overlay, connectUser]);
+    */
 
     useEffect(() => {
         const privatePost = allPosts?.filter(post => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
@@ -87,47 +89,47 @@ const PostSection = ({ name, characterName }: Props) => {
 
     return (
         <div className="posts-wrapper--border">
-                <section className="posts-wrapper">
+            <section className="posts-wrapper">
 
-                    <h2>{name}</h2>
+                <h2>{name}</h2>
 
-                    <ul className='posts-list'>
-                        {
-                            name === 'My Posts' ? privatePosts?.map((post, i) => {
+                <ul className='posts-list'>
+                    {
+                        name === 'My Posts' ? privatePosts?.map((post, i) => {
+                            return (
+                                <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} Id={privatePosts[i].PostId} />
+                            )
+                        })
+                            :
+                            name === 'Public Posts' ? publicPosts?.map((post, i) => {
                                 return (
-                                    <Post key={i} name={name} PostTitle={privatePosts[i].PostTitle} PostText={privatePosts[i].PostText} openOverlay={openOverlay} Id={privatePosts[i].PostId} />
+                                    <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId} />
                                 )
                             })
-                                :
-                                name === 'Public Posts' ? publicPosts?.map((post, i) => {
-                                    return (
-                                        <Post key={i} name={name} PostTitle={publicPosts[i].PostTitle} PostText={publicPosts[i].PostText} openOverlay={openOverlay} Id={publicPosts[i].PostId} />
-                                    )
-                                })
-                                    : null
-                        }
-                    </ul>
-                    { auth.currentUser?.uid != undefined ?
-                        <section className="new-post-button--border">
+                                : null
+                    }
+                </ul>
+                {auth.currentUser?.uid != undefined ?
+                    <section className="new-post-button--border">
 
-                            <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
-                            
+                        <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
+
+                    </section>
+                    :
+                    <section className="posts-wrapper--loggedout">
+                        <section className="sign-in-button--border">
+                            <button onClick={connectUser} className="sign-in-button">Sign in</button>
                         </section>
+                    </section>
+                }
+
+                {
+                    overlay ?
+                        <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={postId} />
                         :
-                        <section className="posts-wrapper--loggedout">
-                            <section className="sign-in-button--border">
-                                <button onClick={ connectUser } className="sign-in-button">Sign in</button>
-                            </section>
-                        </section>
-                    }
-
-                    {
-                        overlay ?
-                            <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={postId} />
-                            :
-                            null
-                    }
-                </section>
+                        null
+                }
+            </section>
 
         </div>
     )
