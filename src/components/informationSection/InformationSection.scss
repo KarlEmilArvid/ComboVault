@@ -12,38 +12,18 @@
         width: 100%;
         background-color: $secondaryBackground;
         border-radius: .2rem;
-    
+
         .information-section {
             @include flex($direction: column);
             margin: auto;
-    
+
             h2 {
                 margin: $margin;
             }
-    
+
             p {
                 margin: $margin;
                 padding: $padding;
-            }
-        }
-    
-        .link-section--border {
-
-            @include containerBorder;
-            width: 30%;
-            margin: $margin;
-            border-radius: .4rem;
-
-            .link-section {
-                width: 100%;
-                height: 300px;
-                background-color: $primaryBackground;
-                border-radius: .2rem;
-        
-                li {
-                    list-style: none;
-                    padding: $padding-small;
-                }
             }
         }
     }
