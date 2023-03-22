@@ -8,19 +8,19 @@ type Props = {
 
 const InformationSection = ({ characterName }: Props) => {
     const [information, setInformation] = useState<string>('')
-    const games = useSelector((state: any) => state.games)
+    const games = useSelector((state: any) => state.games.Games)
 
     useEffect(() => {
         games?.map((game: any, i: number) => {
-            if (i === 1) {
+            game.GameTitle.map((character: any) => {
                 let tempString: string = ''
-                game.Characters.map((character: { Name: string; Information: string; }) => {
-                    if (character.Name === characterName) {
+                character.Characters.map((character: any) => {
+                    if (characterName === character.Name) {
                         tempString = character.Information
                     }
                 })
                 setInformation(tempString)
-            }
+            })
         })
     }, [])
 

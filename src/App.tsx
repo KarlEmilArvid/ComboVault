@@ -3,8 +3,8 @@ import Game from './views/game/Game'
 import Character from './views/character/Character'
 import About from './views/about/About'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import { getDocs, collection, doc, setDoc, DocumentData } from 'firebase/firestore'
-import { db } from './firebase/firebase'
+//import { getDocs, collection, doc, setDoc, DocumentData } from 'firebase/firestore'
+//import { db } from './firebase/firebase'
 //import { auth } from './firebase/firebase'
 import { useEffect, useState } from 'react'
 import { actions as games } from './redux/gamesReducer'
@@ -29,7 +29,6 @@ function App() {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		console.log(gamesDatabase)
 		dispatch(games.getGames(gamesDatabase))
 	}, [])
 

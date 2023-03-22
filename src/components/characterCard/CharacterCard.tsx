@@ -23,19 +23,19 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
         setValidCharacter(character)
     }, [])
 
-    const games = useSelector((state: any) => state.games)
+    const games = useSelector((state: any) => state.games.Games)
 
     useEffect(() => {
         games?.map((game: any, i: number) => {
-            if (i === 1) {
+            game.GameTitle.map((character: any) => {
                 let tempString: string = ''
-                game.Characters.map((character: { Name: string; characterName: string; Intro: string; }) => {
-                    if (character.Name === validCharacter.characterName) {
+                character.Characters.map((character: any) => {
+                    if (validCharacter.characterName === character.Name) {
                         tempString = character.Intro
                     }
                 })
                 setIntro(tempString)
-            }
+            })
         })
     }, [validCharacter])
 

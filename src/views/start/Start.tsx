@@ -14,14 +14,10 @@ const Start = ({ showCharacter, pickGame }: Props) => {
     const [games, setGames] = useState<GAME>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
-    console.log("här är våra games:", games)
-
     useEffect(() => {
         const gameArray = dispatchedGames.Games
-        console.log("här är vår gameArray:", gameArray)
         setGames(gameArray)
     }, [dispatchedGames])
-
 
     let gameImages: string[] = []
     games?.map((game: any) => {
@@ -30,7 +26,6 @@ const Start = ({ showCharacter, pickGame }: Props) => {
         })
         return gameImages
     })
-    console.log("temp array här", gameImages)
 
     let gameNames: string[] = []
     games?.map((game: any) => {
@@ -39,13 +34,6 @@ const Start = ({ showCharacter, pickGame }: Props) => {
         })
         return gameNames
     })
-    console.log("gameNames här", gameNames)
-
-    /*
-        const gameName: string[] | undefined = games?.map((name: any) => {
-            return name.Game.Name
-        })
-    */
 
     return (
         <>

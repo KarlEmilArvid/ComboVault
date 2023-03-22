@@ -44,11 +44,12 @@ const PostSection = ({ name, characterName }: Props) => {
     //TODO: flytta till app
     useEffect(() => {
         (async () => {
-            const querySnapshot = await getDocs(collection(db, 'Posts'))
+            const querySnapshot = await getDocs(collection(db, `${characterName}`))
             const tempArray: any[] = []
             querySnapshot.forEach((doc) => {
                 tempArray.push(doc.data())
             })
+            console.log("här hämtar vi posts", tempArray)
             setAllPosts(tempArray)
 
         })()

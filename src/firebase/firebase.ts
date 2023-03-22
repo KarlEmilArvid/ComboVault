@@ -2,8 +2,7 @@
 import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
 import { getFirestore } from 'firebase/firestore'
-import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, signInWithRedirect, signOut, signInWithPopup } from 'firebase/auth'
-import { useNavigate } from 'react-router';
+import { getAuth, GoogleAuthProvider, setPersistence, browserLocalPersistence, signInWithPopup } from 'firebase/auth'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,16 +16,13 @@ const firebaseConfig = {
   messagingSenderId: "673031488392",
   appId: "1:673031488392:web:aeffcb9420326a847df03d",
   measurementId: "G-Y80KL5631L"
-};
-
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
 const analytics = getAnalytics(app)
 
 export const db = getFirestore(app)
-
-const provider = new GoogleAuthProvider()
 export const auth = getAuth()
 
 export const signIn = () => {
