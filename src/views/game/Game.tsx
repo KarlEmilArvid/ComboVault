@@ -22,22 +22,46 @@ const Game = ({ showCharacter, games, pickGame }: Props) => {
 
     console.log(games.gameName)
     const param = useParams();
-    
+
 
     useEffect(() => {
-        setCharacter(dispatchedGames)
+        const gameArray = dispatchedGames.Games
+        console.log("här är vår gameArray:", gameArray)
+        setCharacter(gameArray)
+        //setCharacter(dispatchedGames)
     }, [dispatchedGames])
+    /*
+        const characterArray: any = []
+    
+        const characterMap = character?.map((game: any, i: number) => {
+    
+            if (games.gameName === game.Game.Name) {
+                game.Characters.map((character: any) => {
+                    characterArray.push({ name: character.Name, image: character.Image })
+                })
+            }
+        })
+    */
 
-    const characterArray: any = []
+    //games == vad vi klickat
+    //game.Game.Name == databas
 
-    const characterMap = character?.map((game: any, i: number) => {
+    console.log(character)
 
-        if (games.gameName === game.Game.Name) {
-            game.Characters.map((character: any) => {
-                characterArray.push({ name: character.Name, image: character.Image })
-            })
-        }
+    let characterArray: any[] = []
+    character?.map((game: any, i: number) => {
+        game.GameTitle.map((character: any) => {
+            if (games.gameName === character.Game.Name) {
+                character.Characters.map((validCharacters: any) => {
+                    console.log(validCharacters.Name)
+                    console.log("check", validCharacters.Name)
+                    characterArray.push({ name: validCharacters.Name, image: validCharacters.Image })
+                })
+            }
+        })
     })
+
+    console.log("character array här", characterArray)
 
     //char används inte? pröva att ändra
 

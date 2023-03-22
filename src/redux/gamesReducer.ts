@@ -1,6 +1,7 @@
 import { createAction, createReducer } from '@reduxjs/toolkit'
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase/firebase'
+import { GAMES } from '../types/types'
 
 type GameItems = {
     characters: [
@@ -17,16 +18,29 @@ type GameItems = {
         Name: string
     },
 }
-
+/*
 type GAMES = {
-
+    Games: {
+        GameTitle: {
+            Characters: {
+                Image: string;
+                Information: string;
+                Intro: string;
+                Name: string;
+            }[]
+            Game: {
+                Image: string;
+                Information: string;
+                Name: string;
+            }
+        }[]
+    }[]
 }
-
+*/
 //Reducer
 let initialState: [] = [];
 //hämta games här, all data från alla spel
-const getGames = createAction<GAMES[]>('namngivning utav actionet');
-
+const getGames = createAction<GAMES>('namngivning utav actionet')
 const actions = { getGames, }
 
 console.log(initialState)

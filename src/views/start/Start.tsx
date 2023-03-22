@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { GAME } from '../../types/types'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './start.scss'
@@ -10,20 +11,41 @@ type Props = {
 }
 
 const Start = ({ showCharacter, pickGame }: Props) => {
-    const [games, setGames] = useState<[]>()
+    const [games, setGames] = useState<GAME>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
+    console.log("här är våra games:", games)
+
     useEffect(() => {
-        setGames(dispatchedGames)
+        const gameArray = dispatchedGames.Games
+        console.log("här är vår gameArray:", gameArray)
+        setGames(gameArray)
     }, [dispatchedGames])
 
-    const gameImage: string[] | undefined = games?.map((game: any) => {
-        return game.Game.Image
-    })
 
-    const gameName: string[] | undefined = games?.map((name: any) => {
-        return name.Game.Name
+    let gameImages: string[] = []
+    games?.map((game: any) => {
+        game.GameTitle.map((game: any) => {
+            gameImages.push(game.Game.Image)
+        })
+        return gameImages
     })
+    console.log("temp array här", gameImages)
+
+    let gameNames: string[] = []
+    games?.map((game: any) => {
+        game.GameTitle.map((game: any) => {
+            gameNames.push(game.Game.Name)
+        })
+        return gameNames
+    })
+    console.log("gameNames här", gameNames)
+
+    /*
+        const gameName: string[] | undefined = games?.map((name: any) => {
+            return name.Game.Name
+        })
+    */
 
     return (
         <>
@@ -31,7 +53,7 @@ const Start = ({ showCharacter, pickGame }: Props) => {
             <main className='square-wrapper'>
                 {
                     games?.map((square: any, i: number) => {
-                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
+                        return <Square key={i} gameImage={gameImages![i]} gameName={gameNames![i]} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
                     })
                 }
             </main>

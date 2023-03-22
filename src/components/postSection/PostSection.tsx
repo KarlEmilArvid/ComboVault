@@ -86,13 +86,10 @@ const PostSection = ({ name, characterName }: Props) => {
         setOverlay(true);
     }
 
-
     return (
         <div className="posts-wrapper--border">
             <section className="posts-wrapper">
-
                 <h2>{name}</h2>
-
                 <ul className='posts-list'>
                     {
                         name === 'My Posts' ? privatePosts?.map((post, i) => {
@@ -122,7 +119,6 @@ const PostSection = ({ name, characterName }: Props) => {
                         </section>
                     </section>
                 }
-
                 {
                     overlay ?
                         <PostOverlay characterName={characterName} overlay={overlay} setOverlay={setOverlay} pickedTitle={pickedTitle} currentPost={currentPost} overlayButton={overlayButton} Id={postId} />
@@ -130,10 +126,8 @@ const PostSection = ({ name, characterName }: Props) => {
                         null
                 }
             </section>
-
         </div>
     )
 }
 
 export default PostSection
-

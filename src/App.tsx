@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react'
 import { actions as games } from './redux/gamesReducer'
 import { useDispatch } from 'react-redux'
 import './scss/global.scss'
+import gamesDatabase from './firebase/gamesDatabase.json'
 
 type CharacterType = {
 	characterName: string;
@@ -28,16 +29,8 @@ function App() {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		(async () => {
-			const querySnapshot = await getDocs(collection(db, 'Games'))
-			const tempArray: any[] = [];
-			querySnapshot.forEach((doc) => {
-				tempArray.push(doc.data())
-			})
-
-			console.log(tempArray)
-			dispatch(games.getGames(tempArray))
-		})()
+		console.log(gamesDatabase)
+		dispatch(games.getGames(gamesDatabase))
 	}, [])
 
 	const showCharacter = (name: string, image: string) => {
