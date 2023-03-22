@@ -960,6 +960,554 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FCassie_mk11.png?alt=media&token=be504931-403d-4401-a4a4-5fa43ac1352d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Cassie"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FCetrion_MK11.png?alt=media&token=e42db731-73ef-43e8-aebc-1e50c358d2ee",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Cetrion"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FD'vorah_mk11_2.png?alt=media&token=fbc70fa0-2b76-4e45-b8aa-5cb465f68bf4",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11D'vorah"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FErron_mk11.png?alt=media&token=2db2252f-2b66-4e96-94dc-e2f190a57b7e",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Erron Black"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FFrost_mk11.png?alt=media&token=5d6a4876-970d-462d-892b-f84724e106f0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Frost"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FGeras_MK11.png?alt=media&token=9ae0f999-1cc4-473b-9375-802d97453ab9",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Geras"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FHuman_kung_laos.png?alt=media&token=8ac0e189-40ad-4e67-9043-88a38672bddb",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kung Lao"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJacqui_mk11.png?alt=media&token=ded5f94b-0e19-468b-a48d-ade7ec4bdb87",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Jacqui"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJade_MK11.png?alt=media&token=9dc73525-9696-4f87-b19c-66b32dbf8e1b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Jade"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJax_mk11.png?alt=media&token=c40f00d1-5dd6-4949-aac1-0e125fcaef4c",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Jax"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJohnny_Render_mk_11_1.png?alt=media&token=7f67919a-cb70-4f9b-b48c-9506dc84ef65",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Johnny Cage"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKabal_MK11.png?alt=media&token=dc8fef25-d1f6-4657-a2c8-d05c27c469a7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kabal"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKano_MK11.png?alt=media&token=5b3efbf8-fc9d-4156-bf80-29f55a49845f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kano"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKitana_mk11.png?alt=media&token=9947a96c-4c2d-4322-a4b0-f6216685d2c5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kitana"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKollector_MK11.png?alt=media&token=c74ea0ef-29f8-4def-9d0f-66f14c8f2950",
+                            "Information": "",
+                            "Intro": "why isn't he named 'kollektor'?",
+                            "Name": "11Kollector"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKotal_mk11.png?alt=media&token=5c48deb7-0431-486d-b7f0-3f41d06045fd",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kotal Kahn"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FLiu_Kang_mk11.png?alt=media&token=f79b0339-096b-4cd1-a63c-0fc23400f387",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Liu Kang"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11JohnRamboRender.png?alt=media&token=2c522daa-e6cb-4d71-87e1-530b359826fe",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11John Rambo"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11JokerRender.png?alt=media&token=2c0a331c-10ea-45c9-9538-a05277503614",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Joker"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11MileenaRender.png?alt=media&token=4825dfc2-08bf-4258-9ae0-63b0cb525880",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Mileena"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11RainRender.png?alt=media&token=02365653-27aa-4c11-9678-8ed8010b337d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Rain"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11TerminatorRender.png?alt=media&token=94fa71a3-ce66-4217-9e59-7ee838a007e0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Terminator"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11YoungShangTsung.png?alt=media&token=98d7cce0-55c9-4f85-802d-76eb5f5fd78a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Shang Tsung"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Baraka_Render.png?alt=media&token=0ce417b9-154d-499e-b853-9200c1c3d863",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Baraka"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Fujin_render-0.png?alt=media&token=d10c23c1-c180-4a08-a678-9d1c228ce3cb",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Fujin"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Skarlet_Render.png?alt=media&token=541b4740-3ad2-4b62-8561-3aeae59402a6",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Skarlet"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMk11sindelrender.png?alt=media&token=0e73a39f-3efe-467d-ac36-35a332d4dcdc",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Sindel"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FNightwolfRenderMK11.png?alt=media&token=6c2368b9-0a9d-4a60-a9d0-8c60ce9d5324",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Nightwolf"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FNoob_Saibot_mk11.png?alt=media&token=4a7e7d6d-9da5-46e3-b55b-a124bb736665",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Noob Saibot"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FRaidenmk11.png?alt=media&token=5972fe21-a5dd-44c8-9f1f-b49f78c62dd2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Raiden"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FRobocop_MK11_render.png?alt=media&token=3d7573e6-2dd4-4b85-ac2d-386d5d01d774",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Robocop"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FScorpion_MK11_3.png?alt=media&token=cf96e65c-705e-402e-bc51-83645e77c873",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Scorpion"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FShao_Khan_mk11_default_2.png?alt=media&token=31ee0036-7733-42bf-a91d-c8a9773fec68",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Shao Khan"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSheeva_Render.png?alt=media&token=f64cb02c-3c53-49f3-9d7b-8cadd4e60436",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Sheeva"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSonya_MK_11.png?alt=media&token=e70ecb5d-494d-4e6b-947a-40f101964bf4",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Sonya"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSpawn_Render.png?alt=media&token=53c1b5a2-6d33-486b-9644-b28a868949cd",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Spawn"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSub-Zero_Mk11.png?alt=media&token=0314b039-17d6-4711-99c1-8bb2f2528727",
+                            "Information": "",
+                            "Intro": "-273°",
+                            "Name": "11Sub-Zero"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMk11coverart.png?alt=media&token=61d6419f-ddba-4bb3-bfef-0e3a7fd5e265",
+                        "Information": "Initial release date: 23/04/2019",
+                        "Name": "Mortal Kombat 11"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FAkuma_UMvC3_artwork.png?alt=media&token=14e3e588-3ba7-4259-9a14-b466151007a2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Akuma"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FAmaterasu_UMvC3_artwork.png?alt=media&token=5dcbcf95-4d31-4f98-818e-c4abb907fa14",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Amaterasu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FArthur_UMvC3_artwork.png?alt=media&token=5bfe24ee-8802-464f-9f33-446821d018ac",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Arthur"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FCaptain_America_UMvC3_artwork.webp?alt=media&token=c2500662-f9e3-4b1c-bb77-53fe85a0c39b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Captain America"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FChris_UMvC3_artwork.png?alt=media&token=ac3d8873-fdd1-46e8-9aab-a767d19ad7fa",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Chris"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FChun-Li_UMvC3_artwork.png?alt=media&token=17a372e7-6d4a-4a80-9825-aeda8d7fc875",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Chun-Li"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FCrimson_Viper_UMvC3_artwork.png?alt=media&token=2e6ec2b3-c7ae-48e1-bb84-59002e149616",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Crimson Viper"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDante_UMvC3_artwork.png?alt=media&token=302b8dfb-c32c-41c5-8391-743829a0d92a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Dante"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDeadpool_UMvC3_artwork.png?alt=media&token=31840fa9-7edf-405f-a44c-f7ca69b1b376",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Deadpool"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDoctor_Doom_UMvC3_artwork.png?alt=media&token=9df7b24c-184c-49b7-af1e-4343d8bc0694",
+                            "Information": "",
+                            "Intro": "foot dive? foot dive.",
+                            "Name": "33Doctor Doom"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDoctor_Strange_UMvC3_artwork.png?alt=media&token=76c77df1-a989-4732-8685-9db7ec56107e",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Doctor Strange"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDormammu_UMvC3_artwork.png?alt=media&token=ce440330-0cc9-4254-af69-7bf97b24bef0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Dormammu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FFelicia_UMvC3_artwork.png?alt=media&token=60681064-1885-4d24-a3e6-6407a0b14d8b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Felicia"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FFirebrand_UMvC3_artwork.png?alt=media&token=f6609c89-8a65-45bf-99c9-ec11cff6c061",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Firebrand"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FFrank_West_UMvC3_artwork.png?alt=media&token=ee3f12a7-5ad3-4fc7-bb99-8225957f3619",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Frank West"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FGhost_Rider_UMvC3_artwork.png?alt=media&token=817a9ba8-3a8e-4e5d-9101-b1950c028af8",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Ghost Rider"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHaggar_UMvC3_artwork.png?alt=media&token=3a42a427-5d02-4470-afe9-6d226963a896",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Haggar"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHawkeye_UMvC3_artwork.png?alt=media&token=40dd6690-661b-4233-9657-718e860daa4a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Hawkeye"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHsien-Ko_UMvC3_artwork.png?alt=media&token=35fdf2dc-c645-4f82-8bf9-4480f410f7b7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Hsien-Ko"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHulk_UMvC3_artwork.webp?alt=media&token=2703f437-5bc0-4732-b3e2-3c6fb1100d04",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Hulk"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FIron_Fist_UMvC3_artwork.png?alt=media&token=39f4fec3-55b1-4670-809b-82eb08a99012",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Iron Fist"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FIron_Man_UMvC3_artwork.png?alt=media&token=4839c87c-1c18-42cb-95f5-b6be9e011544",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Iron Man"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FJill_UMvC3_artwork.png?alt=media&token=baba0620-bcd3-4dc8-82ed-e696dddab32f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Jill"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FMODOK_UMvC3_artwork.png?alt=media&token=859daab6-bf71-476e-a89f-4c14766dd6b5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33M.O.D.O.K."
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FMagneto_UMvC3_artwork.png?alt=media&token=af58f6e1-8a3b-4124-8df5-0feb500c482b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Magneto"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FMorrigan_UMvC3_artwork.png?alt=media&token=aefe78de-1230-4a8f-896e-7c3c7b6a377d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Morrigan"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FNemesis_UMvC3_artwork.png?alt=media&token=60f3ec20-186c-465c-b82b-a26034e98ff7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Nemesis"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FNova_UMvC3_artwork.png?alt=media&token=48b8109f-96bb-482b-ac73-7dfb3e4c7d07",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Nova"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FPhoenix_UMvC3_artwork.png?alt=media&token=2eeaa2cb-be01-4f9d-adc0-34cfbd72b738",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Phoenix"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FPhoenix_Wright_UMvC3_artwork.png?alt=media&token=7c38b666-06fd-4a65-afa1-05d00223c392",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Phoenix Wright"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FRocket_Raccoon_UMvC3_artwork.png?alt=media&token=556802a4-16a9-4ee2-bd70-50fa0f1e2246",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Rocket Raccoon"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FRyu_UMvC3_artwork.png?alt=media&token=ebee6171-4280-4897-9422-16b7da0240a2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Ryu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSentinel_UMvC3_artwork.png?alt=media&token=aa2c519d-92b0-48a0-801b-769d11ceb102",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Sentinel"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FShe-Hulk_UMvC3_artwork.png?alt=media&token=3450649f-6467-449a-ac65-1c320e01fa44",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33She-Hulk"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FShuma-Gorath_UMvC3_artwork.png?alt=media&token=65b0cb16-4ceb-4c1c-8ba2-43d39c433bab",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Shuma-Gorath"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSpencer_UMvC3_artwork.png?alt=media&token=f76dedb1-d0d5-4991-8b8f-0b6153d535ef",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Spencer"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSpider-Man_UMvC3_artwork.png?alt=media&token=69512910-99e2-4740-8e16-a9ba179b7462",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Spider-Man"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FStorm_UMvC3_artwork.png?alt=media&token=227546d5-c5ea-43a3-8aa7-edfbe0647934",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Storm"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FStrider_Hiryu_UMvC3_artwork.png?alt=media&token=1e793763-d315-486c-b6dc-992776ac3e1b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Strider Hiryu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSuper-Skrull_UMvC3_artwork.png?alt=media&token=94aa956a-fa20-4565-857a-c2a458f7fc59",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Super Skrull"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FTaskmaster_UMvC3_artwork.png?alt=media&token=2d6dad3a-cc21-41fe-befb-477fc43c16e7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Taskmaster"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FThor_UMvC3_artwork.png?alt=media&token=46619cf6-d0ca-4f04-9e2c-dd59e4755071",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Thor"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FTrish_UMvC3_artwork.png?alt=media&token=ffcc31db-c4c1-44f0-9e4d-eea9705baf87",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Trish"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FTron_UMvC3_artwork.png?alt=media&token=169dbe81-13d7-4dfe-bee8-a8234ebe50da",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Tron"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FVergil_UMvC3_artwork.png?alt=media&token=c6eaf7a4-ccd5-424a-a213-401e4a864116",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Vergil"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FViewtiful_Joe_UMvC3_artwork.png?alt=media&token=8d9817ff-0ed0-49e0-8ad7-cbdf16e45c15",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Viewtiful Joe"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FWesker_UMvC3_artwork.png?alt=media&token=b9e6ecae-0c55-44de-a5e7-20ff8fcf7dbe",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Wesker"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FWolverine_UMvC3_artwork.png?alt=media&token=d439f819-20bb-42c6-9573-72901a919300",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Wolverine"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FX-23_UMvC3_artwork.png?alt=media&token=242103b2-0419-4315-9afb-24a3186c601c",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33X-23"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FZero_UMvC3_artwork.png?alt=media&token=ab168b06-3114-4f13-8025-b5440ddcac45",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Zero"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FUMvC3_logo-fixed.png?alt=media&token=a9e2c9fc-0973-4db6-800c-0955ce20ef48",
+                        "Information": "marvel",
+                        "Name": "Ultimate Marvel vs. Capcom 3"
+                    }
+                }
+            ]
         }
     ]
 }
