@@ -1,0 +1,48 @@
+{
+    "Games": [
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/a6/DBFZ_Android_16_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01 Android16"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/0/06/DBFZ_Logo.png",
+                        "Information": "",
+                        "Name": "Dragon Ball FighterZ"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/21/GGST_Ky_Kiske_Portrait.png",
+                            "Information": "kyle har ingen information för ha ne kass",
+                            "Intro": "Han har inget intro",
+                            "Name": "05Ky Kiske"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/04/GGST_Sol_Badguy_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Sol Badguy"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/5/55/GGST_Logo.png",
+                        "Information": "",
+                        "Name": "Guilty Gear Strive"
+                    }
+                }
+            ]
+        }
+    ]
+}

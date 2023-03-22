@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { GAME } from '../../types/types'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './start.scss'
@@ -10,19 +11,28 @@ type Props = {
 }
 
 const Start = ({ showCharacter, pickGame }: Props) => {
-    const [games, setGames] = useState<[]>()
+    const [games, setGames] = useState<GAME>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
     useEffect(() => {
-        setGames(dispatchedGames)
+        const gameArray = dispatchedGames.Games
+        setGames(gameArray)
     }, [dispatchedGames])
 
-    const gameImage: string[] | undefined = games?.map((game: any) => {
-        return game.Game.Image
+    let gameImages: string[] = []
+    games?.map((game: any) => {
+        game.GameTitle.map((game: any) => {
+            gameImages.push(game.Game.Image)
+        })
+        return gameImages
     })
 
-    const gameName: string[] | undefined = games?.map((name: any) => {
-        return name.Game.Name
+    let gameNames: string[] = []
+    games?.map((game: any) => {
+        game.GameTitle.map((game: any) => {
+            gameNames.push(game.Game.Name)
+        })
+        return gameNames
     })
 
     return (
@@ -31,7 +41,7 @@ const Start = ({ showCharacter, pickGame }: Props) => {
             <main className='square-wrapper'>
                 {
                     games?.map((square: any, i: number) => {
-                        return <Square key={i} gameImage={gameImage![i]} gameName={gameName![i]} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
+                        return <Square key={i} gameImage={gameImages![i]} gameName={gameNames![i]} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
                     })
                 }
             </main>

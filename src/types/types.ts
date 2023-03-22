@@ -10,9 +10,43 @@ export type GameObjects = {
         MyPosts: string[],
         PublicPosts: string[]
     }
-    
+
 }
 
-export type Games = {
-    Games: GameObjects[];
+//export type Games = {
+//    Games: GameObjects[];
+//}
+
+export type GAMES = {
+    Games: {
+        GameTitle: {
+            Characters: {
+                Image: string;
+                Information: string;
+                Intro: string;
+                Name: string;
+            }[]
+            Game: {
+                Image: string;
+                Information: string;
+                Name: string;
+            }
+        }[]
+    }[]
 }
+
+export type GAME = {
+    GameTitle: {
+        Characters: {
+            Image: string;
+            Information: string;
+            Intro: string;
+            Name: string;
+        }[]
+        Game: {
+            Image: string;
+            Information: string;
+            Name: string;
+        }
+    }[]
+}[]

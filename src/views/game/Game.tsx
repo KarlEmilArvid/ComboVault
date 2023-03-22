@@ -20,26 +20,21 @@ const Game = ({ showCharacter, games, pickGame }: Props) => {
     const [character, setCharacter] = useState<[]>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
-    console.log(games.gameName)
-    const param = useParams();
-    
-
     useEffect(() => {
-        setCharacter(dispatchedGames)
+        const gameArray = dispatchedGames.Games
+        setCharacter(gameArray)
     }, [dispatchedGames])
 
-    const characterArray: any = []
-
-    const characterMap = character?.map((game: any, i: number) => {
-
-        if (games.gameName === game.Game.Name) {
-            game.Characters.map((character: any) => {
-                characterArray.push({ name: character.Name, image: character.Image })
-            })
-        }
+    let characterArray: any[] = []
+    character?.map((game: any, i: number) => {
+        game.GameTitle.map((character: any) => {
+            if (games.gameName === character.Game.Name) {
+                character.Characters.map((validCharacters: any) => {
+                    characterArray.push({ name: validCharacters.Name, image: validCharacters.Image })
+                })
+            }
+        })
     })
-
-    //char används inte? pröva att ändra
 
     return (
         <>

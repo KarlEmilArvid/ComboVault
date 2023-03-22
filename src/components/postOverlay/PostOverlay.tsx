@@ -56,7 +56,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
 
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
-                await updateDoc(doc(db, 'Posts', `${Id}`), {
+                await updateDoc(doc(db, `${characterName}`, `${Id}`), {
                     User: `${user}`,
                     Name: characterName,
                     PostTitle: postTitle,
@@ -74,7 +74,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
 
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
-                await setDoc(doc(db, 'Posts', `${postId}`), {
+                await setDoc(doc(db, `${characterName}`, `${postId}`), {
                     User: `${user}`,
                     Name: characterName,
                     PostTitle: postTitle,
@@ -87,13 +87,10 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
         }
 
         if (overlayButton == 'Delete') {
-
             (async () => {
-
-                await deleteDoc(doc(db, 'Posts', `${Id}`));
+                await deleteDoc(doc(db, `${characterName}`, `${Id}`));
                 setOverlay(false)
             })()
-
         }
     }
 
@@ -107,7 +104,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     <>
 
                         <h2>{pickedTitle}</h2>
-                        
+
                         <section className="input-border">
                             <input type="text" placeholder='post name:' defaultValue={currentPost.postTitle} onChange={(e) => setPostTitle(e.target.value)} />
                         </section>

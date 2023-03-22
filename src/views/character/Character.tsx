@@ -4,7 +4,6 @@ import Header from '../../components/header/Header'
 import InformationSection from '../../components/informationSection/InformationSection'
 import PostSection from '../../components/postSection/PostSection'
 import ToggleComponent from '../../components/toggleComponent/ToggleComponent'
-//import ToggleButton from '../../components/toggleButton/ToggleButton'
 import './character.scss'
 
 type CharacterType = {
