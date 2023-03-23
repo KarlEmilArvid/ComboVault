@@ -3,27 +3,27 @@
 
 
 .post-container--border {
-
+    @include containerBorder;
     width: 80%;
     margin: $margin auto;
-    @include containerBorder;
+    list-style-type: none;
 
     .post-container {
         @include flex($justify: flex-start, $direction: column);
         background-color: $primaryTextColor;
         width: 100%;
         cursor: pointer;
-    
+
         .post-information {
             @include flex($justify: space-between);
             width: 100%;
             background-color: $container-background;
-    
+
             h3 {
                 color: $secondaryTextColor;
             }
         }
-    
+
         .post-section {
             @include flex($justify: flex-start, $align: flex-start);
             color: black;
@@ -31,39 +31,39 @@
             width: 100%;
             background-color: $container-background;
             cursor: default;
-    
+
             p {
                 color: $secondaryTextColor;
                 margin: .5rem;
             }
         }
-    
+
         .button-section {
             @include flex;
             width: 100%;
             background-color: $container-background;
             cursor: default;
-    
+
             .edit-buttons--border {
                 @include flex;
+                @include containerBorder;
                 width: 15%;
                 margin: calc($baseline / 2);
-                @include containerBorder;
 
                 .edit-buttons {
-                    cursor: pointer;
                     width: 100%;
                     color: $primaryTextColor;
                     background-color: $primaryBackground;
                     font-weight: 600;
                     height: calc($baseline * 1.5);
                     border: none;
+                    cursor: pointer;
                 }
             }
         }
-    
+
         .accordion {
-            margin-left: auto;
+            margin: .2rem .2rem .2rem auto;
             cursor: pointer;
         }
     }
