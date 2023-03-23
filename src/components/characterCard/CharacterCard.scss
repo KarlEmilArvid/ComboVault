@@ -2,6 +2,7 @@
 @import '../../scss/variables.scss';
 
 .character-border {
+    @include filterShadow;
     margin: auto;
 
     .character-wrapper {

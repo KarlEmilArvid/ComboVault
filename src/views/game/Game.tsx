@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { useParams } from 'react-router'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './game.scss'

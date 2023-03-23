@@ -2,10 +2,10 @@
 @import '../../scss/variables.scss';
 
 .toggle-wrapper--border {
-
+    @include containerBorder;
+    @include filterShadow;
     width: 90%;
     margin: $margin auto;
-    @include containerBorder;
     border-radius: 0.4rem;
 
     .toggle-wrapper {

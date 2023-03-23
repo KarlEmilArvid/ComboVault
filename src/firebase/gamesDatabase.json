@@ -1508,6 +1508,337 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKOFXV_Benimaru_Nikaido_Character_Render.png?alt=media&token=35ec2975-6ecb-450d-a47d-d5100efa73f5",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "15Benimaru"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKOFXV_Kyo_Kusanagi_Character_Render.png?alt=media&token=0ad93015-f589-4951-acd8-fa68a781ac16",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Kyo Kusanagi"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKOFXV_Meitenkun_Character_Render.png?alt=media&token=36b9c6b8-6957-40f1-97e0-c47b00e1ae25",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Meitenkun"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKOFXV_Omega_Rugal_Render.png?alt=media&token=2f6aedc5-4bc0-48b5-b951-ca22069acc91",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Omega Rugal"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKOFXV_Shun'ei_Character_Render.png?alt=media&token=567ec062-e52f-4f38-835b-4fa801edb6da",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Shun'ei"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_andy_render.png?alt=media&token=e1e848e7-84f5-4231-a337-07a219c5b8f0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Andy"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_antonov_render.png?alt=media&token=634604af-7fa0-4508-b351-c4a4e3b8bfdc",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Antonov"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_athena_render.png?alt=media&token=43962e29-8535-4325-b8da-aa58d7fd6008",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Athena"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_blue_mary_render.png?alt=media&token=5721350e-a35d-49d5-960a-8d283ab3e7ce",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Blue Mary"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_chizuru_render.png?alt=media&token=cd856844-c04b-4304-8206-903eff85d2b1",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Chizuru"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_chris_render.png?alt=media&token=174a39e9-de7d-4cfb-8506-5c3b289de4aa",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Chris"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_clark_render.png?alt=media&token=7fd62ed8-9dd2-487a-81a2-dae81aab013a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Clark"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_dinosaur_render.png?alt=media&token=8fa7c354-19a5-430f-b2b7-3b56d3468e7d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Dinosaur"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_dolores_render.png?alt=media&token=e3404c4e-16b2-432e-befc-6d4098997438",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Dolores"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_iori_render.png?alt=media&token=47fa141a-4d63-475f-ab23-34e59f722fd4",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Iori"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_isla_render.png?alt=media&token=f88c3eca-8636-47ea-9795-59ac50afe766",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Isla"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_joe_render.png?alt=media&token=db757488-dd36-41db-8575-903d8459d986",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Joe"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_k_dash_render.png?alt=media&token=355d2b16-fdd5-4a33-aba5-96f9f72fb238",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15K'"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_king_render.png?alt=media&token=3f80a411-2b6b-42af-a173-2535a99e8cea",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15King"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_kula_render.png?alt=media&token=5f7693af-5748-4dfb-8966-146f8c42b1de",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Kula"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_leona_render.png?alt=media&token=32959d9e-0842-4152-a310-e26b8f096633",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Leona"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_luong_render.png?alt=media&token=87bf1faa-5933-4b17-892b-c62a698f076f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Luong"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_mai_render.png?alt=media&token=ea887bcf-bb47-4670-afbf-e931764a945c",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Mai"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_ralf_render.png?alt=media&token=ddfd6a26-9cd9-469f-b431-94e3c615c23a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Ralf"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_ramon_render.png?alt=media&token=86943b61-6969-427d-a3b9-2e28eb160a4b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Ramon"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_robert_render.png?alt=media&token=7f14f06b-b4a7-49f1-8ee4-47edbb5986b3",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Robert"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_ryo_render.png?alt=media&token=8c72e203-d8b9-4814-8de3-917f547647ec",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Ryo"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_shermie_render.png?alt=media&token=3f273662-3ba1-4085-95b8-1a911d14392e",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Shermie"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_terry_render.png?alt=media&token=695f79a0-3bdf-4370-a95a-fb074b4459ce",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Terry"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_vanessa_render.png?alt=media&token=1753721c-3286-42fb-894f-9a6349550fde",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Vanessa"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_yashiro_render.png?alt=media&token=7b454a12-db12-4454-b3ca-2a4af1028cf6",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Yashiro"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKof_xv_yuri_render.png?alt=media&token=80ae5eed-36fe-4999-a2e0-53c57c676159",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Yuri"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvangelrender.png?alt=media&token=e86a0e02-2935-43f7-a183-c15e8f29ac6d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Angel"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvashrender.png?alt=media&token=f8dbc8d3-90d8-4b8d-9e3f-1528a81586cc",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Ash"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvbillyrender.png?alt=media&token=2631bf7f-fee0-4979-8381-3e28fde03073",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Billy"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvdarlinewrender.png?alt=media&token=eea76a9e-2884-4787-a579-fdbb424cb6ad",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Darli Dagger"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvelisabethrender.png?alt=media&token=b716e457-fb13-4435-9ed6-7518a280b175",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Elisabeth"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvgatorender.png?alt=media&token=19d45f7c-3c75-4abd-85ee-843efbe50241",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Gato"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvgeeserender.png?alt=media&token=4566834b-5cc6-44ad-9590-3e663aa80d1d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Geese Howard"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvhaohmarunewrender.png?alt=media&token=fb8b0d20-91ac-46b7-b165-177456fd6ca5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Haohmaru"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvheidernrender.png?alt=media&token=c2becbb0-1bac-45df-ab96-91c77d51bb39",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Heidern"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvjenetrender.png?alt=media&token=7105564d-4a7d-4f84-a258-0a1a91f0830a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15B. Jenet"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvkrohnenrender.png?alt=media&token=8dbad383-83e6-4b9f-b477-8925d930a7b7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Krohnen"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvkukrirender.png?alt=media&token=c856866b-c069-4ec0-8959-9ad1bd2f8f5f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Kukri"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvmaximarender.png?alt=media&token=f73129eb-6876-4b75-9f74-31b5381650fa",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Maxima"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvnakorurunewrender.png?alt=media&token=0e21b3ec-2385-49a2-b98f-77b2556ea8b4",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Nakoruru"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvorochichrisrender.png?alt=media&token=818cef01-9c51-462f-ac06-f129fadfe44f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Orochi Chris"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvorochishermierender.png?alt=media&token=2c9b6791-7c1e-4cc6-82ba-3c1629532325",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Orochi Shermie"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvorochiyashirorender.png?alt=media&token=1120b954-1f87-4349-92d4-3c5119352d30",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Orochi Yashiro"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvrockrender.png?alt=media&token=3a94c6d1-77fc-4f0c-8d38-ac1a33e34677",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Rock Howard"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKOFXV_Shingo_Profile.png?alt=media&token=3f8dc327-360f-40fd-9871-15363ad47e83",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Shingo"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvwhiprender.png?alt=media&token=ec080eb3-3034-4cf5-a380-b4b815bd5e6a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Whip"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/The%20King%20of%20Fighters%2015%2FKofxvyamazakirender.png?alt=media&token=131cd616-0226-4aca-8382-3e79553d8586",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "15Ryuji Yamazaki"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dreamcancel.com/w/images/7/7e/KOF_XV_Logo.png",
+                        "Information": "KOF15 was released in 2022",
+                        "Name": "The King of Fighters XV"
+                    }
+                }
+            ]
         }
     ]
 }

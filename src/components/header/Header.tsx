@@ -81,10 +81,12 @@ const Header = () => {
                         <img src="" alt="" />
                         <h3>Home</h3>
                     </li>
+                    {/*
                     <li>
                         <img src="" alt="" />
                         <h3>Favourites</h3>
                     </li>
+                    */}
                     <li>
                         <img src="" alt="" />
                         <h3>About us</h3>

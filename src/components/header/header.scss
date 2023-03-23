@@ -25,11 +25,14 @@ header {
                 display: inline;
             }
 
-            .home-param, .game-param {
+            .home-param,
+            .game-param {
+                //TODO: ändra storlek
                 cursor: pointer;
             }
 
             .game-name {
+                //TODO: ändra storlek
                 margin-bottom: .5rem;
             }
         }
