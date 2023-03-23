@@ -37,7 +37,6 @@
         margin: calc($baseline * 5);
 
         .input-border {
-
             @include containerBorder;
             width: 100%;
             margin: $baseline;
@@ -51,10 +50,9 @@
         }
 
         .text-border {
-
+            @include flex;
             @include containerBorder;
             width: 100%;
-            @include flex;
 
             .text-input {
                 min-height: calc($baseline * 10);
@@ -64,11 +62,9 @@
             }
         }
 
-
         .create-button--border {
-
-            @include containerBorder;
             @include flex ($direction: column);
+            @include containerBorder;
             margin-top: 8rem;
             width: 25%;
 
@@ -79,9 +75,7 @@
                 font-weight: 600;
                 width: 100%;
             }
-
         }
-
 
         h2 {
             text-align: center;
@@ -95,9 +89,8 @@
             margin-top: 8rem;
 
             .delete-button--border {
-
-                @include containerBorder;
                 @include flex ($direction: column);
+                @include containerBorder;
                 margin: .5rem;
                 width: 25%;
 
@@ -108,9 +101,7 @@
                     font-weight: 600;
                     width: 100%;
                 }
-
             }
-
         }
 
         .button-section {
@@ -150,6 +141,148 @@
             text-align: start;
             width: 100%;
             margin: $margin;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post-overlay-wrapper-show {
+        @include flex($align: flex-start);
+        padding-top: calc($padding * 3);
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        background-color: $primaryBackground;
+
+        .close-button {
+            width: calc($baseline * 2);
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            font-size: calc($baseline * 3);
+            color: $primaryTextColor;
+            top: $baseline;
+            left: calc($baseline* 2);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .create-post-container {
+            @include flex($direction: column);
+            border-radius: calc($baseline / 2);
+            position: relative;
+            width: 80%;
+            margin: calc($baseline * 5);
+
+            .input-border {
+                @include containerBorder;
+                width: 100%;
+                margin: $baseline;
+
+                input {
+                    min-height: calc($baseline * 2);
+                    width: 100%;
+                    margin: 0;
+                    border: none;
+                }
+            }
+
+            .text-border {
+                @include flex;
+                @include containerBorder;
+                width: 100%;
+
+                .text-input {
+                    min-height: calc($baseline * 10);
+                    width: 100%;
+                    resize: none;
+                    border: none;
+                }
+            }
+
+            .create-button--border {
+                @include containerBorder;
+                @include flex ($direction: column);
+                margin-top: 8rem;
+                width: 25%;
+
+                button {
+                    margin-top: 0;
+                    background-color: $container-background;
+                    color: $secondaryTextColor;
+                    font-weight: 600;
+                    width: 100%;
+                }
+            }
+
+            h2 {
+                text-align: center;
+                width: 100%;
+                margin: $margin;
+            }
+
+            .delete-section {
+                @include flex ($direction: column);
+                width: 100%;
+                margin-top: 8rem;
+
+                .delete-button--border {
+                    @include containerBorder;
+                    @include flex ($direction: column);
+                    margin: .5rem;
+                    width: 25%;
+
+                    button {
+                        margin-top: 0;
+                        background-color: $container-background;
+                        color: $secondaryTextColor;
+                        font-weight: 600;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .button-section {
+                @include flex;
+                width: 100%;
+
+                .post-button {
+                    @include postButton;
+                    width: 70%;
+                    margin-top: $margin-large;
+                    border-left: 3px solid red;
+
+                    span:nth-child(1) {
+                        color: red;
+                    }
+                }
+
+                .post-button-active {
+                    @include postButton;
+                    width: 70%;
+                    margin-top: $margin-large;
+                    border-right: 3px solid red;
+
+                    span:nth-child(2) {
+                        color: red;
+                    }
+                }
+            }
+
+            button {
+                @include postButton;
+                width: 70%;
+                margin-top: $margin-large;
+            }
+
+            input {
+                text-align: start;
+                width: 100%;
+                margin: $margin;
+            }
         }
     }
 }

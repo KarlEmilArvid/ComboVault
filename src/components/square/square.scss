@@ -2,24 +2,22 @@
 @import '../../scss/variables.scss';
 
 .square-border {
-
     @include squareBorder;
-    width: 142px;
-    height: 142px;
+    width: 122px;
+    height: 122px;
     margin: calc($baseline * 3);
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
 
     .square-container {
-        
         @include flex($direction: column);
         @include squareContainer;
-        width: 130px;
-        height: 130px;
-    
+        width: 110px;
+        height: 110px;
+
         &:hover {
             cursor: pointer;
         }
-    
+
         img {
             scale: 1.2;
             transform: rotate(-45deg);
@@ -29,12 +27,12 @@
             color: #900;
             text-decoration: none;
         }
-    
+
         img:hover {
             color: red;
             position: relative;
         }
-    
+
         img[title]:hover:after {
             content: attr(data);
             padding: 4px 8px;
@@ -47,7 +45,54 @@
             border-radius: 5px;
             background: rgba(0, 0, 0, 0.5);
         }
-
     }
+}
 
+@media screen and (min-width: 768px) {
+    .square-border {
+        @include squareBorder;
+        width: 142px;
+        height: 142px;
+        margin: calc($baseline * 3);
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+
+        .square-container {
+            @include flex($direction: column);
+            @include squareContainer;
+            width: 130px;
+            height: 130px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            img {
+                scale: 1.4;
+                transform: rotate(-45deg);
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 50%;
+                color: #900;
+                text-decoration: none;
+            }
+
+            img:hover {
+                color: red;
+                position: relative;
+            }
+
+            img[title]:hover:after {
+                content: attr(data);
+                padding: 4px 8px;
+                color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                left: 0;
+                top: 100%;
+                white-space: nowrap;
+                z-index: 2;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
 }

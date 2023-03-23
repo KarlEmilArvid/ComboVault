@@ -1,23 +1,49 @@
 @import '../../scss/layout.scss';
 @import '../../scss/variables.scss';
 
-.character-wrapper {
-    @include flex();
-    height: 15rem;
-    padding: $padding;
-    border: 2px solid grey;
-    width: 100%;
+.character-border {
+    margin: auto;
 
-    .character-container {
-        @include flex($direction: column, $justify: flex-start);
-        height: 100%;
+    .character-wrapper {
+        @include flex();
+        height: calc($baseline * 15);
+        padding: $padding;
+        border: 2px solid grey;
+        width: 100%;
 
-        .character-name {
-            //display: none;
+        .square-border {
+            :hover {
+                cursor: default;
+            }
+        }
+
+        .character-container {
+            @include flex($direction: column, $justify: flex-start);
+            height: 100%;
+        }
+
+        .character-intro {
+            max-width: 50%;
+            min-width: 200px;
         }
     }
+}
 
-    .character-intro {
-        max-width: 50%;
+@media screen and (min-width: 768px) {
+    .character-border {
+        @include containerBorder;
+        width: 70%;
+
+        .character-wrapper {
+            @include flex();
+            padding: $padding;
+            background-color: $secondaryBackground;
+            border: 2px solid grey;
+
+            .character-container {
+                @include flex($direction: column, $justify: flex-start);
+                height: 100%;
+            }
+        }
     }
 }

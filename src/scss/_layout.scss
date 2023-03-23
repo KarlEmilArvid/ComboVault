@@ -15,10 +15,8 @@
 }
 
 @mixin squareBorder {
-
     transform: rotate(45deg);
     background: linear-gradient(to right, #020202, #2138B1, #859BEB);
-
 }
 
 @mixin squareContainer {
@@ -30,10 +28,7 @@
 }
 
 @mixin containerBorder {
-
     background: $container-gradient;
     padding: .2rem;
     border-radius: .2rem;
-    
 }
-

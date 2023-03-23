@@ -5,3 +5,11 @@
     max-width: 90%;
     margin: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .square-wrapper {
+        @include flex($wrap: wrap);
+        max-width: 80%;
+        margin: auto;
+    }
+}

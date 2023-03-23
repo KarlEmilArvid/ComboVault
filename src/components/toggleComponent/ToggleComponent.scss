@@ -13,7 +13,7 @@
         width: 100%;
         border-radius: .2rem;
         background-color: $secondaryBackground;
-    
+
         figure {
             @include flex();
             @include postButton;
@@ -22,14 +22,20 @@
             background: transparent;
             height: calc($baseline * 2);
             margin: $margin-small;
-    
+
             img {
                 padding-right: $baseline;
             }
-    
+
             p {
                 margin-top: .2rem;
             }
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-wrapper--border {
+        width: 70%;
     }
 }

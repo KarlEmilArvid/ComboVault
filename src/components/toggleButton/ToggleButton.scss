@@ -2,10 +2,9 @@
 @import '../../scss/layout.scss';
 
 .toggle-border {
-
+    @include containerBorder;
     width: 40%;
     margin: $baseline;
-    @include containerBorder;
 
     .toggle-button {
         @include postButton;
@@ -14,4 +13,19 @@
         background-color: $container-background;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-border {
+        @include containerBorder;
+        width: 20%;
+        margin: $baseline;
+
+        .toggle-button {
+            @include postButton;
+            color: $secondaryTextColor;
+            font-weight: 600;
+            background-color: $container-background;
+        }
+    }
 }
