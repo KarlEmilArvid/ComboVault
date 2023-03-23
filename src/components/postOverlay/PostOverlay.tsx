@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
-import { doc, setDoc, updateDoc, deleteDoc } from 'firebase/firestore'
+import { doc, setDoc, updateDoc, deleteDoc, getDocs, collection } from 'firebase/firestore'
 import { db } from '../../firebase/firebase'
 import { auth } from '../../firebase/firebase'
+import { useSelector, useDispatch } from 'react-redux';
+import { actions as posts } from '../../redux/postsReducer';
 import './PostOverlay.scss'
+import { RootState } from '../../store';
 
 type Props = {
     overlay: boolean
@@ -33,6 +36,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     const [privatePost, setPrivatePost] = useState<boolean>(true)
     const [activeButton, setActiveButton] = useState<string>('post-button')
 
+    const dispatch = useDispatch();
+
     useEffect(() => {
         overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper')
 
@@ -52,6 +57,37 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     }
 
     const addPost = () => {
+
+        if (overlayButton == 'Create Post') {
+    
+            const postId = Math.random() * 1000 ** 100;
+    
+            (async () => {
+                const user: string | undefined = auth.currentUser?.uid
+                await setDoc(doc(db, `${characterName}`, `${postId}`), {
+                    User: `${user}`,
+                    Name: characterName,
+                    PostTitle: postTitle,
+                    PostText: postText,
+                    Private: privatePost,
+                    PostId: postId
+                })
+                
+                dispatch(posts.createPosts({
+                    User: `${user}`,
+                    Name: characterName,
+                    PostTitle: postTitle,
+                    PostText: postText,
+                    Private: privatePost,
+                    PostId: Id
+                }));
+
+                getAllPosts();
+
+            })()
+            setOverlay(false)
+        }
+
         if (overlayButton == 'Save Changes') {
 
             (async () => {
@@ -64,34 +100,34 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     Private: privatePost,
                     PostId: Id
                 })
-                setOverlay(false)
+                getAllPosts();
+
             })()
+            setOverlay(false)
         }
 
-        if (overlayButton == 'Create Post') {
-
-            const postId = Math.random() * 1000 ** 100;
-
-            (async () => {
-                const user: string | undefined = auth.currentUser?.uid
-                await setDoc(doc(db, `${characterName}`, `${postId}`), {
-                    User: `${user}`,
-                    Name: characterName,
-                    PostTitle: postTitle,
-                    PostText: postText,
-                    Private: privatePost,
-                    PostId: postId
-                })
-                setOverlay(false)
-            })()
-        }
 
         if (overlayButton == 'Delete') {
             (async () => {
                 await deleteDoc(doc(db, `${characterName}`, `${Id}`));
-                setOverlay(false)
+
+                getAllPosts();
+        
             })()
+            setOverlay(false)
         }
+    }
+
+    const getAllPosts = () => {
+        (async () => {
+            const querySnapshot = await getDocs(collection(db, `${characterName}`))
+                    const tempArray: any[] = []
+                    querySnapshot.forEach((doc) => {
+                        tempArray.push(doc.data())
+                    })
+
+                    dispatch(posts.getPosts(tempArray));
+        })()
     }
 
     console.log(privatePost)
