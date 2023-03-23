@@ -6,12 +6,15 @@ import { useParams } from 'react-router-dom';
 import { auth, signIn } from '../../firebase/firebase';
 import './header.scss'
 import { signOut } from 'firebase/auth';
+import { RootState } from '../../store';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
     const [overlay, setOverlay] = useState<boolean>(false)
     const navigate = useNavigate()
     const param = useParams();
-    console.log(param);
+    const allGames = useSelector((state: RootState) => state.games.Games);
+
 
     const openOverlay = () => {
         setOverlay(!overlay)
@@ -69,7 +72,7 @@ const Header = () => {
                                 null
                     }
                 </section>
-                <Search />
+                <Search allGames={allGames}/>
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>
