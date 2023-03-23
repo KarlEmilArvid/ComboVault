@@ -13,7 +13,8 @@ type Posts = {
 let initialState: Posts[] = [];
 const getPosts = createAction<Posts[]>('get posts');
 const createPosts = createAction<Posts>('create posts');
-const actions = { getPosts, createPosts }
+const updatePosts = createAction<Posts>('update posts');
+const actions = { getPosts, createPosts, updatePosts }
 
 //hämta posts
 
@@ -28,6 +29,24 @@ const reducer = createReducer(initialState, {
         const newPosts: Posts[] = [...state, action.payload];
         console.log(newPosts);
         return newPosts;
+    },
+    [updatePosts.toString()]: (state, action) => {
+
+        const stateCopy = [...state];
+
+        const newPosts = stateCopy.forEach((post) => {
+            if (post.PostId === action.payload.PostId) {
+                post.User = action.payload.User,
+                post.Name = action.payload.Name,
+                post.PostTitle = action.payload.PostTitle,
+                post.PostText = action.payload.PostText,
+                post.Private = action.payload.PrivatePost,
+                post.PostId = action.payload.Id
+            }
+        })
+
+        return newPosts;
+
     }
 })
 

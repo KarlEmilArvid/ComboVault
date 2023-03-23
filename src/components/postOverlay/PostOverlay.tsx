@@ -56,6 +56,35 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     }
 
     const addPost = () => {
+
+        if (overlayButton == 'Create Post') {
+    
+            const postId = Math.random() * 1000 ** 100;
+    
+            (async () => {
+                const user: string | undefined = auth.currentUser?.uid
+                await setDoc(doc(db, `${characterName}`, `${postId}`), {
+                    User: `${user}`,
+                    Name: characterName,
+                    PostTitle: postTitle,
+                    PostText: postText,
+                    Private: privatePost,
+                    PostId: postId
+                })
+
+                setOverlay(false)
+
+                dispatch(posts.createPosts({
+                    User: `${user}`,
+                    Name: characterName,
+                    PostTitle: postTitle,
+                    PostText: postText,
+                    Private: privatePost,
+                    PostId: Id
+                }));
+            })()
+        }
+
         if (overlayButton == 'Save Changes') {
 
             (async () => {
@@ -68,8 +97,10 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     Private: privatePost,
                     PostId: Id
                 })
+
                 setOverlay(false)
-                dispatch(posts.createPosts({
+                
+                dispatch(posts.updatePosts({
                     User: `${user}`,
                     Name: characterName,
                     PostTitle: postTitle,
@@ -80,23 +111,6 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             })()
         }
 
-        if (overlayButton == 'Create Post') {
-
-            const postId = Math.random() * 1000 ** 100;
-
-            (async () => {
-                const user: string | undefined = auth.currentUser?.uid
-                await setDoc(doc(db, `${characterName}`, `${postId}`), {
-                    User: `${user}`,
-                    Name: characterName,
-                    PostTitle: postTitle,
-                    PostText: postText,
-                    Private: privatePost,
-                    PostId: postId
-                })
-                setOverlay(false)
-            })()
-        }
 
         if (overlayButton == 'Delete') {
             (async () => {
