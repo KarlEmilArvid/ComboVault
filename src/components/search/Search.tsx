@@ -12,7 +12,8 @@ const Search = ({ allGames }: Props) => {
 
     const [searching, setSearching] = useState<boolean>(false);
     const [ searchTerm, setSearchTerm ] = useState<string>('');
-    const [ searchQuery, setSearchQuery ] = useState<string[]>();
+    const [ searchQuery, setSearchQuery ] = useState<string[]>([]);
+    const [ foundNames, setFoundNames ] = useState<string[]>([]);
     const param = useParams();
     const paramGame = param.game?.replaceAll('-', ' ');
     
@@ -37,7 +38,8 @@ const Search = ({ allGames }: Props) => {
                     if (game.Game.Name == paramGame) {
     
                         game.Characters.map((character: any) => {
-                            characterNames.push(character.Name);
+                            const characterName = character.Name.slice(2);
+                            characterNames.push(characterName);
                         })
                     }
                 })
@@ -48,7 +50,27 @@ const Search = ({ allGames }: Props) => {
 
     }, [param]);
 
-    console.log(searchQuery);
+    useEffect(() => {
+
+        if ( searchQuery?.length > 0 ) {
+            let names: string[] = [];
+            searchQuery?.forEach((query) => {
+
+                const tempString = searchTerm.toLowerCase();
+                const tempQuery = query.toLowerCase();
+
+                if ( tempQuery.substring(0, searchTerm.length) == tempString.substring(0, searchTerm.length) ) {
+                    names.push(query);
+                }
+            })
+    
+            setFoundNames(names);
+        }
+
+    }, [searchTerm]);
+    console.log('Namnen på vad som finns i squares: ', searchQuery);
+    console.log('Matchningar till namnen i squares: ', foundNames);
+    console.log('sök termen är: ', searchTerm);
 
     return (
         <section className="search_wrapper">
@@ -56,7 +78,7 @@ const Search = ({ allGames }: Props) => {
                 <img onClick={ () => setSearching(!searching) } src={ search } alt="" />
                 {
                     searching ?
-                    <input type="text" onChange={ () => setSearchTerm(searchTerm) } />
+                    <input type="text" onChange={ (e) => setSearchTerm(e.target.value) } />
                     :
                     null
                 }
