@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getDocs, collection } from 'firebase/firestore'
+import { getDocs, collection, doc, getDoc } from 'firebase/firestore'
 import { auth, db, signIn } from '../../firebase/firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
@@ -61,18 +61,7 @@ const PostSection = ({ name, characterName }: Props) => {
     const connectUser = () => {
         signIn()
     }
-    /*
-        useEffect(() => {
-            (async () => {
-                const querySnapshot = await getDocs(collection(db, 'Posts'))
-                const tempArray: any[] = []
-                querySnapshot.forEach((doc) => {
-                    tempArray.push(doc.data())
-                })
-                setAllPosts(tempArray)
-            })()
-        }, [overlay, connectUser]);
-    */
+    
 
     useEffect(() => {
         const privatePost = allPosts?.filter((post: any) => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
