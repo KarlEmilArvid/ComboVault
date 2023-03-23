@@ -3,6 +3,7 @@ import { getDocs, collection } from 'firebase/firestore'
 import { auth, db, signIn } from '../../firebase/firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
+import { RootState } from "../../store";
 import PostOverlay from '../postOverlay/PostOverlay'
 import Post from '../post/Post'
 import './PostSection.scss'
@@ -28,7 +29,7 @@ type CurrentPost = {
 
 const PostSection = ({ name, characterName }: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
-    const [allPosts, setAllPosts] = useState<Posts[]>([])
+    //const [allPosts, setAllPosts] = useState<Posts[]>([])
     const [privatePosts, setPrivatePosts] = useState<any[]>()
     const [publicPosts, setPublicPosts] = useState<any[]>()
     const [pickedTitle, setPickedTitle] = useState<string>()
@@ -38,6 +39,8 @@ const PostSection = ({ name, characterName }: Props) => {
 
     const overlayTitle = 'New Post';
     const currentButton = 'Create Post';
+
+    const allPosts: Posts[] = useSelector((state: RootState) => state.posts);
 
     const dispatch = useDispatch()
 
@@ -50,10 +53,9 @@ const PostSection = ({ name, characterName }: Props) => {
                 tempArray.push(doc.data())
             })
             console.log("här hämtar vi posts", tempArray)
-            setAllPosts(tempArray)
+            dispatch(posts.getPosts(tempArray));
 
         })()
-        dispatch(posts.getPosts(allPosts))
     }, [])
 
     const connectUser = () => {
@@ -73,9 +75,9 @@ const PostSection = ({ name, characterName }: Props) => {
     */
 
     useEffect(() => {
-        const privatePost = allPosts?.filter(post => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
+        const privatePost = allPosts?.filter((post: any) => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
         setPrivatePosts(privatePost)
-        const publicPost = allPosts?.filter(post => post.Name === characterName && !post.Private)
+        const publicPost = allPosts?.filter((post: any) => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
     }, [characterName, allPosts, overlay])
 

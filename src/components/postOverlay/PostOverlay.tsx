@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { doc, setDoc, updateDoc, deleteDoc } from 'firebase/firestore'
 import { db } from '../../firebase/firebase'
 import { auth } from '../../firebase/firebase'
+import { useSelector, useDispatch } from 'react-redux';
+import { actions as posts } from '../../redux/postsReducer';
 import './PostOverlay.scss'
 
 type Props = {
@@ -32,6 +34,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     const [postText, setPostText] = useState<string>()
     const [privatePost, setPrivatePost] = useState<boolean>(true)
     const [activeButton, setActiveButton] = useState<string>('post-button')
+
+    const dispatch = useDispatch();
 
     useEffect(() => {
         overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper')
@@ -65,6 +69,14 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     PostId: Id
                 })
                 setOverlay(false)
+                dispatch(posts.createPosts({
+                    User: `${user}`,
+                    Name: characterName,
+                    PostTitle: postTitle,
+                    PostText: postText,
+                    Private: privatePost,
+                    PostId: Id
+                }));
             })()
         }
 
