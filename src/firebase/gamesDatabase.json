@@ -8,12 +8,270 @@
                             "Image": "https://www.dustloop.com/wiki/images/a/a6/DBFZ_Android_16_Portrait.png",
                             "Information": "",
                             "Intro": "",
-                            "Name": "01 Android16"
+                            "Name": "01Android 16"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/6e/DBFZ_Android_17_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Android 17"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/24/DBFZ_Android_18_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Android 18"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7f/DBFZ_Android_21_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Android 21"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5b/DBFZ_Lab_Coat_Android_21_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Android 21 (Lab Coat)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/0e/DBFZ_Bardock_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Bardock"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/df/DBFZ_Beerus_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Beerus"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/20/DBFZ_DBS_Broly_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Broly (DBS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/ba/DBFZ_Broly_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Broly"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7b/DBFZ_Captain_Ginyu_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Captain Ginyu"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/ad/DBFZ_Cell_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Cell"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/3e/DBFZ_Cooler_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Cooler"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b7/DBFZ_Frieza_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Frieza"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/10/DBFZ_SS4_Gogeta_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Gogeta (SS4)"
+                        },
+                        {
+                            "Image": "http://dustloop.com/wiki/images/6/60/DBFZ_Gogeta_5LL.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Gogeta (SSGSS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/08/DBFZ_Adult_Gohan_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Gohan (Adult)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/92/DBFZ_Teen_Gohan_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Gohan (Teen)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/58/DBFZ_GT_Goku_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Goku (GT)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/4d/DBFZ_SSB_Goku_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Goku (SSGSS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d3/DBFZ_SS_Goku_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Goku (SS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c2/DBFZ_UI_Goku_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Goku (Ultra Instinct)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/da/DBFZ_Goku_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Goku"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/df/DBFZ_Goku_Black_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Goku Black"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c8/DBFZ_Gotenks_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Gotenks"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1f/DBFZ_Hit_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Hit"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/33/DBFZ_Janemba_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Janemba"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/0d/DBFZ_Jiren_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Jiren"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c4/DBFZ_Kefla_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Kefla"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c0/DBFZ_Kid_Buu_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Kid Buu"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/af/DBFZ_Krillin_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Krillin"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/90/DBFZ_Majin_Buu_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Majin Buu"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/58/DBFZ_Master_Roshi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Master Roshi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/8d/DBFZ_Nappa_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Nappa"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/dd/DBFZ_Piccolo_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Piccolo"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/4d/DBFZ_Super_Baby_2_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Super Baby 2"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/65/DBFZ_Tien_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Tien"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1d/DBFZ_Trunks_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Trunks"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7e/DBFZ_SSB_Vegeta_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Vegeta (SSGSS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/52/DBFZ_SS_Vegeta_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Vegeta (SS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/77/DBFZ_Vegeta_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Vegeta"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/47/DBFZ_SSB_Vegito_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Vegito (SSGSS)"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7e/DBFZ_Videl_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Videl"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/49/DBFZ_Yamcha_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Yamcha"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/41/DBFZ_Fused_Zamasu_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Zamasu"
                         }
                     ],
                     "Game": {
                         "Image": "https://www.dustloop.com/wiki/images/0/06/DBFZ_Logo.png",
-                        "Information": "",
+                        "Information": "Dragon Ball FighterZ is a 2.5D fighting game, developed by Arc System Works and published by Bandai Namco Entertainment. It was initially released on the 13th of January, 2018.",
                         "Name": "Dragon Ball FighterZ"
                     }
                 }
@@ -34,12 +292,1219 @@
                             "Information": "",
                             "Intro": "",
                             "Name": "05Sol Badguy"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5c/GGST_Anji_Mito_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Anji"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b7/GGST_Axl_Low_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Axl Low"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/6e/GGST_Baiken_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Baiken"
+                        },
+                        {
+                            "Image": "https://cdn.animenewsnetwork.com/thumbnails/max550x550/cms/news.6/195819/bed.png.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Bedman?"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/83/GGST_Bridget_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Bridget"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c4/GGST_Happy_Chaos_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Happy Chaos"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/ff/GGST_Faust_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Faust"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/3f/GGST_Giovanna_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Giovanna"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7c/GGST_Goldlewis_Dickinson_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Goldlewis"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/a1/GGST_I-No_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05I-No"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/6f/GGST_Jack-O%27_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Jack-O"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/f7/GGST_Leo_Whitefang_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Leo"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/0d/GGST_May_Portrait.png",
+                            "Information": "totsugeki",
+                            "Intro": "totsugeki",
+                            "Name": "05May"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/ab/GGST_Millia_Rage_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Millia"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/af/GGST_Nagoriyuki_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Nagoriyuki"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/ec/GGST_Potemkin_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Potemkin"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/fa/GGST_Ramlethal_Valentine_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Ramlethal"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/8a/GGST_Sin_Kiske_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Sin Kiske"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/ba/GGST_Testament_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Testament"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/df/GGST_Zato-1_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Zato-1"
                         }
                     ],
                     "Game": {
                         "Image": "https://www.dustloop.com/wiki/images/5/55/GGST_Logo.png",
-                        "Information": "",
+                        "Information": "Guilty Gear Strive is a fighting video game developed and published by Arc System Works. It is the seventh mainline installment of the Guilty Gear series, and the 25th overall. It was initially released in 2021.",
                         "Name": "Guilty Gear Strive"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/filia.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Fillia"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/big-band.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Big Band"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/umbrella.png",
+                            "Information": "",
+                            "Intro": "ella ella eh eh eh",
+                            "Name": "01Umbrella"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/beowulf.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Beowulf"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Skullgirls%2FBlack_Dahlia.webp?alt=media&token=eef28a18-2706-4bba-baae-654271042020",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Black Dahlia"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/cerebella.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Cerebella"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/double.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Double"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/eliza.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Eliza"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/fukua.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Fukua"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/msfortune.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Ms. Fortune"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/painwheel.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Painwheel"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/parasoul.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Parasoul"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/robo-fortune.png",
+                            "Information": "",
+                            "Intro": "beep boop meow",
+                            "Name": "01Robo-Fortune"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/squigly.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Squigly"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/valentine.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Valentine"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/annie.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Annie"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Skullgirls%2Fmarie.webp?alt=media&token=771f1fc3-39c5-43f5-97c9-e5aa83257ba6",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Marie"
+                        },
+                        {
+                            "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/peacock.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Peacock"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.gbl.gg/images/c/c4/SG2E%2B_logo.png",
+                        "Information": "Skullgirls was initially released in 2012, 2nd Encore was released in 2015",
+                        "Name": "Skullgirls"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-akuma-removebg-preview.png?alt=media&token=23067cca-3f15-4d79-9072-d692c0afd79f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Akuma"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-alex-removebg-preview.png?alt=media&token=6bd0e612-6a7e-47f9-8551-596ffdab3685",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Alex"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-chun-li-removebg-preview.png?alt=media&token=63443358-0567-4de0-bf65-10171586fcc7/i.imgur.com/7tZFssG.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Chun-Li"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-elena-removebg-preview.png?alt=media&token=fe6e2514-5998-455b-bfad-7265da1423b5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Elena"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-gill-removebg-preview.png?alt=media&token=296e59de-9289-44ab-8cee-eec6986c1f2f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Gill"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-hugo-removebg-preview.png?alt=media&token=4b761cbc-2a02-4c81-87fd-20875dda7171",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Hugo"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-ibuki-removebg-preview.png?alt=media&token=31079c25-cffe-4b96-85c3-c54ba478dab3",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Ibuki"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-ken-removebg-preview.png?alt=media&token=94af86c6-8f59-47fe-81ae-94e5fa8d6496",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Ken"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-makoto-removebg-preview.png?alt=media&token=745a026f-65e2-456d-aa3c-84bbf081acd6",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Makoto"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-necro-removebg-preview.png?alt=media&token=0fa6fbc6-467b-4d7b-ad56-08c6dad8f70c",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Necro"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-oro-removebg-preview.png?alt=media&token=9706d037-07fd-451a-80dc-6ecba30270b2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Oro"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-q-removebg-preview.png?alt=media&token=4ff1707a-b13d-439d-866c-4a803f84a276",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Q"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-remy-removebg-preview.png?alt=media&token=64152ef5-e08f-4895-a779-819dba0de4e5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Remy"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-ryu-removebg-preview.png?alt=media&token=8349cc9c-d4d5-4dd4-b5e5-7ed26dbab769",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Ryu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-sean-removebg-preview.png?alt=media&token=3e3513c9-9ee4-4f7b-bad3-8534a1707890",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Sean"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-twelve-removebg-preview.png?alt=media&token=d853d4a6-2085-4d0d-8bee-8ea61449239a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Twelve"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-urien-removebg-preview.png?alt=media&token=714bb17c-d505-482e-abc3-1064d985b839",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Urien"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-yang-removebg-preview.png?alt=media&token=666f183c-3a58-42d3-95b9-169d62b4261e",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Yang"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2Fsf3tso-yun-removebg-preview.png?alt=media&token=18b3cc4c-4d90-4725-aee4-152b2d6c08f9",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "03Yun"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/SF3rd%20Strike%2FSFIII_Online_Edition_Logo.webp?alt=media&token=0090daf4-f5e0-438f-9051-b314c37b72ea",
+                        "Information": "banger",
+                        "Name": "Street Fighter 3rd Strike"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/ryu/ryu.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Ryu"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/ken/ken.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Ken"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/blanka/blanka.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Blanka"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/cammy/cammy.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Cammy"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/chunli/chunli.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Chun-Li"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/deejay/deejay.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Dee Jay"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/dhalsim/dhalsim.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Dhalsim"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/ehonda/ehonda.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06E. Honda"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/guile/guile.png",
+                            "Information": "",
+                            "Intro": "sonic boom",
+                            "Name": "06Guile"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/jamie/jamie.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Jamie"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/jp/jp.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06JP"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/juri/juri.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Juri"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/kimberly/kimberly.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Kimberly"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/lily/lily.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Lily"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/luke/luke.png",
+                            "Information": "",
+                            "Intro": "all my homies hate Luke",
+                            "Name": "06Luke"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/manon/manon.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Manon"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/marisa/marisa.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Marisa"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/zangief/zangief.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06Zangief"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.streetfighter.com/6/assets/images/index/logo_mark.png",
+                        "Information": "June 2023",
+                        "Name": "Street Fighter 6"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://wiki.gbl.gg/images/c/cc/VSAV_Anakaris_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Anakaris"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/3/3e/VSAV_Aulbath_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Rikuo"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/2/2e/VSAV_Bishamon_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Bishamon"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/11/VSAV_Bulleta_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Baby Bonnie Hood"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/0c/VSAV_Demitri_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Demitri"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/1f/VSAV_Felicia_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Felicia"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/e/e4/VSAV_Gallon_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Jon Talbain"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/5/55/VSAV_Jedah_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Jedah"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/f3/VSAV_Lei-Lei_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Hsien-Ko"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/18/VSAV_Lilith_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Lilith"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/ff/VSAV_Morrigan_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Morrigan"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/1c/VSAV_Q-Bee_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Q-Bee"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/13/VSAV_Sasquatch_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Sasquatch"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/16/VSAV_Victor_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Victor"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/4/4b/VSAV_Zabel_Art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Lord Raptor"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.gbl.gg/images/a/a1/VSAV_Logo.png",
+                        "Information": "aka Darkstalkers 3",
+                        "Name": "Vampire Savior"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FT8_-_Jin_Render.jpg?alt=media&token=e1335789-27bd-4bde-9bb3-6e02e3a6f4aa",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Jin"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FJack-8.jpg?alt=media&token=a0e2b373-d272-4036-afac-567c8e387932",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Jack-8"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FJun_Kazama_TK8.jpg?alt=media&token=53061993-e681-43e8-bf70-e73174005546",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Jun"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FKazuya_Mishima_TK8.jpg?alt=media&token=35dd0259-ce25-4efb-b8b7-3ba84cc296e0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Kazuya"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FKing_Tekken_8.jpg?alt=media&token=bd986e7f-79b7-4f67-83ce-3f18d64d4349",
+                            "Information": "",
+                            "Intro": "*jaguar sounds*",
+                            "Name": "08King"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FLars_Alexandersson_TK8.jpg?alt=media&token=b1441a04-2cbd-4691-a525-cdc05f9d29f6",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Lars"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FMarshall_Law_TK8.jpg?alt=media&token=6c5aeb62-90ee-4ee9-9f17-52e47903f3df",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Law"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FPaul_Phoenix_TK8.jpg?alt=media&token=bc53a625-b693-4b0f-9466-b851fca1a3ad",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Paul"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FTekken_8_-_Nina_Williams_Official_Render.jpg?alt=media&token=5cc8fd55-43bb-49c2-aad6-59791c034eac",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "08Nina"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FTekken8_icon.webp?alt=media&token=9fdef7a0-7ee1-4564-a279-0fc5a3051431",
+                        "Information": "",
+                        "Name": "Tekken 8"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FCassie_mk11.png?alt=media&token=be504931-403d-4401-a4a4-5fa43ac1352d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Cassie"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FCetrion_MK11.png?alt=media&token=e42db731-73ef-43e8-aebc-1e50c358d2ee",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Cetrion"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FD'vorah_mk11_2.png?alt=media&token=fbc70fa0-2b76-4e45-b8aa-5cb465f68bf4",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11D'vorah"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FErron_mk11.png?alt=media&token=2db2252f-2b66-4e96-94dc-e2f190a57b7e",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Erron Black"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FFrost_mk11.png?alt=media&token=5d6a4876-970d-462d-892b-f84724e106f0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Frost"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FGeras_MK11.png?alt=media&token=9ae0f999-1cc4-473b-9375-802d97453ab9",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Geras"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FHuman_kung_laos.png?alt=media&token=8ac0e189-40ad-4e67-9043-88a38672bddb",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kung Lao"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJacqui_mk11.png?alt=media&token=ded5f94b-0e19-468b-a48d-ade7ec4bdb87",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Jacqui"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJade_MK11.png?alt=media&token=9dc73525-9696-4f87-b19c-66b32dbf8e1b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Jade"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJax_mk11.png?alt=media&token=c40f00d1-5dd6-4949-aac1-0e125fcaef4c",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Jax"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJohnny_Render_mk_11_1.png?alt=media&token=7f67919a-cb70-4f9b-b48c-9506dc84ef65",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Johnny Cage"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKabal_MK11.png?alt=media&token=dc8fef25-d1f6-4657-a2c8-d05c27c469a7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kabal"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKano_MK11.png?alt=media&token=5b3efbf8-fc9d-4156-bf80-29f55a49845f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kano"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKitana_mk11.png?alt=media&token=9947a96c-4c2d-4322-a4b0-f6216685d2c5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kitana"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKollector_MK11.png?alt=media&token=c74ea0ef-29f8-4def-9d0f-66f14c8f2950",
+                            "Information": "",
+                            "Intro": "why isn't he named 'kollektor'?",
+                            "Name": "11Kollector"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKotal_mk11.png?alt=media&token=5c48deb7-0431-486d-b7f0-3f41d06045fd",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Kotal Kahn"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FLiu_Kang_mk11.png?alt=media&token=f79b0339-096b-4cd1-a63c-0fc23400f387",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Liu Kang"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11JohnRamboRender.png?alt=media&token=2c522daa-e6cb-4d71-87e1-530b359826fe",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11John Rambo"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11JokerRender.png?alt=media&token=2c0a331c-10ea-45c9-9538-a05277503614",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Joker"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11MileenaRender.png?alt=media&token=4825dfc2-08bf-4258-9ae0-63b0cb525880",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Mileena"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11RainRender.png?alt=media&token=02365653-27aa-4c11-9678-8ed8010b337d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Rain"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11TerminatorRender.png?alt=media&token=94fa71a3-ce66-4217-9e59-7ee838a007e0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Terminator"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11YoungShangTsung.png?alt=media&token=98d7cce0-55c9-4f85-802d-76eb5f5fd78a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Shang Tsung"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Baraka_Render.png?alt=media&token=0ce417b9-154d-499e-b853-9200c1c3d863",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Baraka"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Fujin_render-0.png?alt=media&token=d10c23c1-c180-4a08-a678-9d1c228ce3cb",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Fujin"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Skarlet_Render.png?alt=media&token=541b4740-3ad2-4b62-8561-3aeae59402a6",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Skarlet"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMk11sindelrender.png?alt=media&token=0e73a39f-3efe-467d-ac36-35a332d4dcdc",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Sindel"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FNightwolfRenderMK11.png?alt=media&token=6c2368b9-0a9d-4a60-a9d0-8c60ce9d5324",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Nightwolf"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FNoob_Saibot_mk11.png?alt=media&token=4a7e7d6d-9da5-46e3-b55b-a124bb736665",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Noob Saibot"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FRaidenmk11.png?alt=media&token=5972fe21-a5dd-44c8-9f1f-b49f78c62dd2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Raiden"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FRobocop_MK11_render.png?alt=media&token=3d7573e6-2dd4-4b85-ac2d-386d5d01d774",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Robocop"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FScorpion_MK11_3.png?alt=media&token=cf96e65c-705e-402e-bc51-83645e77c873",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Scorpion"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FShao_Khan_mk11_default_2.png?alt=media&token=31ee0036-7733-42bf-a91d-c8a9773fec68",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Shao Khan"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSheeva_Render.png?alt=media&token=f64cb02c-3c53-49f3-9d7b-8cadd4e60436",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Sheeva"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSonya_MK_11.png?alt=media&token=e70ecb5d-494d-4e6b-947a-40f101964bf4",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Sonya"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSpawn_Render.png?alt=media&token=53c1b5a2-6d33-486b-9644-b28a868949cd",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "11Spawn"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSub-Zero_Mk11.png?alt=media&token=0314b039-17d6-4711-99c1-8bb2f2528727",
+                            "Information": "",
+                            "Intro": "-273°",
+                            "Name": "11Sub-Zero"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMk11coverart.png?alt=media&token=61d6419f-ddba-4bb3-bfef-0e3a7fd5e265",
+                        "Information": "Initial release date: 23/04/2019",
+                        "Name": "Mortal Kombat 11"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FAkuma_UMvC3_artwork.png?alt=media&token=14e3e588-3ba7-4259-9a14-b466151007a2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Akuma"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FAmaterasu_UMvC3_artwork.png?alt=media&token=5dcbcf95-4d31-4f98-818e-c4abb907fa14",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Amaterasu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FArthur_UMvC3_artwork.png?alt=media&token=5bfe24ee-8802-464f-9f33-446821d018ac",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Arthur"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FCaptain_America_UMvC3_artwork.webp?alt=media&token=c2500662-f9e3-4b1c-bb77-53fe85a0c39b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Captain America"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FChris_UMvC3_artwork.png?alt=media&token=ac3d8873-fdd1-46e8-9aab-a767d19ad7fa",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Chris"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FChun-Li_UMvC3_artwork.png?alt=media&token=17a372e7-6d4a-4a80-9825-aeda8d7fc875",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Chun-Li"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FCrimson_Viper_UMvC3_artwork.png?alt=media&token=2e6ec2b3-c7ae-48e1-bb84-59002e149616",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Crimson Viper"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDante_UMvC3_artwork.png?alt=media&token=302b8dfb-c32c-41c5-8391-743829a0d92a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Dante"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDeadpool_UMvC3_artwork.png?alt=media&token=31840fa9-7edf-405f-a44c-f7ca69b1b376",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Deadpool"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDoctor_Doom_UMvC3_artwork.png?alt=media&token=9df7b24c-184c-49b7-af1e-4343d8bc0694",
+                            "Information": "",
+                            "Intro": "foot dive? foot dive.",
+                            "Name": "33Doctor Doom"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDoctor_Strange_UMvC3_artwork.png?alt=media&token=76c77df1-a989-4732-8685-9db7ec56107e",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Doctor Strange"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FDormammu_UMvC3_artwork.png?alt=media&token=ce440330-0cc9-4254-af69-7bf97b24bef0",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Dormammu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FFelicia_UMvC3_artwork.png?alt=media&token=60681064-1885-4d24-a3e6-6407a0b14d8b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Felicia"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FFirebrand_UMvC3_artwork.png?alt=media&token=f6609c89-8a65-45bf-99c9-ec11cff6c061",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Firebrand"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FFrank_West_UMvC3_artwork.png?alt=media&token=ee3f12a7-5ad3-4fc7-bb99-8225957f3619",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Frank West"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FGhost_Rider_UMvC3_artwork.png?alt=media&token=817a9ba8-3a8e-4e5d-9101-b1950c028af8",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Ghost Rider"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHaggar_UMvC3_artwork.png?alt=media&token=3a42a427-5d02-4470-afe9-6d226963a896",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Haggar"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHawkeye_UMvC3_artwork.png?alt=media&token=40dd6690-661b-4233-9657-718e860daa4a",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Hawkeye"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHsien-Ko_UMvC3_artwork.png?alt=media&token=35fdf2dc-c645-4f82-8bf9-4480f410f7b7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Hsien-Ko"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FHulk_UMvC3_artwork.webp?alt=media&token=2703f437-5bc0-4732-b3e2-3c6fb1100d04",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Hulk"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FIron_Fist_UMvC3_artwork.png?alt=media&token=39f4fec3-55b1-4670-809b-82eb08a99012",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Iron Fist"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FIron_Man_UMvC3_artwork.png?alt=media&token=4839c87c-1c18-42cb-95f5-b6be9e011544",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Iron Man"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FJill_UMvC3_artwork.png?alt=media&token=baba0620-bcd3-4dc8-82ed-e696dddab32f",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Jill"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FMODOK_UMvC3_artwork.png?alt=media&token=859daab6-bf71-476e-a89f-4c14766dd6b5",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33M.O.D.O.K."
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FMagneto_UMvC3_artwork.png?alt=media&token=af58f6e1-8a3b-4124-8df5-0feb500c482b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Magneto"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FMorrigan_UMvC3_artwork.png?alt=media&token=aefe78de-1230-4a8f-896e-7c3c7b6a377d",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Morrigan"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FNemesis_UMvC3_artwork.png?alt=media&token=60f3ec20-186c-465c-b82b-a26034e98ff7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Nemesis"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FNova_UMvC3_artwork.png?alt=media&token=48b8109f-96bb-482b-ac73-7dfb3e4c7d07",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Nova"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FPhoenix_UMvC3_artwork.png?alt=media&token=2eeaa2cb-be01-4f9d-adc0-34cfbd72b738",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Phoenix"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FPhoenix_Wright_UMvC3_artwork.png?alt=media&token=7c38b666-06fd-4a65-afa1-05d00223c392",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Phoenix Wright"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FRocket_Raccoon_UMvC3_artwork.png?alt=media&token=556802a4-16a9-4ee2-bd70-50fa0f1e2246",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Rocket Raccoon"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FRyu_UMvC3_artwork.png?alt=media&token=ebee6171-4280-4897-9422-16b7da0240a2",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Ryu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSentinel_UMvC3_artwork.png?alt=media&token=aa2c519d-92b0-48a0-801b-769d11ceb102",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Sentinel"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FShe-Hulk_UMvC3_artwork.png?alt=media&token=3450649f-6467-449a-ac65-1c320e01fa44",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33She-Hulk"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FShuma-Gorath_UMvC3_artwork.png?alt=media&token=65b0cb16-4ceb-4c1c-8ba2-43d39c433bab",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Shuma-Gorath"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSpencer_UMvC3_artwork.png?alt=media&token=f76dedb1-d0d5-4991-8b8f-0b6153d535ef",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Spencer"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSpider-Man_UMvC3_artwork.png?alt=media&token=69512910-99e2-4740-8e16-a9ba179b7462",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Spider-Man"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FStorm_UMvC3_artwork.png?alt=media&token=227546d5-c5ea-43a3-8aa7-edfbe0647934",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Storm"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FStrider_Hiryu_UMvC3_artwork.png?alt=media&token=1e793763-d315-486c-b6dc-992776ac3e1b",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Strider Hiryu"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FSuper-Skrull_UMvC3_artwork.png?alt=media&token=94aa956a-fa20-4565-857a-c2a458f7fc59",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Super Skrull"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FTaskmaster_UMvC3_artwork.png?alt=media&token=2d6dad3a-cc21-41fe-befb-477fc43c16e7",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Taskmaster"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FThor_UMvC3_artwork.png?alt=media&token=46619cf6-d0ca-4f04-9e2c-dd59e4755071",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Thor"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FTrish_UMvC3_artwork.png?alt=media&token=ffcc31db-c4c1-44f0-9e4d-eea9705baf87",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Trish"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FTron_UMvC3_artwork.png?alt=media&token=169dbe81-13d7-4dfe-bee8-a8234ebe50da",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Tron"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FVergil_UMvC3_artwork.png?alt=media&token=c6eaf7a4-ccd5-424a-a213-401e4a864116",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Vergil"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FViewtiful_Joe_UMvC3_artwork.png?alt=media&token=8d9817ff-0ed0-49e0-8ad7-cbdf16e45c15",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Viewtiful Joe"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FWesker_UMvC3_artwork.png?alt=media&token=b9e6ecae-0c55-44de-a5e7-20ff8fcf7dbe",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Wesker"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FWolverine_UMvC3_artwork.png?alt=media&token=d439f819-20bb-42c6-9573-72901a919300",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Wolverine"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FX-23_UMvC3_artwork.png?alt=media&token=242103b2-0419-4315-9afb-24a3186c601c",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33X-23"
+                        },
+                        {
+                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FZero_UMvC3_artwork.png?alt=media&token=ab168b06-3114-4f13-8025-b5440ddcac45",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "33Zero"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/UMVC3%2FUMvC3_logo-fixed.png?alt=media&token=a9e2c9fc-0973-4db6-800c-0955ce20ef48",
+                        "Information": "marvel",
+                        "Name": "Ultimate Marvel vs. Capcom 3"
                     }
                 }
             ]
