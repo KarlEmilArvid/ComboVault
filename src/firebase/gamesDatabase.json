@@ -297,7 +297,7 @@
                             "Image": "https://www.dustloop.com/wiki/images/5/5c/GGST_Anji_Mito_Portrait.png",
                             "Information": "",
                             "Intro": "",
-                            "Name": "05Anji"
+                            "Name": "05Anji Mito"
                         },
                         {
                             "Image": "https://www.dustloop.com/wiki/images/b/b7/GGST_Axl_Low_Portrait.png",
@@ -2065,6 +2065,169 @@
                         "Image": "https://www.dustloop.com/wiki/images/5/5e/BBCF_Logo.png",
                         "Information": "Fourth game in the BlazBlue series, released in arcades 2015 followed by home consoles in 2016",
                         "Name": "BlazBlue: Central Fiction"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/19/GGACR_Kliff_Undersn_Portrait.png",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "XXKliff Undersn"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/64/GGAC_Jam_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXJam Kuradoberi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b7/GGAC_Dizzy_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXDizzy"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/43/GGAC_ABA_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXA.B.A"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/ce/GGACR_Sol_Badguy_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXSol Badguy"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/f0/GGACR_Ky_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXKy Kiske"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/af/GGACR_Robo-Ky_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXRobo-Ky"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c5/GGAC_Testament_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXTestament"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/30/GGAC_Bridget_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXBridget"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/41/GGAC_Justice_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXJustice"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/ea/GGAC_Axl_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXAxl Low"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/aa/GGAC_Zappa_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXZappa"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/08/GGAC_Anji_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXAnji Mito"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5a/GGAC_Johnny_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXJohnny"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5e/GGAC_Order-Sol_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXOrder-Sol"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/59/GGAC_May_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXMay"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/df/GGAC_Baiken_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXBaiken"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/9d/GGAC_Faust_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXFaust"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/a2/GGAC_I-No_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXI-No"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/10/GGAC_Chipp_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXChipp Zanuff"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/e0/GGAC_Slayer_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXSlayer"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/73/GGAC_Millia_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXMillia Rage"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/58/GGAC_Eddie_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXEddie"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/60/GGACR_Venom_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXVenom"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/78/GGAC_Potemkin_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "XXPotemkin"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/a/a0/GGACR_Logo.png",
+                        "Information": "Final version of Guilty Gear XX, released in 2012, the original version was released in 2002",
+                        "Name": "Guilty Gear XX Accent Core Plus R"
                     }
                 }
             ]
