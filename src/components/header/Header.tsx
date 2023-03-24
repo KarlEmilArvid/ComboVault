@@ -50,21 +50,27 @@ const Header = () => {
     return (
         <header>
             <section className="header_container">
-                <img onClick={openOverlay} className="gearwheel_icon" src={kugghjul} alt="" />
+                <img onClick={openOverlay} className="gearwheel-icon" src={kugghjul} alt="" />
                 <section>
                     {param.character ? <h1 className='game-name'>{characterParam}</h1> : <h1 className='game-name'>{gameParam}</h1>}
                     {
                         param.hasOwnProperty('game') && param.hasOwnProperty('character') && param ?
-                            <>
-                                <h3 onClick={() => navigate('/')} className="home-param">/Home/</h3>
-                                <h3 onClick={() => navigate(-1)} className="game-param">{`${gameParam}`}</h3>
+                            <div className='param-wrapper'>
+                                <div>
+                                    <h3 onClick={() => navigate('/')} className="home-param">/Home/</h3>
+                                </div>
+                                <div>
+                                    <h3 onClick={() => navigate(-1)} className="game-param">{`${gameParam}`}</h3>
+                                </div>
                                 <h3>{`/${characterParam}`}</h3>
-                            </>
+                            </div>
                             : param.hasOwnProperty('game') ?
-                                <>
-                                    <h3 onClick={() => navigate(-1)} className="home-param">/Home/</h3>
+                                <div className='param-wrapper'>
+                                    <div>
+                                        <h3 onClick={() => navigate(-1)} className="home-param">/Home/</h3>
+                                    </div>
                                     <h3>{`${param.game?.replaceAll('-', ' ')}`}</h3>
-                                </>
+                                </div>
                                 :
                                 null
                     }
@@ -73,13 +79,13 @@ const Header = () => {
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>
-                    <li>
-                        <img className="gearwheel_icon" onClick={openOverlay} src={kugghjul} alt="" />
+                    <li className='gearwheel-list'>
+                        <img className="gearwheel-icon" onClick={openOverlay} src={kugghjul} alt="" />
                         <h2>Options</h2>
                     </li>
                     <li onClick={goHome}>
                         <img src="" alt="" />
-                        <h3>Home</h3>
+                        <h3 className='gear-title'>Home</h3>
                     </li>
                     {/*
                     <li>
@@ -89,14 +95,14 @@ const Header = () => {
                     */}
                     <li>
                         <img src="" alt="" />
-                        <h3>About us</h3>
+                        <h3 className='gear-title'>About us</h3>
                     </li>
                     <li>
                         <img src="" alt="" />
                         {auth.currentUser?.uid == undefined ?
-                            <h3 onClick={connectUser}>Sign in</h3>
+                            <h3 className='gear-title' onClick={connectUser}>Sign in</h3>
                             :
-                            <h3 onClick={disconnectUser}>Sign Out</h3>
+                            <h3 className='gear-title' onClick={disconnectUser}>Sign Out</h3>
                         }
                     </li>
                 </ul>

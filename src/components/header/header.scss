@@ -8,31 +8,49 @@ header {
         @include flex($justify: space-between);
         min-height: calc($baseline * 5);
 
-        .gearwheel_icon {
+        .gearwheel-icon {
             width: 1.5rem;
-            margin-left: $margin-small;
+            margin-left: $margin;
             cursor: pointer;
         }
 
         section {
+            @include flex($direction: column);
 
             h1,
             h2 {
                 text-align: center;
+                padding-bottom: .2rem;
             }
 
             h3 {
                 display: inline;
+                font-weight: 500;
+                padding-bottom: .2rem;
             }
 
-            .home-param,
-            .game-param {
-                //TODO: ändra storlek
-                cursor: pointer;
+            .param-wrapper {
+                @include flex;
+
+                div {
+                    @include flex;
+                    position: relative;
+
+                    .home-param {
+                        @include hoverLine($background-color: $borderColor);
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+
+                    .game-param {
+                        @include hoverLine($background-color: $borderColor);
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
             }
 
             .game-name {
-                //TODO: ändra storlek
                 margin-bottom: .5rem;
             }
         }
@@ -52,20 +70,43 @@ header {
         top: 0;
         z-index: 1;
 
+        .gearwheel-icon {
+            width: 1.5rem;
+            margin-left: $margin;
+            cursor: pointer;
+        }
+
         ul {
             @include flex($direction: column, $align: start);
-            margin-top: $margin-large;
+            //margin-top: $margin-large;
+
+            .gearwheel-list {
+                padding: 1.5rem 0 1rem 0;
+                margin: 0;
+            }
 
             li {
                 @include flex();
-                margin-left: $margin-large;
-                padding: 1.5rem 0;
+                //margin-left: $margin-large;
+                padding: 1rem 0;
+                margin-left: $margin;
                 cursor: pointer;
+                position: relative;
 
-                h2,
-                h3 {
+                //&:hover {
+                //    transform: scale(1.1);
+                //}
+
+                h2 {
                     margin-left: $margin;
-                    cursor: pointer;
+                }
+
+                h3 {
+                    @include hoverLine($background-color: $primaryBackground);
+                }
+
+                .gear-title {
+                    font-size: 2rem;
                 }
             }
         }
