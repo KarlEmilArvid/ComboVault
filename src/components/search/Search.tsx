@@ -1,14 +1,15 @@
 import './search.scss'
-import search from '../../images/search.svg';
+import searchIcon from '../../images/search.svg';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 
 type Props = {
     allGames: any[];
+    availableSearches: (foundNames: string[] | []) => void
 }
 
-const Search = ({ allGames }: Props) => {
+const Search = ({ allGames, availableSearches }: Props) => {
 
     const [searching, setSearching] = useState<boolean>(false);
     const [ searchTerm, setSearchTerm ] = useState<string>('');
@@ -53,7 +54,7 @@ const Search = ({ allGames }: Props) => {
     useEffect(() => {
 
         if ( searchQuery?.length > 0 ) {
-            let names: string[] = [];
+            const names: string[] = [];
             searchQuery?.forEach((query) => {
 
                 const tempString = searchTerm.toLowerCase();
@@ -63,19 +64,24 @@ const Search = ({ allGames }: Props) => {
                     names.push(query);
                 }
             })
-    
+
             setFoundNames(names);
+    
         }
 
     }, [searchTerm]);
-    console.log('Namnen på vad som finns i squares: ', searchQuery);
-    console.log('Matchningar till namnen i squares: ', foundNames);
-    console.log('sök termen är: ', searchTerm);
+    
+    useEffect(() => {
+
+        availableSearches(foundNames);
+
+    }, [foundNames]);
+
 
     return (
         <section className="search_wrapper">
             <section className="search_toggle">
-                <img onClick={ () => setSearching(!searching) } src={ search } alt="" />
+                <img onClick={ () => setSearching(!searching) } src={ searchIcon } alt="" />
                 {
                     searching ?
                     <input type="text" onChange={ (e) => setSearchTerm(e.target.value) } />

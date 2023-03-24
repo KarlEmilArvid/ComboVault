@@ -9,7 +9,11 @@ import { signOut } from 'firebase/auth';
 import { RootState } from '../../store';
 import { useSelector } from 'react-redux';
 
-const Header = () => {
+type Props = {
+    availableSearches: (foundNames: string[] | []) => void
+}
+
+const Header = ({availableSearches}: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
     const navigate = useNavigate()
     const param = useParams();
@@ -72,7 +76,7 @@ const Header = () => {
                                 null
                     }
                 </section>
-                <Search allGames={allGames}/>
+                <Search allGames={allGames} availableSearches={availableSearches}/>
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>

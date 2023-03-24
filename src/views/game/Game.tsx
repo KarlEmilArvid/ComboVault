@@ -14,11 +14,15 @@ type Props = {
     showCharacter: (name: string, image: string) => void
     games: GameType;
     pickGame: (gameName: string, gameImage: string) => void
+    availableSearches: (foundNames: string[] | []) => void
+    foundGames: string[] | [];
 }
 
-const Game = ({ showCharacter, games, pickGame }: Props) => {
+const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames }: Props) => {
     const [character, setCharacter] = useState<[]>()
     const dispatchedGames = useSelector((state: any) => state.games)
+
+    console.log(foundGames);
 
     useEffect(() => {
         const gameArray = dispatchedGames.Games
@@ -38,7 +42,7 @@ const Game = ({ showCharacter, games, pickGame }: Props) => {
 
     return (
         <>
-            <Header />
+            <Header availableSearches={availableSearches} />
             <main className='square-wrapper'>
                 {characterArray.map((char: any, i: number) => {
                     return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />

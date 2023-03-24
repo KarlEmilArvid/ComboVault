@@ -4,7 +4,7 @@ import { reducer as postsReducer } from './postsReducer'
 
 const rootReducer: any = combineReducers({
     games: gamesReducer,
-    posts: postsReducer
+    posts: postsReducer,
 })
 
 export { rootReducer }

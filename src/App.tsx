@@ -25,6 +25,7 @@ type GameType = {
 function App() {
 	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
 	const [game, setGame] = useState<GameType>({ gameName: '', gameImage: '' })
+	const [ foundGames, setFoundGames ] = useState<string[]>(['']);
 	const dispatch = useDispatch()
 	const navigate = useNavigate();
 
@@ -43,12 +44,16 @@ function App() {
 		navigate(`/${name?.replace(/\s+/g, '-')}`);
 	}
 
+	const availableSearches = (foundNames: string[]) => {
+        setFoundGames(foundNames);
+    }
+
 	return (
 		<div className='App'>
 			<Routes>
-				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame} />} />
-				<Route path='/:game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame} />} />
-				<Route path='/:game/:character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame} />} />
+				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame} availableSearches={availableSearches} foundGames={foundGames} />} />
+				<Route path='/:game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame} availableSearches={availableSearches} foundGames={foundGames} />} />
+				<Route path='/:game/:character' element={<Character character={character} showCharacter={showCharacter} pickGame={pickGame} availableSearches={availableSearches} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>
