@@ -3,7 +3,7 @@
 
 .toggle-wrapper--border {
     @include containerBorder;
-    @include filterShadow;
+    box-shadow: $bigShadow;
     width: 90%;
     margin: $margin auto;
     border-radius: 0.4rem;
@@ -29,6 +29,7 @@
 
             p {
                 margin-top: .2rem;
+                color: $primaryTextColor;
             }
         }
     }

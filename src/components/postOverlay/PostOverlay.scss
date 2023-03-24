@@ -33,8 +33,8 @@
         @include flex($direction: column);
         border-radius: calc($baseline / 2);
         position: relative;
-        width: 80%;
-        margin: calc($baseline * 5);
+        width: 90%;
+        margin: auto;
 
         .input-border {
             @include containerBorder;
@@ -66,14 +66,9 @@
             @include flex ($direction: column);
             @include containerBorder;
             margin-top: 8rem;
-            width: 25%;
 
-            button {
+            .overlay-buttons {
                 margin-top: 0;
-                background-color: $container-background;
-                color: $secondaryTextColor;
-                font-weight: 600;
-                width: 100%;
             }
         }
 
@@ -106,13 +101,13 @@
 
         .button-section {
             @include flex;
-            width: 100%;
+            padding: .2rem;
+            margin-top: $margin-large;
+            background: linear-gradient(to right, #8DBBFF, #597EFF, #504eee);
 
             .post-button {
                 @include postButton;
-                width: 70%;
-                margin-top: $margin-large;
-                border-left: 3px solid red;
+                width: 10em;
 
                 span:nth-child(1) {
                     color: red;
@@ -121,9 +116,7 @@
 
             .post-button-active {
                 @include postButton;
-                width: 70%;
-                margin-top: $margin-large;
-                border-right: 3px solid red;
+                width: 10em;
 
                 span:nth-child(2) {
                     color: red;
@@ -131,9 +124,9 @@
             }
         }
 
-        button {
+        .overlay-buttons {
             @include postButton;
-            width: 70%;
+            width: 8em;
             margin-top: $margin-large;
         }
 
@@ -174,8 +167,7 @@
             @include flex($direction: column);
             border-radius: calc($baseline / 2);
             position: relative;
-            width: 80%;
-            margin: calc($baseline * 5);
+            width: 70%;
 
             .input-border {
                 @include containerBorder;
@@ -207,14 +199,9 @@
                 @include containerBorder;
                 @include flex ($direction: column);
                 margin-top: 8rem;
-                width: 25%;
 
-                button {
+                .overlay-buttons {
                     margin-top: 0;
-                    background-color: $container-background;
-                    color: $secondaryTextColor;
-                    font-weight: 600;
-                    width: 100%;
                 }
             }
 
@@ -247,13 +234,10 @@
 
             .button-section {
                 @include flex;
-                width: 100%;
 
                 .post-button {
                     @include postButton;
-                    width: 70%;
-                    margin-top: $margin-large;
-                    border-left: 3px solid red;
+                    width: 10em;
 
                     span:nth-child(1) {
                         color: red;
@@ -262,20 +246,12 @@
 
                 .post-button-active {
                     @include postButton;
-                    width: 70%;
-                    margin-top: $margin-large;
-                    border-right: 3px solid red;
+                    width: 10em;
 
                     span:nth-child(2) {
                         color: red;
                     }
                 }
-            }
-
-            button {
-                @include postButton;
-                width: 70%;
-                margin-top: $margin-large;
             }
 
             input {

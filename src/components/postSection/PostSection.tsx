@@ -61,7 +61,7 @@ const PostSection = ({ name, characterName }: Props) => {
     }
 
     useEffect(() => {
-        const privatePost = allPosts?.filter((post: any) => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
+        const privatePost = allPosts?.filter((post: any) => post.Name === characterName && post.User === auth.currentUser?.uid)
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter((post: any) => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)

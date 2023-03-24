@@ -3,7 +3,7 @@
 
 .square-border {
     @include squareBorder;
-    @include filterShadow;
+    box-shadow: $bigShadow;
     width: 112px;
     height: 112px;
     margin: calc($baseline * 2);

@@ -133,16 +133,16 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                             <button className={activeButton} onClick={() => setPrivatePost(!privatePost)}><span>Public</span> / <span>Private</span></button>
                         </section>
                         <section className="create-button--border">
-                            <button onClick={addPost}>{overlayButton}</button>
+                            <button className='overlay-buttons' onClick={addPost}>{overlayButton}</button>
                         </section>
                     </>
                     :
                     <section className='delete-section'>
                         <section className="delete-button--border">
-                            <button onClick={addPost}>Delete post</button>
+                            <button className='overlay-buttons' onClick={addPost}>Delete post</button>
                         </section>
                         <section className="delete-button--border">
-                            <button onClick={() => setOverlay(false)}>Keep post</button>
+                            <button className='overlay-buttons' onClick={() => setOverlay(false)}>Keep post</button>
                         </section>
                     </section>
                 }

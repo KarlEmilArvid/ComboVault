@@ -2,7 +2,7 @@
 
 .posts-wrapper--border {
     @include containerBorder;
-    @include filterShadow;
+    box-shadow: $bigShadow;
     width: 90%;
     margin: auto;
 
