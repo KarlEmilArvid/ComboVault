@@ -11,9 +11,10 @@ import { useSelector } from 'react-redux';
 
 type Props = {
     availableSearches: (foundNames: string[] | []) => void
+    searchFunction: (searchTerm: string) => void
 }
 
-const Header = ({availableSearches}: Props) => {
+const Header = ({availableSearches, searchFunction}: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
     const navigate = useNavigate()
     const param = useParams();
@@ -76,7 +77,7 @@ const Header = ({availableSearches}: Props) => {
                                 null
                     }
                 </section>
-                <Search allGames={allGames} availableSearches={availableSearches}/>
+                <Search allGames={allGames} availableSearches={availableSearches} searchFunction={searchFunction}/>
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>

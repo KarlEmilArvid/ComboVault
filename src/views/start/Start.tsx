@@ -10,9 +10,11 @@ type Props = {
     pickGame: (gameName: string, gameImage: string) => void
     foundGames: string[];
     availableSearches: (foundNames: string[] | []) => void
+    searching: string | undefined;
+    searchFunction: (searchTerm: string) => void;
 }
 
-const Start = ({ showCharacter, pickGame, availableSearches, foundGames }: Props) => {
+const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchFunction, searching }: Props) => {
     const [games, setGames] = useState<GAME>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
@@ -28,7 +30,9 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames }: Props
         game.GameTitle.map((game: any) => {
             if (foundGames.length > 0 && foundGames.includes(game.Game.Name)) {
                 gameImages.push(game.Game.Image)
-            } else if (foundGames.length == 0) {
+            } else if (!foundGames.includes(game.Game.Name) && searching!.length > 0) {
+                return
+            } else if (searching!.length == 0) {
                 gameImages.push(game.Game.Image)
             }
         })
@@ -40,7 +44,9 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames }: Props
         game.GameTitle.map((game: any) => {
             if (foundGames.length > 0 && foundGames.includes(game.Game.Name)) {
                 gameNames.push(game.Game.Name)
-            } else if (foundGames.length == 0) {
+            } else if (!foundGames.includes(game.Game.Name) && searching!.length > 0) {
+                return
+            } else if (searching!.length == 0) {
                 gameNames.push(game.Game.Name)
             }
         })
@@ -50,7 +56,7 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames }: Props
 
     return (
         <>
-            <Header availableSearches={availableSearches} />
+            <Header availableSearches={availableSearches} searchFunction={searchFunction}/>
             <main className='square-wrapper'>
                 {
                     games?.map((square: any, i: number) => {

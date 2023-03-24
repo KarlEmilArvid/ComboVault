@@ -7,9 +7,10 @@ import { useParams } from 'react-router';
 type Props = {
     allGames: any[];
     availableSearches: (foundNames: string[] | []) => void
+    searchFunction: (searchTerm: string) => void
 }
 
-const Search = ({ allGames, availableSearches }: Props) => {
+const Search = ({ allGames, availableSearches, searchFunction }: Props) => {
 
     const [searching, setSearching] = useState<boolean>(false);
     const [ searchTerm, setSearchTerm ] = useState<string>('');
@@ -68,6 +69,8 @@ const Search = ({ allGames, availableSearches }: Props) => {
             setFoundNames(names);
     
         }
+
+        searchFunction(searchTerm);
 
     }, [searchTerm]);
     

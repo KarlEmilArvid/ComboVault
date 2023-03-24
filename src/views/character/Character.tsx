@@ -16,9 +16,10 @@ type Props = {
     character: CharacterType
     pickGame: (gameName: string, gameImage: string) => void
     availableSearches: (foundNames: string[] | []) => void
+    searchFunction: (searchTerm: string) => void
 }
 
-const Character = ({ character, showCharacter, pickGame, availableSearches }: Props) => {
+const Character = ({ character, showCharacter, pickGame, availableSearches, searchFunction }: Props) => {
     const [name, setName] = useState<string>('My Posts')
 
     const getName = (name: string) => {
@@ -27,7 +28,7 @@ const Character = ({ character, showCharacter, pickGame, availableSearches }: Pr
 
     return (
         <div>
-            <Header availableSearches={availableSearches}/>
+            <Header availableSearches={availableSearches} searchFunction={searchFunction}/>
             <CharacterCard character={character} showCharacter={showCharacter} pickGame={pickGame} />
             <ToggleComponent getName={getName} />
             {
