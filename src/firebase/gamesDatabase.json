@@ -1839,6 +1839,235 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c1/BBCF_Es_Portrait.png",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "04Es"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/f7/BBCF_Hazama_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Hazama"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/04/BBCF_Naoto_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Naoto Kurogane"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1f/BBCF_Susanoo_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Susanoo"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/13/BBCF_Hibiki_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Hibiki Kohaku"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b3/BBCF_Tsubaki_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Tsubaki Yayoi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/36/BBCF_Mai_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Mai Natsume"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/31/BBCF_Nu_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Nu-13"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5f/BBCF_Kagura_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Kagura Mutsuki"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/2f/BBCF_Ragna_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Ragna the Bloodedge"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c1/BBCF_Jubei_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Jubei"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/50/BBCF_Jin_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Jin Kisaragi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/10/BBCF_Kokonoe_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Kokonoe"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/13/BBCF_Lambda_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Lambda-11"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/89/BBCF_Bullet_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Bullet"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1e/BBCF_Celica_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Celica A. Mercury"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/2e/BBCF_Noel_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Noel Vermillion"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d5/BBCF_Izanami_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Izanami"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7e/BBCF_Rachel_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Rachel Alucard"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/96/BBCF_Izayoi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Izayoi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7d/BBCF_Azrael_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Azrael"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/f8/BBCF_Tager_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Iron Tager"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/07/BBCF_Litchi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Litchi Faye Ling"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/cc/BBCF_Makoto_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Makoto Nanaya"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/78/BBCF_Nine_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Nine the Phantom"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/52/BBCF_Hakumen_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Hakumen"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/3b/BBCF_Arakune_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Arakune"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/23/BBCF_Amane_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Amane Nishiki"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/fe/BBCF_Platinum_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Platinum the Trinity"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/65/BBCF_Relius_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Relius Clover"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/70/BBCF_Terumi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Yuuki Terumi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/a7/BBCF_Carl_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Carl Clover"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d4/BBCF_Bang_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Bang Shishigami"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/e3/BBCF_Valkenhayn_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Valkenhayn R. Hellsing"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/e4/BBCF_Mu_Portrait.png",
+                            "Information": "",
+                            "Intro": "What did the cow say when crossing the road? muuu",
+                            "Name": "04Mu-12"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/02/BBCF_Taokaka_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "04Taokaka"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/5/5e/BBCF_Logo.png",
+                        "Information": "Fourth game in the BlazBlue series, released in arcades 2015 followed by home consoles in 2016",
+                        "Name": "BlazBlue: Central Fiction"
+                    }
+                }
+            ]
         }
     ]
 }
