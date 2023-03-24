@@ -6,12 +6,20 @@ import { useParams } from 'react-router-dom';
 import { auth, signIn } from '../../firebase/firebase';
 import './header.scss'
 import { signOut } from 'firebase/auth';
+import { RootState } from '../../store';
+import { useSelector } from 'react-redux';
 
-const Header = () => {
+type Props = {
+    availableSearches: (foundNames: string[] | []) => void
+    searchFunction: (searchTerm: string) => void
+}
+
+const Header = ({availableSearches, searchFunction}: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
     const navigate = useNavigate()
     const param = useParams();
-    console.log(param);
+    const allGames = useSelector((state: RootState) => state.games.Games);
+
 
     const openOverlay = () => {
         setOverlay(!overlay)
@@ -75,7 +83,7 @@ const Header = () => {
                                 null
                     }
                 </section>
-                <Search />
+                <Search allGames={allGames} availableSearches={availableSearches} searchFunction={searchFunction}/>
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>
