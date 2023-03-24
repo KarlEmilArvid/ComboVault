@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpointDesktop) {
     .square-border {
         @include squareBorder;
         width: 142px;

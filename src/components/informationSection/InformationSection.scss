@@ -11,7 +11,7 @@
         @include flex($direction: row-reverse);
         width: 100%;
         background-color: $secondaryBackground;
-        border-radius: .2rem;
+        border-radius: $borderRadius;
 
         .information-section {
             @include flex($direction: column);
@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpointDesktop) {
     .information-wrapper--border {
         @include containerBorder;
         width: 70%;
@@ -40,7 +40,7 @@
             @include flex($direction: row-reverse);
             width: 100%;
             background-color: $secondaryBackground;
-            border-radius: .2rem;
+            border-radius: $borderRadius;
 
             .information-section {
                 @include flex($direction: column);

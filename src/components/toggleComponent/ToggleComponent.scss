@@ -11,7 +11,7 @@
     .toggle-wrapper {
         @include flex($wrap: wrap);
         width: 100%;
-        border-radius: .2rem;
+        border-radius: $borderRadius;
         background-color: $secondaryBackground;
 
         figure {
@@ -35,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpointDesktop) {
     .toggle-wrapper--border {
         width: 70%;
     }

@@ -1,5 +1,5 @@
 $baseline: 1rem;
-$breakpointDesktop: 820px;
+$breakpointDesktop: 768px;
 
 $primaryTextColor: #FBF6F6;
 $secondaryTextColor: #343030;
@@ -10,10 +10,10 @@ $dark: #343030;
 
 $borderColor: #597EFF;
 $borderStyle: 1px solid $borderColor;
-$borderRadius: $baseline * 0.5;
+$borderRadius: $baseline * 0.2;
 $container-background: #F4F3FF;
 
-$shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+$shadow: 0px 0px 4px 1px rgba(2, 2, 2, 0.6);
 $bigShadow: 0px 0px 1rem 1px rgba(2, 2, 2, 0.6);
 
 $scrollTrack: #292b2d;
