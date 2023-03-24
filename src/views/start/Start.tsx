@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 import { GAME } from '../../types/types'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
-import './start.scss'
 
 type Props = {
     showCharacter: (name: string, image: string) => void

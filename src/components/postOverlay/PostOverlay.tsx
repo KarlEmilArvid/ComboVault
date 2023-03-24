@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react'
 import { doc, setDoc, updateDoc, deleteDoc, getDocs, collection } from 'firebase/firestore'
 import { db } from '../../firebase/firebase'
 import { auth } from '../../firebase/firebase'
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { actions as posts } from '../../redux/postsReducer';
 import './PostOverlay.scss'
-import { RootState } from '../../store';
 
 type Props = {
     overlay: boolean
@@ -35,17 +34,14 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     const [postText, setPostText] = useState<string>()
     const [privatePost, setPrivatePost] = useState<boolean>(true)
     const [activeButton, setActiveButton] = useState<string>('post-button')
-
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
 
     useEffect(() => {
         overlay ? setShowOverlay('post-overlay-wrapper-show') : setShowOverlay('post-overlay-wrapper')
-
         if (overlayButton == 'Save Changes') {
-            setPostTitle(currentPost.postTitle);
-            setPostText(currentPost.postText);
+            setPostTitle(currentPost.postTitle)
+            setPostText(currentPost.postText)
         }
-
     }, [])
 
     useEffect(() => {
@@ -57,11 +53,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     }
 
     const addPost = () => {
-
         if (overlayButton == 'Create Post') {
-    
             const postId = Math.random() * 1000 ** 100;
-    
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
                 await setDoc(doc(db, `${characterName}`, `${postId}`), {
@@ -72,7 +65,6 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     Private: privatePost,
                     PostId: postId
                 })
-                
                 dispatch(posts.createPosts({
                     User: `${user}`,
                     Name: characterName,
@@ -80,16 +72,13 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     PostText: postText,
                     Private: privatePost,
                     PostId: Id
-                }));
-
-                getAllPosts();
-
+                }))
+                getAllPosts()
             })()
             setOverlay(false)
         }
 
         if (overlayButton == 'Save Changes') {
-
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
                 await updateDoc(doc(db, `${characterName}`, `${Id}`), {
@@ -100,19 +89,15 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     Private: privatePost,
                     PostId: Id
                 })
-                getAllPosts();
-
+                getAllPosts()
             })()
             setOverlay(false)
         }
 
-
         if (overlayButton == 'Delete') {
             (async () => {
-                await deleteDoc(doc(db, `${characterName}`, `${Id}`));
-
-                getAllPosts();
-        
+                await deleteDoc(doc(db, `${characterName}`, `${Id}`))
+                getAllPosts()
             })()
             setOverlay(false)
         }
@@ -121,12 +106,11 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     const getAllPosts = () => {
         (async () => {
             const querySnapshot = await getDocs(collection(db, `${characterName}`))
-                    const tempArray: any[] = []
-                    querySnapshot.forEach((doc) => {
-                        tempArray.push(doc.data())
-                    })
-
-                    dispatch(posts.getPosts(tempArray));
+            const tempArray: any[] = []
+            querySnapshot.forEach((doc) => {
+                tempArray.push(doc.data())
+            })
+            dispatch(posts.getPosts(tempArray))
         })()
     }
 
@@ -138,33 +122,27 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             <section className="create-post-container">
                 {overlayButton == 'Save Changes' || overlayButton == 'Create Post' ?
                     <>
-
                         <h2>{pickedTitle}</h2>
-
                         <section className="input-border">
                             <input type="text" placeholder='post name:' defaultValue={currentPost.postTitle} onChange={(e) => setPostTitle(e.target.value)} />
                         </section>
-
                         <section className="text-border">
                             <textarea className="text-input" placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
                         </section>
-
                         <section className='button-section'>
                             <button className={activeButton} onClick={() => setPrivatePost(!privatePost)}><span>Public</span> / <span>Private</span></button>
                         </section>
-
                         <section className="create-button--border">
-                            <button onClick={addPost}>{overlayButton}</button>
+                            <button className='overlay-buttons' onClick={addPost}>{overlayButton}</button>
                         </section>
                     </>
                     :
                     <section className='delete-section'>
-
                         <section className="delete-button--border">
-                            <button onClick={addPost}>YES</button>
+                            <button className='overlay-buttons' onClick={addPost}>Delete post</button>
                         </section>
                         <section className="delete-button--border">
-                            <button onClick={() => setOverlay(false)}>NO</button>
+                            <button className='overlay-buttons' onClick={() => setOverlay(false)}>Keep post</button>
                         </section>
                     </section>
                 }

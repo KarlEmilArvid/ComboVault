@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getDocs, collection, doc, getDoc } from 'firebase/firestore'
+import { getDocs, collection } from 'firebase/firestore'
 import { auth, db, signIn } from '../../firebase/firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
@@ -23,19 +23,18 @@ type Posts = {
 }
 
 type CurrentPost = {
-    postTitle: string;
-    postText: string;
+    postTitle: string
+    postText: string
 }
 
 const PostSection = ({ name, characterName }: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
-    //const [allPosts, setAllPosts] = useState<Posts[]>([])
     const [privatePosts, setPrivatePosts] = useState<any[]>()
     const [publicPosts, setPublicPosts] = useState<any[]>()
     const [pickedTitle, setPickedTitle] = useState<string>()
     const [overlayButton, setOverlayButton] = useState<string>()
     const [postId, setPostId] = useState<number>(0);
-    const [currentPost, setCurrentPost] = useState<CurrentPost>({ postTitle: '', postText: '' });
+    const [currentPost, setCurrentPost] = useState<CurrentPost>({ postTitle: '', postText: '' })
 
     const overlayTitle = 'New Post';
     const currentButton = 'Create Post';
@@ -53,29 +52,27 @@ const PostSection = ({ name, characterName }: Props) => {
                 tempArray.push(doc.data())
             })
             console.log("här hämtar vi posts", tempArray)
-            dispatch(posts.getPosts(tempArray));
-
+            dispatch(posts.getPosts(tempArray))
         })()
     }, [])
 
     const connectUser = () => {
         signIn()
     }
-    
 
     useEffect(() => {
-        const privatePost = allPosts?.filter((post: any) => post.Name === characterName && post.User === auth.currentUser?.uid && post.Private)
+        const privatePost = allPosts?.filter((post: any) => post.Name === characterName && post.User === auth.currentUser?.uid)
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter((post: any) => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
     }, [characterName, allPosts, overlay])
 
     const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
-        setPickedTitle(overlayTitle);
-        setOverlayButton(currentButton);
-        setCurrentPost(post);
-        setPostId(Id);
-        setOverlay(true);
+        setPickedTitle(overlayTitle)
+        setOverlayButton(currentButton)
+        setCurrentPost(post)
+        setPostId(Id)
+        setOverlay(true)
     }
 
     return (
@@ -100,9 +97,7 @@ const PostSection = ({ name, characterName }: Props) => {
                 </ul>
                 {auth.currentUser?.uid != undefined ?
                     <section className="new-post-button--border">
-
                         <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
-
                     </section>
                     :
                     <section className="posts-wrapper--loggedout">

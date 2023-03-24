@@ -39,14 +39,17 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
         })
     }, [validCharacter])
 
+    console.log(intro)
+
     return (
-        <section className='character-wrapper'>
-            <Square name={validCharacter.characterName} image={validCharacter.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} pickGame={pickGame} />
-            <section className='character-container'>
-                <h2 className='character-name'>{validCharacter.characterName.slice(2)}</h2>
-                <p className='character-intro'>{intro}</p>
+        <div className='character-border'>
+            <section className='character-wrapper'>
+                <Square name={validCharacter.characterName} image={validCharacter.characterImage} gameImage={''} gameName={''} showCharacter={showCharacter} pickGame={pickGame} />
+                <section className='character-container'>
+                    <p className='character-intro'>{intro}</p>
+                </section>
             </section>
-        </section>
+        </div>
     )
 }
 

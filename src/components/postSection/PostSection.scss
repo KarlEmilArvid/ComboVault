@@ -1,10 +1,10 @@
 @import '../../scss//layout.scss';
 
 .posts-wrapper--border {
-
+    @include containerBorder;
+    box-shadow: $bigShadow;
     width: 90%;
     margin: auto;
-    @include containerBorder;
 
     .posts-wrapper {
         @include flex($direction: column);
@@ -14,11 +14,10 @@
         h2 {
             margin-top: $baseline;
         }
-    
-        .new-post-button--border {
 
-            width: 40%;
+        .new-post-button--border {
             @include containerBorder;
+            width: 40%;
             margin: $margin-large;
 
             .new-post-button {
@@ -27,11 +26,10 @@
                 color: $secondaryTextColor;
                 background-color: $container-background;
             }
-
         }
-    
+
         .posts-list {
-            width: 80%;
+            width: 100%;
         }
     }
 }
@@ -42,7 +40,6 @@
     background-color: $secondaryBackground;
 
     .sign-in-button--border {
-
         @include containerBorder;
 
         .sign-in-button {
@@ -54,5 +51,59 @@
             cursor: pointer;
         }
     }
+}
 
+@media screen and (min-width: $breakpointDesktop) {
+    .posts-wrapper--border {
+        @include containerBorder;
+        width: 70%;
+        margin: auto;
+
+        .posts-wrapper {
+            @include flex($direction: column);
+            width: 100%;
+            background-color: $secondaryBackground;
+
+            h2 {
+                margin-top: $baseline;
+            }
+
+            .new-post-button--border {
+                @include containerBorder;
+                width: 20%;
+                margin: $margin-large;
+                //TODO: lägg till skugga
+
+                .new-post-button {
+                    @include postButton;
+                    font-weight: 600;
+                    color: $secondaryTextColor;
+                    background-color: $container-background;
+                }
+            }
+
+            .posts-list {
+                width: 80%;
+            }
+        }
+    }
+
+    .posts-wrapper--loggedout {
+        @include flex();
+        min-height: 8rem;
+        background-color: $secondaryBackground;
+
+        .sign-in-button--border {
+            @include containerBorder;
+
+            .sign-in-button {
+                height: 2rem;
+                width: 6rem;
+                border: none;
+                color: $secondaryTextColor;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
 }

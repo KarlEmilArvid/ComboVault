@@ -1,17 +1,17 @@
 @import '../../scss//layout.scss';
 
 .information-wrapper--border {
-
+    @include containerBorder;
+    box-shadow: $bigShadow;
     width: 90%;
     margin: auto;
-    @include containerBorder;
     border-radius: .4rem;
 
     .information-wrapper {
         @include flex($direction: row-reverse);
         width: 100%;
         background-color: $secondaryBackground;
-        border-radius: .2rem;
+        border-radius: $borderRadius;
 
         .information-section {
             @include flex($direction: column);
@@ -24,6 +24,36 @@
             p {
                 margin: $margin;
                 padding: $padding;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpointDesktop) {
+    .information-wrapper--border {
+        @include containerBorder;
+        width: 70%;
+        margin: auto;
+        border-radius: .4rem;
+
+        .information-wrapper {
+            @include flex($direction: row-reverse);
+            width: 100%;
+            background-color: $secondaryBackground;
+            border-radius: $borderRadius;
+
+            .information-section {
+                @include flex($direction: column);
+                margin: auto;
+
+                h2 {
+                    margin: $margin;
+                }
+
+                p {
+                    margin: $margin;
+                    padding: $padding;
+                }
             }
         }
     }

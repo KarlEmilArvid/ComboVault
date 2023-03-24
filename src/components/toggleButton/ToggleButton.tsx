@@ -13,9 +13,7 @@ const ToggleButton = ({ name, getName }: Props) => {
     return (
         <>
             <div className="toggle-border">
-
                 <button className="toggle-button" onClick={toggle}>{name}</button>
-
             </div>
         </>
     )

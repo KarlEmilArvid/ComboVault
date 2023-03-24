@@ -17,11 +17,11 @@ const ToggleComponent = ({ getName }: Props) => {
                 <ToggleButton name='Public Posts' getName={getName} />
                 <ToggleButton name='Information' getName={getName} />
                 <figure>
-                    <img src={star} alt="Favourites/Starred" />
-                    <p>Favourites/Starred</p>
+                    <img src={star} alt="Favourites" />
+                    <p>Favourites</p>
                 </figure>
             </section >
-            
+
         </div>
     )
 }
