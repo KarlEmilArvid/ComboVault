@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router'
 import Header from '../../components/header/Header'
 import Square from '../../components/square/Square'
 import './game.scss'
@@ -22,8 +23,14 @@ type Props = {
 const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, searchFunction, searching }: Props) => {
     const [character, setCharacter] = useState<[]>()
     const dispatchedGames = useSelector((state: any) => state.games)
+    const navigate = useNavigate()
 
-    console.log(foundGames);
+    //navigerar oss till start om vi inte går från start>spel>karaktär
+    useEffect(() => {
+        if (!games.gameName && !games.gameImage) {
+            return navigate('/')
+        }
+    }, [])
 
     useEffect(() => {
         const gameArray = dispatchedGames.Games
@@ -51,7 +58,7 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
 
     return (
         <>
-            <Header availableSearches={availableSearches} searchFunction={searchFunction}/>
+            <Header availableSearches={availableSearches} searchFunction={searchFunction} />
             <main className='square-wrapper'>
                 {characterArray.map((char: any, i: number) => {
                     if (i < characterArray.length) {

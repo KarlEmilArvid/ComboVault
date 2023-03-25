@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router'
 import CharacterCard from '../../components/characterCard/CharacterCard'
 import Header from '../../components/header/Header'
 import InformationSection from '../../components/informationSection/InformationSection'
@@ -21,14 +22,21 @@ type Props = {
 
 const Character = ({ character, showCharacter, pickGame, availableSearches, searchFunction }: Props) => {
     const [name, setName] = useState<string>('My Posts')
-
+    const navigate = useNavigate()
     const getName = (name: string) => {
         setName(name)
     }
 
+    //navigerar oss till start om vi inte går från start>spel>karaktär
+    useEffect(() => {
+        if (!character.characterName && !character.characterImage) {
+            return navigate('/')
+        }
+    }, [])
+
     return (
         <div>
-            <Header availableSearches={availableSearches} searchFunction={searchFunction}/>
+            <Header availableSearches={availableSearches} searchFunction={searchFunction} />
             <CharacterCard character={character} showCharacter={showCharacter} pickGame={pickGame} />
             <ToggleComponent getName={getName} />
             {
