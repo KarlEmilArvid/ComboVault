@@ -24,22 +24,38 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
     }, [])
 
     const games = useSelector((state: any) => state.games.Games)
+    /*
+        useEffect(() => {
+            games?.map((game: any, i: number) => {
+                game.GameTitle.map((character: any) => {
+                    let tempString: string = ''
+                    character.Characters.map((character: any) => {
+                        if (validCharacter.characterName === character.characterName) {
+                            console.log('är det true?')
+                            tempString = character.Intro
+                        }
+                    })
+                    setIntro(tempString)
+                })
+            })
+        }, [validCharacter])
+    */
 
+    //fungerande kod för att visa intro text
     useEffect(() => {
-        games?.map((game: any, i: number) => {
-            game.GameTitle.map((character: any) => {
-                let tempString: string = ''
-                character.Characters.map((character: any) => {
-                    if (validCharacter.characterName === character.Name) {
+        let tempString = ''
+        games?.forEach((game: any) => {
+            game.GameTitle.forEach((title: any) => {
+                title.Characters.forEach((character: any) => {
+                    if (character.Name === validCharacter.characterName) {
                         tempString = character.Intro
+                        return
                     }
                 })
-                setIntro(tempString)
             })
         })
-    }, [validCharacter])
-
-    console.log(intro)
+        setIntro(tempString)
+    }, [validCharacter, games])
 
     return (
         <div className='character-border'>
