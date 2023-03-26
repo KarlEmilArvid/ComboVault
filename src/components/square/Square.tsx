@@ -25,7 +25,7 @@ const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: P
     }
 
     return (
-        <div>
+        <div className="square-border--wrapper">
             {window.location.href.includes(`/${gameName}`) ? (
                 <>
 
