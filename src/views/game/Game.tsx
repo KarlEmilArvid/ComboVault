@@ -59,13 +59,18 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
     return (
         <>
             <Header availableSearches={availableSearches} searchFunction={searchFunction} />
-            <main className='square-wrapper'>
-                {characterArray.map((char: any, i: number) => {
-                    if (i < characterArray.length) {
-                        return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />
-                    }
-                })}
-            </main>
+            
+            <div className="main-wrapper">
+
+                <main className='square-wrapper'>
+                    {characterArray.map((char: any, i: number) => {
+                        if (i < characterArray.length) {
+                            return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />
+                        }
+                    })}
+                </main>
+
+            </div>
         </>
     )
 }

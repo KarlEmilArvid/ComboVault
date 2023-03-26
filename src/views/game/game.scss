@@ -1,15 +1,79 @@
 @import '../../scss/layout';
+@import '../../scss/variables';
 
-.square-wrapper {
-    @include flex($wrap: wrap);
-    max-width: 100%;
-    margin: auto;
+.main-wrapper {
+    padding: 4rem 0 4rem 0;
+    @include flex;
+    width: 100%;
+
+    .square-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 82px);
+        place-items: center;
+    }
+
 }
 
-@media screen and (min-width: 768px) {
-    .square-wrapper {
-        @include flex($wrap: wrap);
-        max-width: 80%;
-        margin: auto;
+@media screen and (min-width: 540px) {
+    .main-wrapper {
+        .square-wrapper {
+            display: grid;
+            grid-template-columns: repeat(7, 92px);
+            place-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpointDesktop) {
+
+    .main-wrapper {
+        .square-wrapper {
+            display: grid;
+            grid-template-columns: repeat(7, 112px);
+            place-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 890px) {
+
+    .main-wrapper {
+        .square-wrapper {
+            display: grid;
+            grid-template-columns: repeat(9, 112px);
+            place-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    .main-wrapper {
+
+        .square-wrapper {
+            display: grid;
+            grid-template-columns: repeat(11, 112px);
+            place-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .main-wrapper {
+
+        .square-wrapper {
+            grid-template-columns: repeat(13, 112px);
+        }
+    }
+}
+
+@media screen and (min-width: 1650px) {
+
+    .main-wrapper {
+
+        .square-wrapper {
+            grid-template-columns: repeat(15, 112px);
+        }
     }
 }
