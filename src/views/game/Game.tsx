@@ -55,6 +55,14 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
         })
     })
 
+    const charactersSorted = characterArray.sort((a: any, b: any) => {
+        if (b.name <= a.name) {
+            return a.name <= b.name ? -1 : 1;
+        } else {
+            return b.name > a.name ? -1 : 1;
+        }
+    });
+
 
     return (
         <>
@@ -64,8 +72,8 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
 
                 <main className='square-wrapper'>
                     {characterArray.map((char: any, i: number) => {
-                        if (i < characterArray.length) {
-                            return <Square key={i} name={characterArray[i].name} image={characterArray[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />
+                        if (i < charactersSorted.length) {
+                            return <Square key={i} name={charactersSorted[i].name} image={charactersSorted[i].image} gameImage='' gameName='' showCharacter={showCharacter} pickGame={pickGame} />
                         }
                     })}
                 </main>

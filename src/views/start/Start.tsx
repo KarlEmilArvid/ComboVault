@@ -24,34 +24,28 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchF
         setGames(gameArray)
     }, [dispatchedGames])
 
-    let gameImages: string[] = []
+    let gameNamesImages: any[] = []
     games?.map((game: any) => {
         game.GameTitle.map((game: any) => {
             if (foundGames.length > 0 && foundGames.includes(game.Game.Name)) {
-                gameImages.push(game.Game.Image)
+                gameNamesImages.push({ name: game.Game.Name, image: game.Game.Image })
             } else if (!foundGames.includes(game.Game.Name) && searching!.length > 0) {
                 return
             } else if (searching!.length == 0) {
-                gameImages.push(game.Game.Image)
+                gameNamesImages.push({ name: game.Game.Name, image: game.Game.Image })
             }
         })
-        return gameImages
+        return gameNamesImages
     })
 
-    let gameNames: string[] = []
-    games?.map((game: any) => {
-        game.GameTitle.map((game: any) => {
-            if (foundGames.length > 0 && foundGames.includes(game.Game.Name)) {
-                gameNames.push(game.Game.Name)
-            } else if (!foundGames.includes(game.Game.Name) && searching!.length > 0) {
-                return
-            } else if (searching!.length == 0) {
-                gameNames.push(game.Game.Name)
-            }
-        })
-        return gameNames
-    })
-
+    const gamesSorted = gameNamesImages.sort((a: any, b: any) => {
+        if (b.name <= a.name) {
+            return a.name <= b.name ? -1 : 1;
+        } else {
+            return b.name > a.name ? -1 : 1;
+        }
+    });
+    
 
     return (
         <>
@@ -62,8 +56,8 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchF
                 <main className='square-wrapper'>
                     {
                         games?.map((square: any, i: number) => {
-                            if (i < gameNames.length) {
-                                return <Square key={i} gameImage={gameImages![i]} gameName={gameNames![i]} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
+                            if (i < gamesSorted.length) {
+                                return <Square key={i} gameImage={gamesSorted[i].image} gameName={gamesSorted[i].name} name='' image='' showCharacter={showCharacter} pickGame={pickGame} />
                             }
                         })
                     }
