@@ -7,6 +7,7 @@ type Posts = {
     Private: boolean;
     User: string;
     PostId: number | undefined;
+    CreatedAt: string;
 }
 
 //Reducer
