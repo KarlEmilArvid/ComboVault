@@ -55,6 +55,9 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     const addPost = () => {
         if (overlayButton == 'Create Post') {
             const postId = Math.random() * 1000 ** 100;
+            const date = new Date();
+            const fullDate = `${date.toLocaleDateString()}` + ' ' + `${date.toLocaleTimeString()}`;
+
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
                 await setDoc(doc(db, `${characterName}`, `${postId}`), {
@@ -63,7 +66,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     PostTitle: postTitle,
                     PostText: postText,
                     Private: privatePost,
-                    PostId: postId
+                    PostId: postId,
+                    CreatedAt: fullDate
                 })
                 dispatch(posts.createPosts({
                     User: `${user}`,
@@ -71,7 +75,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     PostTitle: postTitle,
                     PostText: postText,
                     Private: privatePost,
-                    PostId: Id
+                    PostId: Id,
+                    CreatedAt: fullDate
                 }))
                 getAllPosts()
             })()
@@ -79,6 +84,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
         }
 
         if (overlayButton == 'Save Changes') {
+            const date = new Date();
+            const fullDate = `${date.toLocaleDateString()}` + ' ' + `${date.toLocaleTimeString()}`;
             (async () => {
                 const user: string | undefined = auth.currentUser?.uid
                 await updateDoc(doc(db, `${characterName}`, `${Id}`), {
@@ -87,7 +94,8 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     PostTitle: postTitle,
                     PostText: postText,
                     Private: privatePost,
-                    PostId: Id
+                    PostId: Id,
+                    CreatedAt: fullDate
                 })
                 getAllPosts()
             })()
@@ -110,6 +118,13 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
             querySnapshot.forEach((doc) => {
                 tempArray.push(doc.data())
             })
+            tempArray.sort((a: any, b: any) => {
+                if (a.CreatedAt <= b.CreatedAt) {
+                    return b.CreatedAt <= a.CreatedAt ? -1 : 1;
+                } else {
+                    return a.CreatedAt > b.CreatedAt ? -1 : 1;
+                }
+            });
             dispatch(posts.getPosts(tempArray))
         })()
     }

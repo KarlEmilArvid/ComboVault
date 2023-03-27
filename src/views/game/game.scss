@@ -67,13 +67,3 @@
         }
     }
 }
-
-@media screen and (min-width: 1650px) {
-
-    .main-wrapper {
-
-        .square-wrapper {
-            grid-template-columns: repeat(15, 112px);
-        }
-    }
-}
