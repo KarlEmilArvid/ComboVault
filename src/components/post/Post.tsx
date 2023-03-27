@@ -1,6 +1,6 @@
-import star from '../../images/star.svg'
-import accordionArrow from '../../images/accordionArrow.svg'
+//import star from '../../images/star.svg'
 import { useEffect, useState } from 'react'
+import accordionArrow from '../../images/accordionArrow.svg'
 import './Post.scss'
 
 type CurrentPost = {
@@ -22,6 +22,11 @@ const Post = ({ PostTitle, PostText, name, openOverlay, Id }: Props) => {
     const overlayTitle = 'Edit'
     const editButton = 'Save Changes'
     const deleteButton = 'Delete'
+
+    const sentences = PostText.split('. ');
+    const PostWithBreak = sentences.join('.\n');
+
+    console.log(PostWithBreak)
 
     useEffect(() => {
         setAccordion(true)
@@ -46,7 +51,7 @@ const Post = ({ PostTitle, PostText, name, openOverlay, Id }: Props) => {
                             {/*<img src={star} alt="star" />*/}
                         </section>
                         <section className='post-section'>
-                            <p>{PostText}</p>
+                            <p>{PostWithBreak}</p>
                         </section>
                         {name === 'My Posts' ?
                             <section className='button-section'>
