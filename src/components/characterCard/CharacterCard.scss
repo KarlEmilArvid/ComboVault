@@ -42,12 +42,14 @@
             background-color: $secondaryBackground;
 
             .square-border--wrapper {
-                margin: 4rem;
+                margin: 6rem;
             }
 
             .character-container {
                 @include flex($direction: column, $justify: center);
-                height: 100%;
+                height: 80%;
+                border: 3px solid $primaryBackground;
+                margin-right: 2rem;
             }
         }
     }
