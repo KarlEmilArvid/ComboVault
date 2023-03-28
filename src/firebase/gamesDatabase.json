@@ -6,7 +6,7 @@
                     "Characters": [
                         {
                             "Image": "https://www.dustloop.com/wiki/images/a/a6/DBFZ_Android_16_Portrait.png",
-                            "Information": "",
+                            "Information": "test information för Android 16",
                             "Intro": "Test intro för Android 16 så vi kan styla intro texten så det ser najs ut :)",
                             "Name": "01Android 16"
                         },
@@ -2782,6 +2782,434 @@
                         "Image": "https://meltyblood.typelumina.com/resources/img/top/fv_title_13568e059c5ebdd2da48d6de2537caf1.png",
                         "Information": "melty",
                         "Name": "Melty Blood: Type Lumina"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-kyo-kusanagi.jpg",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "98Kyo Kusanagi"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-athena-asamiya.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Athena"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-blue-mary.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Blue Mary"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-chris.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Chris"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-eiji-kisaragi.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Eiji Kisaragi"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-geese-howard.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Geese Howard"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-goenitz.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Goenitz"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-heavy-d.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Heavy D"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-iori-yagami.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Iori Yagami"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-kasumi-todoh.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Kasumi Todoh"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-kim-kaphwan.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Kim Kaphwan"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-king.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98King"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-leona-heidern.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Leona Heidern"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-mai-shiranui.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Mai Shiranui"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-mature.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Mature"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-mr-big.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Mr Big"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-omega-rugal.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Omega Rugal"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-orochi.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Orochi"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-orochi-iori.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Orochi Iori"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-orochi-leona.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Orochi Leona"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-robert-garcia.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Robert Garcia"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-rugal-bernstein.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Rugal Bernstein"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-ryo-sakazaki.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Ryo Sakazaki"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-saisyu-kusanagi.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Saisyu Kusanagi"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-shermie.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Shermie"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-shingo-yabuki.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Shingo Yabuki"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-takuma-sakazaki.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Takuma Sakazaki"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-terry-bogard.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Terry Bogard"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-wolfgang-krauser.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Wolfgang Krauser"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-yashiro-nanakase.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Yashiro Nanakase"
+                        },
+                        {
+                            "Image": "https://www.creativeuncut.com/gallery-24/art/kof98-yuri-sakazaki.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "98Yuri Sakazaki"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dreamcancel.com/w/images/9/94/KOF_98UMFE_Logo.png",
+                        "Information": "KOF 98 UMFE is the final patch for KOF 98 UM, the remake of KOF 98.",
+                        "Name": "The King of Fighters '98 UMFE"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/5/57/Kyo.gif",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "13Kyo Kusanagi"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/9/90/Benimaru_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Benimaru"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/e/e3/Daimon_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Goro Daimon"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/4/49/Terry_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Terry Bogard"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/0/0e/Andy_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Andy Bogard"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/8/82/Joe_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Joe Higashi"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/6/64/Billyxiii.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Billy Kane"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/a/ae/Ash_01.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Ash Crimson"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/f/f5/Saiki.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Saiki"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/4/46/EXiori.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Iori with the Power of Flames"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/9/9b/NESTSKyoxiii.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13NESTS Style Kyo"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/0/02/Mrkaratexiii.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Mr. Karate"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/b/b3/Ryo_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Ryo Sakazaki"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/8/8a/Robert_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Robert Garcia"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/1/1f/Takuma1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Takuma Sakazaki"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/5/52/Iori_02.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Iori Yagami"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/7/7b/Mature_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Mature"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/2/2a/Vice.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Vice"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/9/9d/Elisabethkofxii.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Elisabeth Branctorche"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/0/07/Duo_Lon_Sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Duo Lon"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/3/3e/Shen.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Shen Woo"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/a/ae/Kim_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Kim Kaphwan"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/e/ed/Hwa_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Hwa Jai"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/e/e1/Raiden_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Raiden"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/9/90/Mai_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Mai Shiranui"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/0/00/King_Sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13King"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/f/fd/Yuri_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Yuri Sakazaki"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/9/94/K%27_Sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13K'"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/b/b0/Sprite_Kula_XIII.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Kula Diamond"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/d/db/Maxima_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Maxima"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/3/32/Athena_new.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Athena"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/3/36/Kensou_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Sie Kensou"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/1/18/Chin.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Chin Gentsai"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/a/af/Ralf_Sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Ralf Jones"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/d/d4/Clark_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Clark Still"
+                        },
+                        {
+                            "Image": "https://www.dreamcancel.com/w/images/a/ae/Leona_sprite.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "13Leona Heidern"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dreamcancel.com/w/images/0/04/KOF_XIII_Logo.png",
+                        "Information": "",
+                        "Name": "The King of Fighters XIII"
                     }
                 }
             ]

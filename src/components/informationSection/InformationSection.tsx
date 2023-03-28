@@ -11,17 +11,18 @@ const InformationSection = ({ characterName }: Props) => {
     const games = useSelector((state: any) => state.games.Games)
 
     useEffect(() => {
-        games?.map((game: any, i: number) => {
-            game.GameTitle.map((character: any) => {
-                let tempString: string = ''
-                character.Characters.map((character: any) => {
-                    if (characterName === character.Name) {
+        let tempString = ''
+        games?.forEach((game: any) => {
+            game.GameTitle.forEach((title: any) => {
+                title.Characters.forEach((character: any) => {
+                    if (character.Name === characterName) {
                         tempString = character.Information
+                        return
                     }
                 })
-                setInformation(tempString)
             })
         })
+        setInformation(tempString)
     }, [])
 
     return (
