@@ -144,7 +144,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                         <section className="text-border">
                             <textarea className="text-input" placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
                         </section>
-                        <section className='button-section'>
+                        <section className='overlay-button-section'>
                             <button className={activeButton} onClick={() => setPrivatePost(!privatePost)}><span>Public</span> / <span>Private</span></button>
                         </section>
                         <section className="create-button--border">

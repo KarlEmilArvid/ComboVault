@@ -38,7 +38,7 @@
         .input-border {
             @include containerBorder;
             width: 100%;
-            margin: $baseline;
+            margin: $margin;
 
             input {
                 min-height: calc($baseline * 2);
@@ -64,7 +64,7 @@
         .create-button--border {
             @include flex ($direction: column);
             @include containerBorder;
-            margin-top: 4rem;
+            margin-top: 2rem;
 
             .overlay-buttons {
                 margin-top: 0;
@@ -96,12 +96,11 @@
             }
         }
 
-        .button-section {
+        .overlay-button-section {
             @include flex;
+            @include containerBorder;
             padding: .2rem;
             margin-top: $margin-large;
-            background: linear-gradient(to right, #8DBBFF, #597EFF, #504eee);
-            border-radius: $borderRadius;
 
             .post-button {
                 @include postButton;
@@ -124,7 +123,7 @@
 
         .overlay-buttons {
             @include postButton;
-            width: 8em;
+            width: 10em;
             margin-top: $margin-large;
         }
 
@@ -190,6 +189,7 @@
                 @include flex ($direction: column);
 
                 .overlay-buttons {
+                    width: 12em;
                     margin-top: 0;
                 }
             }
@@ -219,12 +219,12 @@
                 }
             }
 
-            .button-section {
+            .overlay-button-section {
                 @include flex;
 
                 .post-button {
                     @include postButton;
-                    width: 10em;
+                    width: 12em;
 
                     span:nth-child(1) {
                         color: $borderColor;
@@ -233,7 +233,7 @@
 
                 .post-button-active {
                     @include postButton;
-                    width: 10em;
+                    width: 12em;
 
                     span:nth-child(2) {
                         color: $borderColor;

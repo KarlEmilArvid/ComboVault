@@ -5,7 +5,7 @@
     @include containerBorder;
     @include hoverEffect;
     width: 40%;
-    margin: $baseline;
+    margin-top: $margin;
 
     .toggle-button {
         @include postButton;

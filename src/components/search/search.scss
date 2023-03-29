@@ -3,9 +3,9 @@
 
 
 .search-wrapper {
-    width: 1rem;
-    height: 1rem;
     @include flex($direction: row);
+    width: $baseline;
+    height: $baseline;
     margin: 0 $margin;
 
     .search-toggle {
@@ -18,15 +18,16 @@
             width: 1.5rem;
             cursor: pointer;
         }
-        
+
 
         .input-border {
             @include containerBorder;
-            margin: 0 .5rem 0 .5rem;
-            padding: .15rem;
-            
+            margin: 0 1rem 0 1rem;
+            padding: .2rem;
+
             input {
-                width: 10rem;
+                width: 12em;
+                padding: .15rem;
                 outline: none;
                 border: none;
             }
@@ -37,4 +38,7 @@
 
 }
 
-
+.search-wrapper-none {
+    opacity: 0;
+    z-index: -99;
+}

@@ -435,7 +435,7 @@
                         {
                             "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/big-band.png",
                             "Information": "",
-                            "Intro": "",
+                            "Intro": "intro text",
                             "Name": "01Big Band"
                         },
                         {
@@ -2135,8 +2135,8 @@
                         },
                         {
                             "Image": "https://www.dustloop.com/wiki/images/e/ea/GGAC_Axl_Portrait.png",
-                            "Information": "",
-                            "Intro": "",
+                            "Information": "axl axl axl axl axl axl axl axl axl axl axl axl axl axl axl",
+                            "Intro": "axl han e low low o inte high high, axl han e low low o inte high high",
                             "Name": "XXAxl Low"
                         },
                         {

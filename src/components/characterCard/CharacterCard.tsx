@@ -24,22 +24,6 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
     }, [])
 
     const games = useSelector((state: any) => state.games.Games)
-    /*
-        useEffect(() => {
-            games?.map((game: any, i: number) => {
-                game.GameTitle.map((character: any) => {
-                    let tempString: string = ''
-                    character.Characters.map((character: any) => {
-                        if (validCharacter.characterName === character.characterName) {
-                            console.log('är det true?')
-                            tempString = character.Intro
-                        }
-                    })
-                    setIntro(tempString)
-                })
-            })
-        }, [validCharacter])
-    */
 
     //fungerande kod för att visa intro text
     useEffect(() => {

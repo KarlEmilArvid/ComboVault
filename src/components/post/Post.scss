@@ -19,7 +19,9 @@
             background-color: $container-background;
 
             h3 {
+                font-size: 1.2rem;
                 color: $secondaryTextColor;
+                text-shadow: none;
                 margin: $margin-small;
             }
         }
@@ -63,7 +65,15 @@
             }
         }
 
+        .accordion-up {
+            transition: .4s transform ease-in-out;
+            transform: rotate(-180deg);
+            margin: .2rem .2rem .2rem auto;
+            cursor: pointer;
+        }
+
         .accordion {
+            transition: .4s transform ease-in-out;
             margin: .2rem .2rem .2rem auto;
             cursor: pointer;
         }
@@ -87,6 +97,10 @@
                 @include flex($justify: space-between);
                 width: 100%;
                 background-color: $container-background;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
             }
 
             .post-section {

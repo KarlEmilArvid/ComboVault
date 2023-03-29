@@ -1,28 +1,27 @@
-import Search from '../search/Search'
-import kugghjul from '../../images/kugghjul.svg'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom'
 import { auth, signIn } from '../../firebase/firebase';
-import './header.scss'
 import { signOut } from 'firebase/auth';
 import { RootState } from '../../store';
 import { useSelector } from 'react-redux';
+import Search from '../search/Search'
+import kugghjul from '../../images/kugghjul.svg'
+import './header.scss'
 
 type Props = {
     availableSearches: (foundNames: string[] | []) => void
     searchFunction: (searchTerm: string) => void
 }
 
-const Header = ({availableSearches, searchFunction}: Props) => {
+const Header = ({ availableSearches, searchFunction }: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
     const [searching, setSearching] = useState<boolean>(false);
     const navigate = useNavigate()
     const param = useParams();
     const allGames = useSelector((state: RootState) => state.games.Games);
 
-
     const openOverlay = () => {
+
         setOverlay(!overlay)
     }
 
@@ -89,7 +88,7 @@ const Header = ({availableSearches, searchFunction}: Props) => {
                                 null
                     }
                 </section>
-                <Search allGames={allGames} availableSearches={availableSearches} searchFunction={searchFunction} searching={searching} activeSearching={activeSearching}/>
+                <Search allGames={allGames} availableSearches={availableSearches} searchFunction={searchFunction} searching={searching} activeSearching={activeSearching} />
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>
@@ -107,10 +106,12 @@ const Header = ({availableSearches, searchFunction}: Props) => {
                         <h3>Favourites</h3>
                     </li>
                     */}
+                    {/*
                     <li>
                         <img src="" alt="" />
                         <h3 className='gear-title'>About us</h3>
                     </li>
+                    */}
                     <li>
                         <img src="" alt="" />
                         {auth.currentUser?.uid == undefined ?

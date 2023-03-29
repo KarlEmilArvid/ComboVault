@@ -1,7 +1,7 @@
-import './search.scss'
-import searchIcon from '../../images/search.svg';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
+import searchIcon from '../../images/search.svg';
+import './search.scss'
 
 
 type Props = {
@@ -14,12 +14,14 @@ type Props = {
 
 const Search = ({ allGames, availableSearches, searchFunction, searching, activeSearching }: Props) => {
 
-    const [ searchTerm, setSearchTerm ] = useState<string>('');
-    const [ searchQuery, setSearchQuery ] = useState<string[]>([]);
-    const [ foundNames, setFoundNames ] = useState<string[]>([]);
+    const [searchTerm, setSearchTerm] = useState<string>('');
+    const [searchQuery, setSearchQuery] = useState<string[]>([]);
+    const [foundNames, setFoundNames] = useState<string[]>([]);
     const param = useParams();
     const paramGame = param.game?.replaceAll('-', ' ');
-    
+
+    const ref = useRef<HTMLInputElement>(null)
+
     useEffect(() => {
         if (!param.game) {
 
@@ -36,10 +38,10 @@ const Search = ({ allGames, availableSearches, searchFunction, searching, active
 
             const characterNames: string[] = [];
             allGames?.map((charactersArray: any) => {
-    
+
                 charactersArray.GameTitle.map((game: any) => {
                     if (game.Game.Name == paramGame) {
-    
+
                         game.Characters.map((character: any) => {
                             const characterName = character.Name.slice(2);
                             characterNames.push(characterName);
@@ -55,47 +57,71 @@ const Search = ({ allGames, availableSearches, searchFunction, searching, active
 
     useEffect(() => {
 
-        if ( searchQuery?.length > 0 ) {
+        if (searchQuery?.length > 0) {
             const names: string[] = [];
             searchQuery?.forEach((query) => {
 
                 const tempString = searchTerm.toLowerCase();
                 const tempQuery = query.toLowerCase();
 
-                if ( tempQuery.substring(0, searchTerm.length) == tempString.substring(0, searchTerm.length) ) {
+                if (tempQuery.substring(0, searchTerm.length) == tempString.substring(0, searchTerm.length)) {
                     names.push(query);
                 }
             })
 
             setFoundNames(names);
-    
+
         }
 
         searchFunction(searchTerm);
 
     }, [searchTerm]);
-    
+
     useEffect(() => {
 
         availableSearches(foundNames);
 
     }, [foundNames]);
 
+    useEffect(() => {
+        if (searching === true) {
+            ref.current?.focus();
+        } else {
+            setSearchTerm('')
+        }
+    }, [searching])
 
     return (
-        <section className="search-wrapper">
-            <section className="search-toggle">
-                <img className="search-icon" onClick={ activeSearching } src={ searchIcon } alt="" />
-                {
-                    searching ?
-                        <div className="input-border">
-                            <input type="text" onChange={ (e) => setSearchTerm(e.target.value) } />
-                        </div>
-                    :
-                    null
-                }
-            </section>
-        </section>
+        <>
+            {!param.character ?
+                <section className="search-wrapper">
+                    <section className="search-toggle">
+                        <img className="search-icon" onClick={activeSearching} src={searchIcon} alt="" />
+                        {
+                            searching ?
+                                <div className="input-border">
+                                    <input ref={ref} type="text" onChange={(e) => setSearchTerm(e.target.value)} />
+                                </div>
+                                :
+                                null
+                        }
+                    </section>
+                </section> :
+                <section className="search-wrapper-none">
+                    <section className="search-toggle">
+                        <img className="search-icon" onClick={activeSearching} src={searchIcon} alt="" />
+                        {
+                            searching ?
+                                <div className="input-border">
+                                    <input ref={ref} type="text" onChange={(e) => setSearchTerm(e.target.value)} />
+                                </div>
+                                :
+                                null
+                        }
+                    </section>
+                </section>
+            }
+        </>
     )
 }
 
