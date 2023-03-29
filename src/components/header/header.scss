@@ -124,6 +124,45 @@ header {
             .param-section.true {
                 display: none;
             }
+            .param-section.false {
+
+                .game-name {
+                    font-size: 2rem;
+                }
+                .param-wrapper {
+                    position: absolute;
+                    top: 4.5rem;
+                    @include flex($wrap: wrap);
+
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+                    /*
+                    h3, .home-param, .game-param {
+                        position: absolute;
+                        left: -12rem;
+                        width: 30rem;
+                        font-size: 1.2rem;
+                    }
+
+                    .h3 {
+                        position: absolute;
+                        left: 0;
+                        top: 3.6rem;
+                    }
+                    .home-param {
+                        position: absolute;
+                        top: 1.2rem;
+                    }
+
+                    .game-param {
+                        position: absolute;
+                        top: 2.4rem;
+                    }
+                    */
+
+                }
+            }
         }
     }
 }
