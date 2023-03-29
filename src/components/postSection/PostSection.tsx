@@ -72,7 +72,7 @@ const PostSection = ({ name, characterName }: Props) => {
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter((post: any) => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
-    }, [characterName, allPosts, overlay, connectUser])
+    }, [characterName, allPosts, overlay, name])
 
     const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
         setPickedTitle(overlayTitle)

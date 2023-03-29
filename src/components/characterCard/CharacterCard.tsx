@@ -32,7 +32,6 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
             game.GameTitle.forEach((title: any) => {
                 title.Characters.forEach((character: any) => {
                     if (character.Name === validCharacter.characterName) {
-                        tempString = character.Intro
                         return
                     }
                 })
