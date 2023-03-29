@@ -6,11 +6,12 @@
     margin: auto;
 
     .character-wrapper {
-        @include flex();
-        height: calc($baseline * 15);
+        @include flex($direction: column, $justify: space-evenly);
+        //height: calc($baseline * 15);
+        margin-top: calc($margin * 4);
 
         .square-border--wrapper {
-            margin: 1rem;
+            margin: $margin;
 
             .square-border {
                 :hover {
@@ -22,6 +23,7 @@
         .character-container {
             @include flex($direction: column, $justify: center);
             height: 100%;
+            margin: $margin;
         }
 
         .character-intro {
@@ -38,18 +40,14 @@
         width: 70%;
 
         .character-wrapper {
-            @include flex();
             background-color: $secondaryBackground;
-
-            .square-border--wrapper {
-                margin: 6rem;
-            }
+            min-height: 20rem;
+            margin: 0;
 
             .character-container {
-                @include flex($direction: column, $justify: center);
+                @include flex($justify: center);
                 height: 80%;
-                border: 3px solid $primaryBackground;
-                margin-right: 2rem;
+                margin: 0;
             }
         }
     }

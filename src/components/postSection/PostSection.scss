@@ -72,7 +72,6 @@
                 @include containerBorder;
                 width: 20%;
                 margin: $margin-large;
-                //TODO: lägg till skugga
 
                 .new-post-button {
                     @include postButton;

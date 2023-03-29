@@ -22,7 +22,7 @@
             }
 
             p {
-                margin: $margin;
+                max-width: 90%;
                 padding: $padding;
             }
         }
@@ -46,12 +46,8 @@
                 @include flex($direction: column);
                 margin: auto;
 
-                h2 {
-                    margin: $margin;
-                }
-
                 p {
-                    margin: $margin;
+                    max-width: 80%;
                     padding: $padding;
                 }
             }

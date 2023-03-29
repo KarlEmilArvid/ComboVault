@@ -30,9 +30,8 @@ h1,
 h2,
 h3 {
     font-family: "Barlow Condensed";
-    //font-style: normal;
+    text-shadow: $textShadow;
     line-height: 100%;
-    //letter-spacing: 0.04em;
     color: $primaryTextColor;
 }
 
