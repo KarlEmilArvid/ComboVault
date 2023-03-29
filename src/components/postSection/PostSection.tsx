@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getDocs, collection } from 'firebase/firestore'
 import { auth, db, signIn } from '../../firebase/firebase'
-import { connect, useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
 import { RootState } from "../../store";
 import PostOverlay from '../postOverlay/PostOverlay'
