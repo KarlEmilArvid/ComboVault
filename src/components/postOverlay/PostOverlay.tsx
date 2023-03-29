@@ -129,8 +129,6 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
         })()
     }
 
-    console.log(privatePost)
-
     return (
         <div className={showOverlay}>
             <button className="close-button" onClick={closeOverlay}>X</button>

@@ -27,8 +27,6 @@ const Post = ({ PostTitle, PostText, name, openOverlay, Id }: Props) => {
     const sentences = PostText.split('. ');
     const PostWithBreak = sentences.join('.\n');
 
-    console.log(PostWithBreak)
-
     useEffect(() => {
         setAccordion(true)
         setToggle(true)
