@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getDocs, collection } from 'firebase/firestore'
 import { auth, db, signIn } from '../../firebase/firebase'
-import { useDispatch, useSelector } from 'react-redux'
+import { connect, useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
 import { RootState } from "../../store";
 import PostOverlay from '../postOverlay/PostOverlay'
@@ -72,7 +72,7 @@ const PostSection = ({ name, characterName }: Props) => {
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter((post: any) => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
-    }, [characterName, allPosts, overlay])
+    }, [characterName, allPosts, overlay, connectUser])
 
     const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
         setPickedTitle(overlayTitle)
