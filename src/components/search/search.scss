@@ -1,16 +1,40 @@
 @import '../../scss/layout.scss';
+@import '../../scss/variables.scss';
 
 
-.search_wrapper {
+.search-wrapper {
+    width: 1rem;
+    height: 1rem;
+    @include flex($direction: row);
+    margin: 0 $margin;
 
-    @include flex();
-
-    .search_icon {
-        
-        align-self: center;
-        width: 1.5rem;
+    .search-toggle {
+        position: absolute;
+        right: 0;
+        @include flex($direction: row-reverse);
         margin-right: .5rem;
+
+        .search-icon {
+            width: 1.5rem;
+            cursor: pointer;
+        }
+        
+
+        .input-border {
+            @include containerBorder;
+            margin: 0 .5rem 0 .5rem;
+            padding: .15rem;
+            
+            input {
+                width: 10rem;
+                outline: none;
+                border: none;
+            }
+
+        }
 
     }
 
 }
+
+
