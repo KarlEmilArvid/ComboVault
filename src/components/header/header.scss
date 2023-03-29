@@ -5,8 +5,10 @@ header {
     margin-bottom: $margin;
 
     .header_container {
+        position: relative;
         @include flex($justify: space-between);
         min-height: calc($baseline * 5);
+
 
         .gearwheel-icon {
             width: 1.5rem;
@@ -14,7 +16,8 @@ header {
             cursor: pointer;
         }
 
-        section {
+
+        .param-section {
             @include flex($direction: column);
 
             h1,
@@ -109,6 +112,17 @@ header {
                 .gear-title {
                     font-size: 2rem;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        .header_container {
+
+            .param-section.true {
+                display: none;
             }
         }
     }

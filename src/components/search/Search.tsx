@@ -8,11 +8,12 @@ type Props = {
     allGames: any[];
     availableSearches: (foundNames: string[] | []) => void
     searchFunction: (searchTerm: string) => void
+    searching: boolean;
+    activeSearching: () => void;
 }
 
-const Search = ({ allGames, availableSearches, searchFunction }: Props) => {
+const Search = ({ allGames, availableSearches, searchFunction, searching, activeSearching }: Props) => {
 
-    const [searching, setSearching] = useState<boolean>(false);
     const [ searchTerm, setSearchTerm ] = useState<string>('');
     const [ searchQuery, setSearchQuery ] = useState<string[]>([]);
     const [ foundNames, setFoundNames ] = useState<string[]>([]);
@@ -82,12 +83,14 @@ const Search = ({ allGames, availableSearches, searchFunction }: Props) => {
 
 
     return (
-        <section className="search_wrapper">
-            <section className="search_toggle">
-                <img onClick={ () => setSearching(!searching) } src={ searchIcon } alt="" />
+        <section className="search-wrapper">
+            <section className="search-toggle">
+                <img className="search-icon" onClick={ activeSearching } src={ searchIcon } alt="" />
                 {
                     searching ?
-                    <input type="text" onChange={ (e) => setSearchTerm(e.target.value) } />
+                        <div className="input-border">
+                            <input type="text" onChange={ (e) => setSearchTerm(e.target.value) } />
+                        </div>
                     :
                     null
                 }

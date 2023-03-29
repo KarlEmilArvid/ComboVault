@@ -16,6 +16,7 @@ type Props = {
 
 const Header = ({availableSearches, searchFunction}: Props) => {
     const [overlay, setOverlay] = useState<boolean>(false)
+    const [searching, setSearching] = useState<boolean>(false);
     const navigate = useNavigate()
     const param = useParams();
     const allGames = useSelector((state: RootState) => state.games.Games);
@@ -43,10 +44,15 @@ const Header = ({availableSearches, searchFunction}: Props) => {
         }).catch((error) => {
             console.log(error);
         });
+
         setOverlay(!overlay);
 
         navigate('/');
 
+    }
+
+    const activeSearching = () => {
+        setSearching(!searching)
     }
 
 
@@ -59,7 +65,7 @@ const Header = ({availableSearches, searchFunction}: Props) => {
         <header>
             <section className="header_container">
                 <img onClick={openOverlay} className="gearwheel-icon" src={kugghjul} alt="" />
-                <section>
+                <section className={`param-section ${searching}`}>
                     {param.character ? <h1 className='game-name'>{characterParam}</h1> : <h1 className='game-name'>{gameParam}</h1>}
                     {
                         param.hasOwnProperty('game') && param.hasOwnProperty('character') && param ?
@@ -83,7 +89,7 @@ const Header = ({availableSearches, searchFunction}: Props) => {
                                 null
                     }
                 </section>
-                <Search allGames={allGames} availableSearches={availableSearches} searchFunction={searchFunction}/>
+                <Search allGames={allGames} availableSearches={availableSearches} searchFunction={searchFunction} searching={searching} activeSearching={activeSearching}/>
             </section>
             <nav className={'header_overlay' + `-${overlay}`}>
                 <ul>
