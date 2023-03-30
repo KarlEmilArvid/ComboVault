@@ -37,7 +37,6 @@
 .posts-wrapper--loggedout {
     @include flex();
     min-height: 8rem;
-    background-color: $secondaryBackground;
 
     .sign-in-button--border {
         @include containerBorder;
@@ -90,7 +89,6 @@
     .posts-wrapper--loggedout {
         @include flex();
         min-height: 8rem;
-        background-color: $secondaryBackground;
 
         .sign-in-button--border {
             @include containerBorder;

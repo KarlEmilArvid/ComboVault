@@ -144,6 +144,13 @@
         top: 0;
         background-color: $primaryBackground;
 
+        .alert {
+            background-color: red;
+            color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
         .close-button {
             width: calc($baseline * 2);
             position: absolute;
@@ -246,6 +253,16 @@
                 width: 100%;
                 margin: $margin;
             }
+
         }
+
+    }
+
+    .alert {
+        background-color: red !important;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 1rem 0;
     }
 }
