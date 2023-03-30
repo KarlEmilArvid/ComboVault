@@ -55,6 +55,13 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     }
 
     const addPost = () => {
+        if (overlayButton == 'Delete') {
+            (async () => {
+                await deleteDoc(doc(db, `${characterName}`, `${Id}`))
+                getAllPosts()
+            })()
+            setOverlay(false)
+        }
         // Validation logic for post title and post text
         setFormSubmitted(true)
         if (!postTitle?.trim()) {
@@ -110,14 +117,6 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                     PostId: Id,
                     CreatedAt: fullDate
                 })
-                getAllPosts()
-            })()
-            setOverlay(false)
-        }
-
-        if (overlayButton == 'Delete') {
-            (async () => {
-                await deleteDoc(doc(db, `${characterName}`, `${Id}`))
                 getAllPosts()
             })()
             setOverlay(false)
