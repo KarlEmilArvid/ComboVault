@@ -64,3 +64,9 @@
         transform: scaleX(1);
     }
 }
+
+@mixin paramStyling {
+    @include hoverLine($background-color: $borderColor);
+    font-weight: 500;
+    cursor: pointer;
+}
