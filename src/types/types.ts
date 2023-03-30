@@ -13,6 +13,7 @@ export type GameObjects = {
 
 }
 
+//TODO: ta bort? lägg till typer osv
 //export type Games = {
 //    Games: GameObjects[];
 //}

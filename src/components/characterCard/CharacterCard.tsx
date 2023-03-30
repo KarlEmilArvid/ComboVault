@@ -24,8 +24,6 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
         setValidCharacter(character)
     }, [])
 
-
-    //fungerande kod för att visa intro text
     useEffect(() => {
         let tempString = ''
         games?.forEach((game: any) => {
@@ -39,7 +37,6 @@ const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
             })
         })
         setIntro(tempString)
-        console.log('intro', tempString)
     }, [validCharacter, games])
 
     return (

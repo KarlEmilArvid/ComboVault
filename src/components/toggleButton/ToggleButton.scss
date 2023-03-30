@@ -13,20 +13,11 @@
         font-weight: 600;
         background-color: $container-background;
     }
-
 }
 
 @media screen and (min-width: $breakpointDesktop) {
     .toggle-border {
-        @include containerBorder;
         width: 20%;
-        margin: $baseline;
-
-        .toggle-button {
-            @include postButton;
-            color: $secondaryTextColor;
-            font-weight: 600;
-            background-color: $container-background;
-        }
+        margin: $margin;
     }
 }
