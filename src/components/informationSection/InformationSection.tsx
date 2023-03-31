@@ -26,7 +26,7 @@ const InformationSection = ({ characterName }: Props) => {
     }, [])
 
     return (
-        <div className="information-wrapper--border">
+        <div className='information-wrapper--border'>
             <section className='information-wrapper'>
                 <section className='information-section'>
                     <h2>Information</h2>

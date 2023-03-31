@@ -1,7 +1,6 @@
 @import '../../scss/layout.scss';
 @import '../../scss/variables.scss';
 
-
 .search-wrapper {
     @include flex($direction: row);
     width: $baseline;
@@ -12,17 +11,16 @@
         position: absolute;
         right: 0;
         @include flex($direction: row-reverse);
-        margin-right: .5rem;
+        margin-right: $margin-small;
 
         .search-icon {
-            width: 1.5rem;
+            width: calc($baseline * 1.5);
             cursor: pointer;
         }
 
-
         .input-border {
             @include containerBorder;
-            margin: 0 1rem 0 1rem;
+            margin: 0 $margin;
             padding: .2rem;
 
             input {
@@ -31,11 +29,8 @@
                 outline: none;
                 border: none;
             }
-
         }
-
     }
-
 }
 
 .search-wrapper-none {

@@ -11,12 +11,10 @@ type Posts = {
 }
 
 //Reducer
-let initialState: Posts[] = [];
-const getPosts = createAction<Posts[]>('get posts');
-const createPosts = createAction<Posts>('create posts');
+let initialState: Posts[] = []
+const getPosts = createAction<Posts[]>('get posts')
+const createPosts = createAction<Posts>('create posts')
 const actions = { getPosts, createPosts }
-
-//hämta posts
 
 const reducer = createReducer(initialState, {
     [getPosts.toString()]: (state, action) => {
@@ -25,10 +23,9 @@ const reducer = createReducer(initialState, {
         return state
     },
     [createPosts.toString()]: (state, action) => {
+        const newPosts: Posts[] = [...state, action.payload]
 
-        const newPosts: Posts[] = [...state, action.payload];
-
-        return newPosts;
+        return newPosts
     }
 })
 

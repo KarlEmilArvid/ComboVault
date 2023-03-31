@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 @mixin flex($display: flex, $justify: center, $align: center, $direction: row, $wrap: nowrap) {
     display: $display;
@@ -40,6 +40,7 @@
     //}
 }
 
+//TODO: används ej?
 @mixin filterShadow {
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
 }
@@ -63,4 +64,20 @@
         transform-origin: left;
         transform: scaleX(1);
     }
+}
+
+@mixin paramStyling {
+    @include hoverLine($background-color: $borderColor);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@mixin postButton {
+    background-color: $primaryTextColor;
+    color: $secondaryTextColor;
+    font-weight: 600;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
 }

@@ -3,32 +3,29 @@ import Game from './views/game/Game'
 import Character from './views/character/Character'
 import About from './views/about/About'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-//import { getDocs, collection, doc, setDoc, DocumentData } from 'firebase/firestore'
-//import { db } from './firebase/firebase'
-//import { auth } from './firebase/firebase'
 import { useEffect, useState } from 'react'
 import { actions as games } from './redux/gamesReducer'
 import { useDispatch } from 'react-redux'
-import './scss/global.scss'
 import gamesDatabase from './firebase/gamesDatabase.json'
+import './scss/global.scss'
 
 type CharacterType = {
-	characterName: string;
-	characterImage: string;
+	characterName: string
+	characterImage: string
 }
 
 type GameType = {
-	gameName: string;
-	gameImage: string;
+	gameName: string
+	gameImage: string
 }
 
 function App() {
 	const [character, setCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
 	const [game, setGame] = useState<GameType>({ gameName: '', gameImage: '' })
-	const [ foundGames, setFoundGames ] = useState<string[]>(['']);
-	const [searching, setSearching] = useState<string | undefined>();
+	const [foundGames, setFoundGames] = useState<string[]>([''])
+	const [searching, setSearching] = useState<string | undefined>()
 	const dispatch = useDispatch()
-	const navigate = useNavigate();
+	const navigate = useNavigate()
 
 	useEffect(() => {
 		dispatch(games.getGames(gamesDatabase))
@@ -42,12 +39,12 @@ function App() {
 
 	const pickGame = (name: string, image: string) => {
 		setGame({ gameName: name, gameImage: image })
-		navigate(`/${name?.replace(/\s+/g, '-')}`);
+		navigate(`/${name?.replace(/\s+/g, '-')}`)
 	}
 
 	const availableSearches = (foundNames: string[]) => {
-        setFoundGames(foundNames);
-    }
+		setFoundGames(foundNames)
+	}
 
 	const searchFunction = (searchTerm: string) => {
 		setSearching(searchTerm)
@@ -57,14 +54,11 @@ function App() {
 		<div className='App'>
 			<Routes>
 				<Route path='/' element={<Start showCharacter={showCharacter} pickGame={pickGame} availableSearches={availableSearches}
-				 foundGames={foundGames} searchFunction={searchFunction} searching={searching}/>} />
-
+					foundGames={foundGames} searchFunction={searchFunction} searching={searching} />} />
 				<Route path='/:game' element={<Game showCharacter={showCharacter} games={game} pickGame={pickGame}
-				 availableSearches={availableSearches} foundGames={foundGames} searchFunction={searchFunction} searching={searching}/>} />
-
-				<Route path='/:game/:character' element={<Character character={character} 
-				showCharacter={showCharacter} pickGame={pickGame} availableSearches={availableSearches} searchFunction={searchFunction}/>} />
-
+					availableSearches={availableSearches} foundGames={foundGames} searchFunction={searchFunction} searching={searching} />} />
+				<Route path='/:game/:character' element={<Character character={character}
+					showCharacter={showCharacter} pickGame={pickGame} availableSearches={availableSearches} searchFunction={searchFunction} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
 		</div>

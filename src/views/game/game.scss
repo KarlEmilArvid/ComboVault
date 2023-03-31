@@ -2,8 +2,8 @@
 @import '../../scss/variables';
 
 .main-wrapper {
-    padding: 4rem 0 4rem 0;
     @include flex;
+    padding: calc($padding * 4) 0;
     width: 100%;
 
     .square-wrapper {
@@ -11,57 +11,42 @@
         grid-template-columns: repeat(5, 82px);
         place-items: center;
     }
-
 }
 
 @media screen and (min-width: 540px) {
     .main-wrapper {
         .square-wrapper {
-            display: grid;
             grid-template-columns: repeat(7, 92px);
-            place-items: center;
         }
     }
 }
 
 @media screen and (min-width: $breakpointDesktop) {
-
     .main-wrapper {
         .square-wrapper {
-            display: grid;
             grid-template-columns: repeat(7, 112px);
-            place-items: center;
         }
     }
 }
 
 @media screen and (min-width: 890px) {
-
     .main-wrapper {
         .square-wrapper {
-            display: grid;
             grid-template-columns: repeat(9, 112px);
-            place-items: center;
         }
     }
 }
 
 @media screen and (min-width: 1150px) {
-
     .main-wrapper {
-
         .square-wrapper {
-            display: grid;
             grid-template-columns: repeat(11, 112px);
-            place-items: center;
         }
     }
 }
 
 @media screen and (min-width: 1400px) {
-
     .main-wrapper {
-
         .square-wrapper {
             grid-template-columns: repeat(13, 112px);
         }

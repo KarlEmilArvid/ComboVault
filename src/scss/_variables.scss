@@ -30,13 +30,3 @@ $padding-small: calc($baseline / 2);
 $padding-large: calc($baseline * 2);
 
 $container-gradient: linear-gradient(to right, #8DBBFF, #597EFF, #504eee);
-
-@mixin postButton {
-    background-color: $primaryTextColor;
-    color: $secondaryTextColor;
-    font-weight: 600;
-    width: 100%;
-    height: 2rem;
-    border: none;
-    cursor: pointer;
-}

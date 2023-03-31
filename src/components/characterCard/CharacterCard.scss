@@ -7,7 +7,6 @@
 
     .character-wrapper {
         @include flex($direction: column, $justify: space-evenly);
-        //height: calc($baseline * 15);
         margin-top: calc($margin * 4);
 
         .square-border--wrapper {
@@ -42,7 +41,7 @@
 
         .character-wrapper {
             background-color: $secondaryBackground;
-            min-height: 20rem;
+            min-height: calc($baseline * 20);
             margin: 0;
 
             .character-container {
