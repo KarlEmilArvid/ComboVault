@@ -38,7 +38,6 @@
         .input-border {
             @include containerBorder;
             width: 100%;
-            margin: $margin;
 
             input {
                 min-height: calc($baseline * 2);
@@ -133,6 +132,14 @@
             margin: $margin;
         }
     }
+
+    .alert {
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        margin: $margin-small auto $margin-small 0;
+    }
 }
 
 @media screen and (min-width: $breakpointDesktop) {
@@ -168,7 +175,6 @@
             .input-border {
                 @include containerBorder;
                 width: 100%;
-                margin: $margin;
 
                 input {
                     min-height: calc($baseline * 2);
@@ -247,13 +253,5 @@
                 margin: $margin;
             }
         }
-    }
-
-    .alert {
-        background-color: red !important;
-        color: white;
-        text-align: center;
-        padding: 0.5rem;
-        margin: 1rem 0;
     }
 }

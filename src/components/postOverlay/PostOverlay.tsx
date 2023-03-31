@@ -151,17 +151,17 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                         <section className='input-border'>
                             <input type='text' placeholder='post name:' defaultValue={currentPost.postTitle} onChange={(e) => setPostTitle(e.target.value)} />
                         </section>
+                        {(formSubmitted && !postTitle?.trim()) && <div className='alert'>Please enter a post title.</div>}
                         <section className='text-border'>
                             <textarea className='text-input' placeholder='post text goes here...' defaultValue={currentPost.postText} onChange={(e) => setPostText(e.target.value)} />
                         </section>
+                        {(formSubmitted && !postText?.trim()) && <div className='alert'>Please enter a post text.</div>}
                         <section className='overlay-button-section'>
                             <button className={activeButton} onClick={() => setPrivatePost(!privatePost)}><span>Public</span> / <span>Private</span></button>
                         </section>
                         <section className='create-button--border'>
                             <button className='overlay-buttons' onClick={addPost}>{overlayButton}</button>
                         </section>
-                        {(formSubmitted && !postTitle?.trim()) && <div className='alert'>Please enter a post title.</div>}
-                        {(formSubmitted && !postText?.trim()) && <div className='alert'>Please enter a post text.</div>}
                     </>
                     :
                     <section className='delete-section'>
