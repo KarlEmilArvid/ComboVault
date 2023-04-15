@@ -1,8 +1,3 @@
-# ComboVault
-https://combovault.com/
+# [ComboVault](https://combovault.com/)
 
----
-
-React + TS + Redux + SASS + Firebase
-
----
+## Save and share fighting game information easily with the help of ComboVault

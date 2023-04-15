@@ -1,16 +1,39 @@
 @import '../../scss/layout.scss';
+@import '../../scss/variables.scss';
 
+.search-wrapper {
+    @include flex($direction: row);
+    width: $baseline;
+    height: $baseline;
+    margin: 0 $margin;
 
-.search_wrapper {
+    .search-toggle {
+        position: absolute;
+        right: 0;
+        @include flex($direction: row-reverse);
+        margin-right: $margin-small;
 
-    @include flex();
+        .search-icon {
+            width: calc($baseline * 1.5);
+            cursor: pointer;
+        }
 
-    .search_icon {
-        
-        align-self: center;
-        width: 1.5rem;
-        margin-right: .5rem;
+        .input-border {
+            @include containerBorder;
+            margin: 0 $margin;
+            padding: .2rem;
 
+            input {
+                width: 12em;
+                padding: .15rem;
+                outline: none;
+                border: none;
+            }
+        }
     }
+}
 
+.search-wrapper-none {
+    opacity: 0;
+    z-index: -99;
 }

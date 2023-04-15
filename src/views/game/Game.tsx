@@ -12,12 +12,12 @@ type GameType = {
 
 type Props = {
     showCharacter: (name: string, image: string) => void
-    games: GameType;
+    games: GameType
     pickGame: (gameName: string, gameImage: string) => void
     availableSearches: (foundNames: string[] | []) => void
-    foundGames: string[];
-    searching: string | undefined;
-    searchFunction: (searchTerm: string) => void;
+    foundGames: string[]
+    searching: string | undefined
+    searchFunction: (searchTerm: string) => void
 }
 
 const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, searchFunction, searching }: Props) => {
@@ -25,7 +25,7 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
     const dispatchedGames = useSelector((state: any) => state.games)
     const navigate = useNavigate()
 
-    //navigerar oss till start om vi inte går från start>spel>karaktär
+    //Redirect function
     useEffect(() => {
         if (!games.gameName && !games.gameImage) {
             return navigate('/')
@@ -42,7 +42,7 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
         game.GameTitle.map((character: any) => {
             if (games.gameName === character.Game.Name) {
                 character.Characters.map((validCharacters: any) => {
-                    const tempName = validCharacters.Name.slice(2);
+                    const tempName = validCharacters.Name.slice(2)
                     if (foundGames.length > 0 && foundGames.includes(tempName)) {
                         characterArray.push({ name: validCharacters.Name, image: validCharacters.Image })
                     } else if (!foundGames.includes(tempName) && searching!.length > 0) {
@@ -57,19 +57,16 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
 
     const charactersSorted = characterArray.sort((a: any, b: any) => {
         if (b.name <= a.name) {
-            return a.name <= b.name ? -1 : 1;
+            return a.name <= b.name ? -1 : 1
         } else {
-            return b.name > a.name ? -1 : 1;
+            return b.name > a.name ? -1 : 1
         }
-    });
-
+    })
 
     return (
         <>
             <Header availableSearches={availableSearches} searchFunction={searchFunction} />
-            
-            <div className="main-wrapper">
-
+            <div className='main-wrapper'>
                 <main className='square-wrapper'>
                     {characterArray.map((char: any, i: number) => {
                         if (i < charactersSorted.length) {
@@ -77,7 +74,6 @@ const Game = ({ showCharacter, games, pickGame, availableSearches, foundGames, s
                         }
                     })}
                 </main>
-
             </div>
         </>
     )

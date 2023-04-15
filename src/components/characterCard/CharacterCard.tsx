@@ -18,30 +18,12 @@ type Props = {
 const CharacterCard = ({ character, showCharacter, pickGame }: Props) => {
     const [validCharacter, setValidCharacter] = useState<CharacterType>({ characterName: '', characterImage: '' })
     const [intro, setIntro] = useState<string>('')
+    const games = useSelector((state: any) => state.games.Games)
 
     useEffect(() => {
         setValidCharacter(character)
     }, [])
 
-    const games = useSelector((state: any) => state.games.Games)
-    /*
-        useEffect(() => {
-            games?.map((game: any, i: number) => {
-                game.GameTitle.map((character: any) => {
-                    let tempString: string = ''
-                    character.Characters.map((character: any) => {
-                        if (validCharacter.characterName === character.characterName) {
-                            console.log('är det true?')
-                            tempString = character.Intro
-                        }
-                    })
-                    setIntro(tempString)
-                })
-            })
-        }, [validCharacter])
-    */
-
-    //fungerande kod för att visa intro text
     useEffect(() => {
         let tempString = ''
         games?.forEach((game: any) => {

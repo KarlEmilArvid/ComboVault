@@ -5,7 +5,6 @@ import Header from '../../components/header/Header'
 import InformationSection from '../../components/informationSection/InformationSection'
 import PostSection from '../../components/postSection/PostSection'
 import ToggleComponent from '../../components/toggleComponent/ToggleComponent'
-import './character.scss'
 
 type CharacterType = {
     characterName: string
@@ -27,7 +26,7 @@ const Character = ({ character, showCharacter, pickGame, availableSearches, sear
         setName(name)
     }
 
-    //navigerar oss till start om vi inte går från start>spel>karaktär
+    //Redirect function
     useEffect(() => {
         if (!character.characterName && !character.characterImage) {
             return navigate('/')

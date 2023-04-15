@@ -66,46 +66,15 @@
 @media screen and (min-width: $breakpointDesktop) {
     .square-border--wrapper {
         .square-border {
-            @include squareBorder;
             width: 142px;
             height: 142px;
 
             .square-container {
-                @include flex($direction: column);
-                @include squareContainer;
                 width: 130px;
                 height: 130px;
 
-                &:hover {
-                    cursor: pointer;
-                }
-
                 img {
                     scale: 1.4;
-                    transform: rotate(-45deg);
-                    max-width: 100%;
-                    max-height: 100%;
-                    border-radius: 50%;
-                    color: #900;
-                    text-decoration: none;
-                }
-
-                img:hover {
-                    color: red;
-                    position: relative;
-                }
-
-                img[title]:hover:after {
-                    content: attr(data);
-                    padding: 4px 8px;
-                    color: rgba(0, 0, 0, 0.5);
-                    position: absolute;
-                    left: 0;
-                    top: 100%;
-                    white-space: nowrap;
-                    z-index: 2;
-                    border-radius: 5px;
-                    background: rgba(0, 0, 0, 0.5);
                 }
             }
         }
@@ -113,7 +82,6 @@
 }
 
 @media screen and (min-width: 540px) {
-
     .square-border--wrapper:nth-child(5n+3) {
         grid-column: 2 / 3;
     }
@@ -133,11 +101,9 @@
     .square-border--wrapper:nth-child(5n + 2) {
         grid-column: 5 / 6;
     }
-
 }
 
 @media screen and (min-width: 890px) {
-
     .square-border--wrapper:nth-child(7n+4) {
         grid-column: 2 / 3;
     }
@@ -167,9 +133,7 @@
     }
 }
 
-
 @media screen and (min-width: 1150px) {
-
     .square-border--wrapper:nth-child(9n+5) {
         grid-column: 2 / 3;
     }
@@ -207,9 +171,7 @@
     }
 }
 
-
 @media screen and (min-width: 1400px) {
-
     .square-border--wrapper:nth-child(11n+6) {
         grid-column: 2 / 3;
     }
@@ -253,5 +215,4 @@
     .square-border--wrapper:nth-child(11n + 5) {
         grid-column: 11 / 12;
     }
-
 }

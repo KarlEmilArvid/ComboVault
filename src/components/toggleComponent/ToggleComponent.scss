@@ -9,7 +9,7 @@
     border-radius: 0.4rem;
 
     .toggle-wrapper {
-        @include flex($wrap: wrap);
+        @include flex($direction: column);
         width: 100%;
         border-radius: $borderRadius;
         background-color: $secondaryBackground;
@@ -38,5 +38,9 @@
 @media screen and (min-width: $breakpointDesktop) {
     .toggle-wrapper--border {
         width: 70%;
+
+        .toggle-wrapper {
+            @include flex($direction: row, $wrap: wrap)
+        }
     }
 }

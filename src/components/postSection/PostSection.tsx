@@ -3,7 +3,7 @@ import { getDocs, collection } from 'firebase/firestore'
 import { auth, db, signIn } from '../../firebase/firebase'
 import { useDispatch, useSelector } from 'react-redux'
 import { actions as posts } from '../../redux/postsReducer'
-import { RootState } from "../../store";
+import { RootState } from '../../store'
 import PostOverlay from '../postOverlay/PostOverlay'
 import Post from '../post/Post'
 import './PostSection.scss'
@@ -33,13 +33,13 @@ const PostSection = ({ name, characterName }: Props) => {
     const [publicPosts, setPublicPosts] = useState<any[]>()
     const [pickedTitle, setPickedTitle] = useState<string>()
     const [overlayButton, setOverlayButton] = useState<string>()
-    const [postId, setPostId] = useState<number>(0);
+    const [postId, setPostId] = useState<number>(0)
     const [currentPost, setCurrentPost] = useState<CurrentPost>({ postTitle: '', postText: '' })
 
-    const overlayTitle = 'New Post';
-    const currentButton = 'Create Post';
+    const overlayTitle = 'New Post'
+    const currentButton = 'Create Post'
 
-    const allPosts: Posts[] = useSelector((state: RootState) => state.posts);
+    const allPosts: Posts[] = useSelector((state: RootState) => state.posts)
 
     const dispatch = useDispatch()
 
@@ -51,14 +51,14 @@ const PostSection = ({ name, characterName }: Props) => {
             querySnapshot.forEach((doc) => {
                 tempArray.push(doc.data())
             })
-            console.log("här hämtar vi posts", tempArray)
+            console.log('här hämtar vi posts', tempArray)
             tempArray.sort((a: any, b: any) => {
                 if (a.CreatedAt <= b.CreatedAt) {
-                    return b.CreatedAt <= a.CreatedAt ? -1 : 1;
+                    return b.CreatedAt <= a.CreatedAt ? -1 : 1
                 } else {
-                    return a.CreatedAt > b.CreatedAt ? -1 : 1;
+                    return a.CreatedAt > b.CreatedAt ? -1 : 1
                 }
-            });
+            })
             dispatch(posts.getPosts(tempArray))
         })()
     }, [])
@@ -72,7 +72,7 @@ const PostSection = ({ name, characterName }: Props) => {
         setPrivatePosts(privatePost)
         const publicPost = allPosts?.filter((post: any) => post.Name === characterName && !post.Private)
         setPublicPosts(publicPost)
-    }, [characterName, allPosts, overlay])
+    }, [characterName, allPosts, overlay, name])
 
     const openOverlay = (overlayTitle: string, post: CurrentPost, currentButton: string, Id: number) => {
         setPickedTitle(overlayTitle)
@@ -83,8 +83,8 @@ const PostSection = ({ name, characterName }: Props) => {
     }
 
     return (
-        <div className="posts-wrapper--border">
-            <section className="posts-wrapper">
+        <div className='posts-wrapper--border'>
+            <section className='posts-wrapper'>
                 <h2>{name}</h2>
                 <ul className='posts-list'>
                     {
@@ -103,13 +103,13 @@ const PostSection = ({ name, characterName }: Props) => {
                     }
                 </ul>
                 {auth.currentUser?.uid != undefined ?
-                    <section className="new-post-button--border">
+                    <section className='new-post-button--border'>
                         <button onClick={() => openOverlay(overlayTitle, { postText: '', postTitle: '' }, currentButton, postId)} className='new-post-button'>New Post</button>
                     </section>
                     :
-                    <section className="posts-wrapper--loggedout">
-                        <section className="sign-in-button--border">
-                            <button onClick={connectUser} className="sign-in-button">Sign in</button>
+                    <section className='posts-wrapper--loggedout'>
+                        <section className='sign-in-button--border'>
+                            <button onClick={connectUser} className='sign-in-button'>Sign in</button>
                         </section>
                     </section>
                 }

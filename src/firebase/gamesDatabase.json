@@ -132,8 +132,8 @@
                         },
                         {
                             "Image": "https://www.dustloop.com/wiki/images/d/da/DBFZ_Goku_Portrait.png",
-                            "Information": "",
-                            "Intro": "",
+                            "Information": "Goku!",
+                            "Intro": "Goku?",
                             "Name": "01Goku"
                         },
                         {
@@ -435,7 +435,7 @@
                         {
                             "Image": "https://skullgirls.com/wp-content/themes/skullgirls/images/characters/big-band.png",
                             "Information": "",
-                            "Intro": "",
+                            "Intro": "intro text",
                             "Name": "01Big Band"
                         },
                         {
@@ -1153,8 +1153,8 @@
                         },
                         {
                             "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FScorpion_MK11_3.png?alt=media&token=cf96e65c-705e-402e-bc51-83645e77c873",
-                            "Information": "",
-                            "Intro": "",
+                            "Information": "Scorpion is a well-rounded character with high damaging combos and long-ranged normals. His teleport gives him high mobility options while making him a threat from anywhere on the screen.",
+                            "Intro": "Grandmaster Scorpion of the Shirai Ryu",
                             "Name": "11Scorpion"
                         },
                         {
@@ -2135,8 +2135,8 @@
                         },
                         {
                             "Image": "https://www.dustloop.com/wiki/images/e/ea/GGAC_Axl_Portrait.png",
-                            "Information": "",
-                            "Intro": "",
+                            "Information": "axl axl axl axl axl axl axl axl axl axl axl axl axl axl axl",
+                            "Intro": "axl han e low low o inte high high, axl han e low low o inte high high",
                             "Name": "XXAxl Low"
                         },
                         {

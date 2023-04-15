@@ -7,16 +7,17 @@ import Square from '../../components/square/Square'
 type Props = {
     showCharacter: (name: string, image: string) => void
     pickGame: (gameName: string, gameImage: string) => void
-    foundGames: string[];
+    foundGames: string[]
     availableSearches: (foundNames: string[] | []) => void
-    searching: string | undefined;
-    searchFunction: (searchTerm: string) => void;
+    searching: string | undefined
+    searchFunction: (searchTerm: string) => void
 }
 
 const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchFunction, searching }: Props) => {
     const [games, setGames] = useState<GAME>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
+    //TODO: ska denna bort?
     console.log(foundGames);
 
     useEffect(() => {
@@ -40,19 +41,16 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchF
 
     const gamesSorted = gameNamesImages.sort((a: any, b: any) => {
         if (b.name <= a.name) {
-            return a.name <= b.name ? -1 : 1;
+            return a.name <= b.name ? -1 : 1
         } else {
-            return b.name > a.name ? -1 : 1;
+            return b.name > a.name ? -1 : 1
         }
-    });
-    
+    })
 
     return (
         <>
-            <Header availableSearches={availableSearches} searchFunction={searchFunction}/>
-
-            <div className="main-wrapper">
-
+            <Header availableSearches={availableSearches} searchFunction={searchFunction} />
+            <div className='main-wrapper'>
                 <main className='square-wrapper'>
                     {
                         games?.map((square: any, i: number) => {
@@ -62,7 +60,6 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchF
                         })
                     }
                 </main>
-                
             </div>
         </>
     )
