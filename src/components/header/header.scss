@@ -5,8 +5,11 @@ header {
     margin-bottom: $margin;
 
     .header_container {
-        position: relative;
         @include flex($justify: space-between);
+        //TODO: temp max bredd fix, finns säkert bättre sätt att fixa
+        max-width: 2000px;
+        margin: auto;
+        position: relative;
         min-height: calc($baseline * 5);
 
         .gearwheel-icon {
@@ -80,6 +83,7 @@ header {
 
             .gearwheel-list {
                 padding: calc($padding * 1.5) 0 $padding 0;
+                cursor: default;
                 margin: 0;
             }
 
@@ -91,7 +95,12 @@ header {
                 position: relative;
 
                 h2 {
-                    margin-left: $margin;
+                    margin-left: $margin-large;
+                    //TODO: fixa så att "Options" ser mer ut som en header, temp lösning så länge
+                    background: linear-gradient(to right, $borderColor 50%, white);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: rgba(255, 255, 255, 0.2);
                 }
 
                 h3 {

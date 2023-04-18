@@ -14,17 +14,19 @@
         border-radius: $borderRadius;
         background-color: $secondaryBackground;
 
-        figure {
+        .fav-figure {
             @include flex();
             @include postButton;
             width: calc(40% + 1rem);
-            margin: $baseline;
+            margin: $margin;
             background: transparent;
             height: calc($baseline * 2);
             margin: $margin-small;
+            //TODO: ändra när favourites finns
+            cursor: default;
 
             img {
-                padding-right: $baseline;
+                padding-right: $padding;
             }
 
             p {

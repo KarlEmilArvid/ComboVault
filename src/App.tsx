@@ -8,6 +8,7 @@ import { actions as games } from './redux/gamesReducer'
 import { useDispatch } from 'react-redux'
 import gamesDatabase from './firebase/gamesDatabase.json'
 import './scss/global.scss'
+import Footer from './components/footer/Footer'
 
 type CharacterType = {
 	characterName: string
@@ -61,6 +62,7 @@ function App() {
 					showCharacter={showCharacter} pickGame={pickGame} availableSearches={availableSearches} searchFunction={searchFunction} />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
+			<Footer />
 		</div>
 	)
 }
