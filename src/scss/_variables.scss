@@ -5,6 +5,7 @@ $primaryTextColor: #FBF6F6;
 $secondaryTextColor: #343030;
 $primaryBackground: #4C4E5E;
 $secondaryBackground: #797C8D;
+$greyColor: #5e6265;
 
 $dark: #343030;
 
@@ -13,13 +14,12 @@ $borderStyle: 1px solid $borderColor;
 $borderRadius: $baseline * 0.2;
 $container-background: #F4F3FF;
 
-$shadow: 0px 0px 4px 1px rgba(2, 2, 2, 0.6);
-$bigShadow: 0px 0px 1rem 1px rgba(2, 2, 2, 0.6);
+$shadow: 0px 0px 1rem 1px rgba(2, 2, 2, 0.6);
 $textShadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
 
-$scrollTrack: #292b2d;
-$scrollThumb: #4b4e51;
-$scrollHover: #5e6265;
+$scrollTrack: $primaryBackground;
+$scrollThumb: $greyColor;
+$scrollHover: $secondaryBackground;
 
 $margin: $baseline;
 $margin-small: calc($baseline / 2);

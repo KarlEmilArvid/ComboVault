@@ -18,7 +18,7 @@
 
     .square-border {
         @include squareBorder;
-        box-shadow: $bigShadow;
+        box-shadow: $shadow;
         width: 112px;
         height: 112px;
 

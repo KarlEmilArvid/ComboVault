@@ -38,3 +38,16 @@ body::-webkit-scrollbar-thumb:hover {
     @include maxSize;
     background-color: $primaryBackground;
 }
+
+//TODO: focus skapat för att testa, inte färdigt.
+button {
+    @include focus;
+}
+
+input[type="text"] {
+    @include focus;
+}
+
+textarea {
+    @include focus;
+}

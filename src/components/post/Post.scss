@@ -50,7 +50,7 @@
             .edit-buttons--border {
                 @include flex;
                 @include containerBorder;
-                width: 30%;
+                width: 8em;
                 margin: $margin-small;
 
                 .edit-buttons {
@@ -94,7 +94,7 @@
 
             .button-section {
                 .edit-buttons--border {
-                    width: 15%;
+                    width: 6em;
                     margin: $margin;
                 }
             }
