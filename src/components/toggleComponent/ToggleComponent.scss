@@ -3,7 +3,7 @@
 
 .toggle-wrapper--border {
     @include containerBorder;
-    box-shadow: $bigShadow;
+    box-shadow: $shadow;
     width: 90%;
     margin: $margin auto;
     border-radius: 0.4rem;

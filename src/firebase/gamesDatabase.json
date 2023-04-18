@@ -312,7 +312,7 @@
                             "Name": "05Baiken"
                         },
                         {
-                            "Image": "https://cdn.animenewsnetwork.com/thumbnails/max550x550/cms/news.6/195819/bed.png.jpg",
+                            "Image": "https://www.dustloop.com/wiki/images/3/33/GGST_Bedman_Portrait.png",
                             "Information": "",
                             "Intro": "",
                             "Name": "05Bedman?"
@@ -954,7 +954,7 @@
                         }
                     ],
                     "Game": {
-                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken%208%2FTekken8_icon.webp?alt=media&token=9fdef7a0-7ee1-4564-a279-0fc5a3051431",
+                        "Image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Tekken_8_logo.svg",
                         "Information": "",
                         "Name": "Tekken 8"
                     }
@@ -966,230 +966,230 @@
                 {
                     "Characters": [
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FCassie_mk11.png?alt=media&token=be504931-403d-4401-a4a4-5fa43ac1352d",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/cassie-cage/body.webp",
                             "Information": "",
                             "Intro": "",
-                            "Name": "11Cassie"
+                            "Name": "11Cassie Cage"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FCetrion_MK11.png?alt=media&token=e42db731-73ef-43e8-aebc-1e50c358d2ee",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/cetrion/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Cetrion"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FD'vorah_mk11_2.png?alt=media&token=fbc70fa0-2b76-4e45-b8aa-5cb465f68bf4",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/d-vorah/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11D'vorah"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FErron_mk11.png?alt=media&token=2db2252f-2b66-4e96-94dc-e2f190a57b7e",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/erron-black/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Erron Black"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FFrost_mk11.png?alt=media&token=5d6a4876-970d-462d-892b-f84724e106f0",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/frost/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Frost"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FGeras_MK11.png?alt=media&token=9ae0f999-1cc4-473b-9375-802d97453ab9",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/geras/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Geras"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FHuman_kung_laos.png?alt=media&token=8ac0e189-40ad-4e67-9043-88a38672bddb",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/kung-lao/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Kung Lao"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJacqui_mk11.png?alt=media&token=ded5f94b-0e19-468b-a48d-ade7ec4bdb87",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/jacqui-briggs/body.webp",
                             "Information": "",
                             "Intro": "",
-                            "Name": "11Jacqui"
+                            "Name": "11Jacqui Briggs"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJade_MK11.png?alt=media&token=9dc73525-9696-4f87-b19c-66b32dbf8e1b",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/jade/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Jade"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJax_mk11.png?alt=media&token=c40f00d1-5dd6-4949-aac1-0e125fcaef4c",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/jax-briggs/body.webp",
                             "Information": "",
                             "Intro": "",
-                            "Name": "11Jax"
+                            "Name": "11Jax Briggs"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FJohnny_Render_mk_11_1.png?alt=media&token=7f67919a-cb70-4f9b-b48c-9506dc84ef65",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/johnny-cage/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Johnny Cage"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKabal_MK11.png?alt=media&token=dc8fef25-d1f6-4657-a2c8-d05c27c469a7",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/kabal/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Kabal"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKano_MK11.png?alt=media&token=5b3efbf8-fc9d-4156-bf80-29f55a49845f",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/kano/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Kano"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKitana_mk11.png?alt=media&token=9947a96c-4c2d-4322-a4b0-f6216685d2c5",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/kitana/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Kitana"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKollector_MK11.png?alt=media&token=c74ea0ef-29f8-4def-9d0f-66f14c8f2950",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/kollector/body.webp",
                             "Information": "",
                             "Intro": "why isn't he named 'kollektor'?",
                             "Name": "11Kollector"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FKotal_mk11.png?alt=media&token=5c48deb7-0431-486d-b7f0-3f41d06045fd",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/kotal-kahn/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Kotal Kahn"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FLiu_Kang_mk11.png?alt=media&token=f79b0339-096b-4cd1-a63c-0fc23400f387",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/liu-kang/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Liu Kang"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11JohnRamboRender.png?alt=media&token=2c522daa-e6cb-4d71-87e1-530b359826fe",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/rambo/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11John Rambo"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11JokerRender.png?alt=media&token=2c0a331c-10ea-45c9-9538-a05277503614",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/the-joker/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Joker"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11MileenaRender.png?alt=media&token=4825dfc2-08bf-4258-9ae0-63b0cb525880",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/mileena/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Mileena"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11RainRender.png?alt=media&token=02365653-27aa-4c11-9678-8ed8010b337d",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/rain/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Rain"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11TerminatorRender.png?alt=media&token=94fa71a3-ce66-4217-9e59-7ee838a007e0",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/terminator/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Terminator"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11YoungShangTsung.png?alt=media&token=98d7cce0-55c9-4f85-802d-76eb5f5fd78a",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/shang-tsung/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Shang Tsung"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Baraka_Render.png?alt=media&token=0ce417b9-154d-499e-b853-9200c1c3d863",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/baraka/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Baraka"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Fujin_render-0.png?alt=media&token=d10c23c1-c180-4a08-a678-9d1c228ce3cb",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/fujin/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Fujin"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMK11_Skarlet_Render.png?alt=media&token=541b4740-3ad2-4b62-8561-3aeae59402a6",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/skarlet/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Skarlet"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMk11sindelrender.png?alt=media&token=0e73a39f-3efe-467d-ac36-35a332d4dcdc",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/sindel/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Sindel"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FNightwolfRenderMK11.png?alt=media&token=6c2368b9-0a9d-4a60-a9d0-8c60ce9d5324",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/nightwolf/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Nightwolf"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FNoob_Saibot_mk11.png?alt=media&token=4a7e7d6d-9da5-46e3-b55b-a124bb736665",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/noob-saibot/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Noob Saibot"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FRaidenmk11.png?alt=media&token=5972fe21-a5dd-44c8-9f1f-b49f78c62dd2",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/raiden/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Raiden"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FRobocop_MK11_render.png?alt=media&token=3d7573e6-2dd4-4b85-ac2d-386d5d01d774",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/robocop/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Robocop"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FScorpion_MK11_3.png?alt=media&token=cf96e65c-705e-402e-bc51-83645e77c873",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/scorpion/body.webp",
                             "Information": "Scorpion is a well-rounded character with high damaging combos and long-ranged normals. His teleport gives him high mobility options while making him a threat from anywhere on the screen.",
                             "Intro": "Grandmaster Scorpion of the Shirai Ryu",
                             "Name": "11Scorpion"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FShao_Khan_mk11_default_2.png?alt=media&token=31ee0036-7733-42bf-a91d-c8a9773fec68",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/shao-kahn/body.webp",
                             "Information": "",
                             "Intro": "",
-                            "Name": "11Shao Khan"
+                            "Name": "11Shao Kahn"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSheeva_Render.png?alt=media&token=f64cb02c-3c53-49f3-9d7b-8cadd4e60436",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/sheeva/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Sheeva"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSonya_MK_11.png?alt=media&token=e70ecb5d-494d-4e6b-947a-40f101964bf4",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/sonya-blade/body.webp",
                             "Information": "",
                             "Intro": "",
-                            "Name": "11Sonya"
+                            "Name": "11Sonya Blade"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSpawn_Render.png?alt=media&token=53c1b5a2-6d33-486b-9644-b28a868949cd",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/spawn/body.webp",
                             "Information": "",
                             "Intro": "",
                             "Name": "11Spawn"
                         },
                         {
-                            "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FSub-Zero_Mk11.png?alt=media&token=0314b039-17d6-4711-99c1-8bb2f2528727",
+                            "Image": "https://cdn-prod.mortalkombat.com/roster/sub-zero/body.webp",
                             "Information": "",
                             "Intro": "-273°",
                             "Name": "11Sub-Zero"
                         }
                     ],
                     "Game": {
-                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/MK11%2FMk11coverart.png?alt=media&token=61d6419f-ddba-4bb3-bfef-0e3a7fd5e265",
+                        "Image": "https://cdn-prod.mortalkombat.com/static/mk-mark.svg",
                         "Information": "Initial release date: 23/04/2019",
                         "Name": "Mortal Kombat 11"
                     }

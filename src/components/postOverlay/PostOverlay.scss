@@ -21,10 +21,16 @@
         font-size: calc($baseline * 3);
         color: $primaryTextColor;
         top: $baseline;
-        left: calc($baseline* 2);
+        left: calc($baseline * 2);
 
         &:hover {
             cursor: pointer;
+        }
+
+        //TODO: temp fix för close-button så den får focus styling
+        &:focus {
+            border-color: none;
+            box-shadow: inset 0 1px 1px black, 0 0 1px 1px black;
         }
     }
 
@@ -37,11 +43,13 @@
 
         .input-border {
             @include containerBorder;
+            margin: $margin;
             width: 100%;
 
             input {
                 min-height: calc($baseline * 2);
                 width: 100%;
+                padding: .2rem;
                 margin: 0;
                 border: none;
             }
@@ -55,6 +63,7 @@
             .text-input {
                 min-height: calc($baseline * 14);
                 width: 100%;
+                padding: .2rem;
                 resize: none;
                 border: none;
             }

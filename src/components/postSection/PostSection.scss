@@ -2,7 +2,7 @@
 
 .posts-wrapper--border {
     @include containerBorder;
-    box-shadow: $bigShadow;
+    box-shadow: $shadow;
     width: 90%;
     margin: auto;
 
@@ -55,7 +55,7 @@
 @media screen and (min-width: $breakpointDesktop) {
     .posts-wrapper--border {
         @include containerBorder;
-        box-shadow: $bigShadow;
+        box-shadow: $shadow;
         width: 70%;
 
         .posts-wrapper {
