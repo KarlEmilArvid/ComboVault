@@ -14,7 +14,7 @@ const ToggleComponent = ({ getName }: Props) => {
                 <ToggleButton name='My Posts' getName={getName} />
                 <ToggleButton name='Public Posts' getName={getName} />
                 <ToggleButton name='Information' getName={getName} />
-                <figure>
+                <figure className='fav-figure'>
                     <img src={star} alt='Star icon' />
                     <p>Favourites</p>
                 </figure>

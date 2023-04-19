@@ -10,6 +10,8 @@ type Props = {
     pickGame: (gameName: string, gameImage: string) => void
 }
 
+//TODO: gör en funktion för window.scrollTo? temp fix som ligger på många ställen.
+
 const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: Props) => {
     const navigate = useNavigate()
     const param = useParams()
@@ -17,6 +19,7 @@ const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: P
     const pickCharacter = (name: string, image: string) => {
         if (!param.character) {
             showCharacter(name, image)
+            window.scrollTo(0, 0);
             navigate(`/${param.game?.replace(/\s+/g, '-')}/${name.slice(2)?.replace(/\s+/g, '-')}`)
         }
     }

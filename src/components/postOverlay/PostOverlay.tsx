@@ -51,6 +51,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
     }, [privatePost])
 
     const closeOverlay = () => {
+        window.scrollTo(0, 0);
         setOverlay(false)
     }
 
@@ -60,6 +61,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                 await deleteDoc(doc(db, `${characterName}`, `${Id}`))
                 getAllPosts()
             })()
+            window.scrollTo(0, 0);
             setOverlay(false)
         }
         // Validation logic for post title and post text
@@ -100,6 +102,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                 }))
                 getAllPosts()
             })()
+            window.scrollTo(0, 0);
             setOverlay(false)
         }
 
@@ -119,6 +122,7 @@ const PostOverlay = ({ overlay, setOverlay, characterName, pickedTitle, currentP
                 })
                 getAllPosts()
             })()
+            window.scrollTo(0, 0);
             setOverlay(false)
         }
     }

@@ -23,14 +23,12 @@ const Header = ({ availableSearches, searchFunction }: Props) => {
     const gameParam = param.game?.replaceAll('-', ' ')
     const characterParam = param.character?.replaceAll('-', ' ')
 
-    //TODO: ta bort?
-    console.log(auth.currentUser?.uid)
-
     const openOverlay = () => {
         setOverlay(!overlay)
     }
 
     const goHome = () => {
+        window.scrollTo(0, 0);
         navigate('/')
         setOverlay(!overlay)
     }

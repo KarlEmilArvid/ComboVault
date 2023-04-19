@@ -1,0 +1,9 @@
+@import '../../scss/layout.scss';
+@import '../../scss/variables.scss';
+
+.footer {
+    width: 100%;
+    height: 2rem;
+    margin-top: $margin;
+    background-color: $primaryBackground;
+}
