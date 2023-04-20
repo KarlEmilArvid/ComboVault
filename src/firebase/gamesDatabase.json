@@ -3424,6 +3424,182 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/65/RE_Kenji_Portrait.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "REKenji"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/7/7d/RE_MaiLing_Portrait.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "REMai Ling"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/b/b3/RE_Leo_Portrait.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "RELeo"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/62/RE_Tessa_Portrait.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "RETessa"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.gbl.gg/images/e/e8/RE_Logo.png?20200821221301",
+                        "Information": "",
+                        "Name": "Red Earth"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://wiki.gbl.gg/images/thumb/0/04/Profile-hyde.png/228px-Profile-hyde.png?20140819013808",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "UNHyde"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/07/Profile-linne.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNLinne"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/2/27/Profile-waldstein.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNWaldstein"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/b/bf/Profile-carmine.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNCarmine"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/63/Profile-orie.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNOrie"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/b/b5/Profile-gordeau.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNGordeau"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/8/87/Profile-merkava.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNMerkava"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/4/41/Profile-vatista.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNVatista"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/5/5d/Profile-seth.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNSeth"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/9/9e/Profile-yuzuriha.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNYuzuriha"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/6c/Profile-hilda.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNHilda"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/5/55/Profile-chaos.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNChaos"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/a/af/Profile-nanase.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNNanase"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/00/Profile-byakuya.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNByakuya"
+                        },
+                        {
+                            "Image": "http://under-night.wdfiles.com/local--files/characters:phonon/Pal_00.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNPhonon"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/19/Profile-mika.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNMika"
+                        },
+                        {
+                            "Image": "http://under-night.wdfiles.com/local--files/characters:wagner/Pal_00.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNWagner"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/05/Profile-Enkidu.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNEnkidu"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/f1/Profile-londrekia.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNLondrekia"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/f4/Profile-eltnum.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNEltnum"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/3/3b/Profile-akatsuki.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "UNAkatsuki"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.gbl.gg/images/thumb/f/fb/UNICLR_Logo.png/800px-UNICLR_Logo.png?20200607132644",
+                        "Information": "It's much easier just calling it UNICLR",
+                        "Name": "Under Night In-Birth Exe:Late[cl-r]"
+                    }
+                }
+            ]
         }
     ]
 }
