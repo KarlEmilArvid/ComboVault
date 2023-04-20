@@ -3600,6 +3600,355 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://wiki.gbl.gg/images/7/78/JJASBR_Jonathan_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJonathan"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/f5/JJASBR_Zeppeli_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJZeppeli"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/e/e9/JJASBR_Speedwagon_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJSpeedwagon"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/7/79/JJASBR_Brando_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJDio Brando"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/4/4b/JJASBR_Joseph_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJoseph"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/c/c0/JJASBR_Caesar_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJCeasar"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/2/21/JJASBR_Lisa_Lisa_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJLisa Lisa"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/9/9b/JJASBR_Stroheim_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJStroheim"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/7/77/JJASBR_Wamuu_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJWamuu"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/9/99/JJASBR_Esidisi_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJEsidisi"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/8/87/JJASBR_Kars_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJKars"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/c/ce/JJASBR_Jotaro_Part_3_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJotaro (Part 3)"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/c/c2/JJASBR_Old_Joseph_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJOld Joseph"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/d/dd/JJASBR_Avdol_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJAvdol"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/1b/JJASBR_Kakyoin_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJKakyoin"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/c/c1/JJASBR_Polnareff_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJPolnareff"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/8/89/JJASBR_Iggy_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJIggy"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/1b/JJASBR_Hol_Horse_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJHol Horse"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/5/51/JJASBR_Mariah_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJMariah"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/d/d1/JJASBR_Pet_Shop_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJPet Shop"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/a/a0/JJASBR_Vanilla_Ice_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJVanilla Ice"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/f3/JJASBR_DIO_Artwork.png",
+                            "Information": "no cap",
+                            "Intro": "all caps",
+                            "Name": "JJDIO"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/a/a0/JJASBR_Josuke_Part_4_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJosuke Higashikata (Part 4)"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/0a/JJASBR_Jotaro_Part_4_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJotaro Kujo (Part 4)"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/e/e0/JJASBR_Koichi_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJKoichi Hirose"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/11/JJASBR_Okuyasu_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJOkuyasu Nijimura"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/9/93/JJASBR_Rohan_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJRohan Kishibe"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/3/30/JJASBR_Yukako_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJYukako Yamagishi"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/2/28/JJASBR_Shigechi_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJShigechi"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/b/bc/JJASBR_Keicho_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJKeicho"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/62/JJASBR_Akira_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJAkira Otoishi"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/d/d9/JJASBR_Kira_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJYoshikage Kira"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/4/4d/JJASBR_Kosaku_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJKosaku Kawajiri"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/64/JJASBR_Giorno_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJGiorno Giovanna"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/3/34/JJASBR_Bruno_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJBruno Bucciarati"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/4/45/JJASBR_Mista_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJGuido Mista"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/3/31/JJASBR_Narancia_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJNarancia Ghirga"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/3/3d/JJASBR_Fugo_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJPannacotta Fugo"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/9/90/JJASBR_Trish_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJTrish Una"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/69/JJASBR_Prosciutto_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJProsciutto & Pesci"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/ff/JJASBR_Ghiaccio_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJGhiaccio"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/6d/JJASBR_Risotto_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJRisotto Nero"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/a/a4/JJASBR_Diavolo_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJDiavolo"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/18/JJASBR_Jolyne_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJolyne Cujoh"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/2/2b/JJASBR_Ermes_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJErmes Costello"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/2/2a/JJASBR_Anasui_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJNarciso Anasui"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/6b/JJASBR_FF_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJFoo Fighters"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/09/JJASBR_Weather_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJWeather Report"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/0/00/JJASBR_WS_Pucci_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJEnrico Pucci (Whitesnake)"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/9/9a/JJASBR_Final_Pucci_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJEnrico Pucci (Final)"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/f/f8/JJASBR_Johnny_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJohnny Joestar"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/e/e5/JJASBR_Gyro_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJGyro Zeppeli"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/6/6a/JJASBR_Diego_Brando_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJDiego Brando"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/1/10/JJASBR_Valentine_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJFunny Valentine"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/e/e2/JJASBR_Josuke_Part_8_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJJosuke Higashikata (Part 8)"
+                        },
+                        {
+                            "Image": "https://wiki.gbl.gg/images/c/cc/JJASBR_Baoh_Artwork.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "JJIkuro Hashizawa"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.gbl.gg/images/d/d8/ASBR_Logo.png",
+                        "Information": "",
+                        "Name": "JoJo's Bizarre Adventure: All-Star Battle R"
+                    }
+                }
+            ]
         }
     ]
 }
