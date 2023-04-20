@@ -4064,6 +4064,169 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/dc/GGXRD-R_Kum_Portrait.png",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "R2Kum Haehyun"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/3c/GGXRD-R_Elphelt_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Elphelt Valentine"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/95/GGXRD-R_Sol_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Sol Badguy"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/2a/GGXRD-R2_Ky_Kiske_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Ky Kiske"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/81/GGXRD-R_Ramlethal_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Ramlethal Valentine"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/2a/GGXRD-R_Raven_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Raven"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/74/GGXRD-R_Sin_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Sin Kiske"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/8c/GGXRD_Johnny_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Johnny"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/9e/GGXRD-R_May_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2May"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/56/GGXRD-R_Leo_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Leo Whitefang"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/41/GGXRD-R_Chipp_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Chipp Zanuff"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b0/GGXRD-R_Millia_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Millia Rage"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/4f/GGXRD-R2_Baiken_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Baiken"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/94/GGXRD-R2_Answer_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Answer"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/f4/GGXRD-R_Zato-1_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Zato-1"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/0b/GGXRD-R_Potemkin_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Potemkin"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/88/GGXRD-R_I-No_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2I-No"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/09/GGXRD-R_Slayer_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Slayer"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/aa/GGXRD-R_Venom_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Venom"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/55/GGXRD-R_Axl_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Axl Low"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/33/GGXRD-R_Dizzy_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Dizzy"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/00/GGXRD-R_Faust_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Faust"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c8/GGXRD-R_Bedman_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Bedman"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/0a/GGXRD-R_JackO_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Jack-O"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d8/GGXRD-R_Jam_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "R2Jam Kuradoberi"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/4/44/GGXRD-R2_Logo.png",
+                        "Information": "Final version of Guilty Gear Xrd",
+                        "Name": "Guilty Gear Xrd REV 2"
+                    }
+                }
+            ]
         }
     ]
 }
