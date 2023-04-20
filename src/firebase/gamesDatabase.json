@@ -3949,6 +3949,121 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/7/79/Akuma-01.png",
+                            "Information": "",
+                            "Intro": ":)",
+                            "Name": "2TAkuma"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/b/bc/Ryu-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TRyu"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/6/61/Ehonda-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TE.Honda"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/e/e6/Blanka-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TBlanka"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/d/df/Guile-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TGuile"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/4/41/Thawk-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TT. Hawk"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/b/ba/Feilong-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TFei Long"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/e/e9/Balrog-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TBalrog"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/1/15/Sagat-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TSagat"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/6/63/Ken-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TKen"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/e/ee/Chunli-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TChun-Li"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/e/e8/Zangief-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TZangief"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/c/cf/Dhalsim-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TDhalsim"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/c/ca/Cammy-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TCammy"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/8/88/Deejay-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TDee Jay"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/9/96/Vega-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TVega"
+                        },
+                        {
+                            "Image": "https://wiki.supercombo.gg/images/3/3c/Mbison-old1.gif",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "2TM. Bison"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.supercombo.gg/images/0/09/Ssf2turbologo.png",
+                        "Information": "Page for all versions of Street Fighter 2",
+                        "Name": "Street Fighter 2 Turbo"
+                    }
+                }
+            ]
         }
     ]
 }
