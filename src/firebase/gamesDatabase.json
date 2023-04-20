@@ -3213,6 +3213,217 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://static.tvtropes.org/pmwiki/pub/images/alien_mkx_render.png",
+                            "Information": "",
+                            "Intro": "gasp",
+                            "Name": "10Alien"
+                        },
+                        {
+                            "Image": "https://static.tvtropes.org/pmwiki/pub/images/bo_rai_cho_mkx.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Bo-Rai-Cho"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/cassie-cage-mortal-kombat-x-character-artwork-altar-of-gaming-198.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Cassie Cage"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/Mortal_kombat_x_ios_d_vorah_render_2_by_wyruzzah-d8p0wsq-1-.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10D'vorah"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/ErmacMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Ermac"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/Erron_Black_Render_3.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Erron Black"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/Ferra_Torr_Render_3.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Ferra/Torr"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/goro-mortal-kombat-x-character-artwork-altar-of-gaming-224.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Goro"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/Jacqui_MKX_Render.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Jacqui Briggs"
+                        },
+                        {
+                            "Image": "https://static.tvtropes.org/pmwiki/pub/images/jason_render.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Jason Voorhees"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/jax-briggs-mortal-kombat-x-character-artwork-altar-of-gaming-202.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Jax Briggs"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/johnny-cage-mortal-kombat-x-character-artwork-altar-of-gaming-203.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Johnny Cage"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/KanoMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Kano"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/KenshiMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Kenshi"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/kitana-mortal-kombat-x-character-artwork-altar-of-gaming-205.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Kitana"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/Kotal_Khan_PNG.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Kotal Kahn"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/kung-jin-mortal-kombat-x-character-artwork-altar-of-gaming-226.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Kung Jin"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/kung-lao-mortal-kombat-x-character-artwork-altar-of-gaming-207.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Kung Lao"
+                        },
+                        {
+                            "Image": "https://static.tvtropes.org/pmwiki/pub/images/leatherface_mkx.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Leatherface"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/liu-kang-mortal-kombat-x-character-artwork-altar-of-gaming-208.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Liu Kang"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/MileenaMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Mileena"
+                        },
+                        {
+                            "Image": "https://static.tvtropes.org/pmwiki/pub/images/predator_render.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Predator"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/QuanChiMKXRender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Quan Chi"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/RaidenMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Raiden"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/ReptileMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Reptile"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/ScorpionMKXRender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Scorpion"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/ShinnokMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Shinnok"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/SonyaMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Sonya Blade"
+                        },
+                        {
+                            "Image": "https://www.gamersdecide.com/sites/default/files/authors/u14264/SubZeroMKXrender.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Sub-Zero"
+                        },
+                        {
+                            "Image": "https://static.tvtropes.org/pmwiki/pub/images/3de5728adf2399b0f9c1098735a61c20.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Takeda"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/tanya-mortal-kombat-x-character-artwork-altar-of-gaming-230.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Tanya"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/tremor-mortal-kombat-x-character-artwork-altar-of-gaming-231.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Tremor"
+                        },
+                        {
+                            "Image": "https://assets.altarofgaming.com/wp-content/uploads/2022/06/triborg-mortal-kombat-x-character-artwork-altar-of-gaming-232.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "10Triborg"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/da/Mortal_Kombat_X_Logo.png/1024px-Mortal_Kombat_X_Logo.png",
+                        "Information": "MKX released in 2015",
+                        "Name": "Mortal Kombat X"
+                    }
+                }
+            ]
         }
     ]
 }
