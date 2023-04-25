@@ -4703,6 +4703,325 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://cdn.dashfight.com/5f4a180eb26758d772b7bae9585b8ff7e4996a1e_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Akuma"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/0eba7957ac79d78163ee93a7db1693e0decec32d_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Alisa"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/719dd65e774e6588ce7d28fe0b778b779e3797f5_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Anna"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/8c35cc21b02079e2f7752ae74370f70cbc4c1975_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Armor King"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/7ed3b23ddd28ea40adc3627f46df55a4ed42c7ee_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Asuka"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/7bf0ad9801f0bdeeca647dc8b30a75695ff126c7_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Bob"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/cb092609d5547c2a1f0f22ee41925d84063f2dd4_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Bryan"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/6a76ba986fc9262700a1af25774f0d26b4fadd74_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Claudio"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/d76890e89859062d4ade2cbd032a315c2ca76967_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Devil Jin"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/df463cecfa4449b610d6542e7ac4fc41805d572e_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Dragunov"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/48c00732aa7a4747473d9445bf47c84fd8789b40_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Eddie"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/ea40ac70c9c87a018ca340b12331a91b8c123560_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Eliza"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/7ea5c09d2aac739a047ff7d9c9ebba4f8d230807_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Fahkumram"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/ca4dfaee2839457d0b8f5f7dfb342cb3772e1a05_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Feng"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/394b5607c9b59d3753210cb33c5b4748b315d037_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Ganryu"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/65476a8c0fc7022bac2a8d8bdecb5b008858f100_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Geese"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/fde87d7160cb0a1aa9f4e95a3696bde0d3c15963_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Gigas"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/30eb7f04dfca39d70f993c2eb9299a8e539cc7a7_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Heihachi"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/a332472533b212ce8c017a47938bc0b43bbaad8f_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Hwoarang"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/66bb1e0f3546d01a1ad6b57cc3d18651a32008d3_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Jack-7"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/0131cd56ac8c1c38e12735f1e0aabc3e841f819a_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Jin"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/d5346ac5323fd8e3af99c3bad86b3b9f9425f531_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Josie"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/73dba59a58897250e5a64d8bf6c4f7574f2e5b56_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Julia"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/7d6e85da1f285802f70e36f0d2cfc24c7bdc5948_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Katarina"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/6843afc361e513a8db9a607186115ff092ec289d_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Kazumi"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/c147364945e56378e70e88a3155c2832965bd6e5_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Kazuya"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/970b134efa82c98b49c86a07750ac78feea8be45_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7King"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/385d026c5452e86842d077eae0cdaf3bb5cda24b_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Kuma"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/b9dddf535cea916d390b8c9ec2f0feb8e6f43a6a_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Kunimitsu"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/cb0390e228db80d1262e76d9524fb2b77dbba252_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Lars"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/7fd4613423c806df9e73133217e668c22c513a96_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Law"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/640b2468d2dff322e47a046361901f6d5246acfb_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Lee"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/808d6e97886abbd2ac9650f9ecd9d15df99f23b5_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Lei"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/00bd0893589c2d85e154bdefbeeb84b4493c2089_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Leo"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/b1ab96a231246a1554ac0595166f345d3f4a23ec_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Leroy"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/12d783c13c115115cc9fe7c7d0b9046668ce5a15_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Lidia"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/0d2ac7013b3669c353eabe80a958cd1ab56323ac_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Lili"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/06c8f39593547bb6c4829e423c0cadfb760e497b_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Lucky Chloe"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/9dc7587e455744539cf5dcaba08cadf009558134_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Marduk"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/ef7b62b7f5d94340a996011fa01fdc0ad03a1d01_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Master Raven"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/c7f82c26fdf3847b9e0934c6f0f6f68160245c89_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Miguel"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/3dc98d9df6871c4d281ba4ad39e4c01a5abc248f_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Negan"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/d63bc6e146a310480b80d6b4215a4f3b91e55e14_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Nina"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/08d09b7867d0d3ddb65001ed701b9a11f452ea93_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Noctis"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/b8e0cb528e88fc5fac21b3dff2623a4c9b31beaa_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Panda"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/e9cd2659cb89cdb9580698d94eb8e203f582994d_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Paul"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/b8af4b7a53595e062dc0539b15cb3a76bf266ba2_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Shaheen"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/4cb257b580c0f0dd36de23d483a876c4a9914514_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Steve"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/914dc4091f4efc21c1c1fd8bf15d6f5a445fdbc0_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Xiaoyu"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/2b2363a9718cf9f249b5ea58f92966825ba7da27_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Yoshimitsu"
+                        },
+                        {
+                            "Image": "https://cdn.dashfight.com/0726cc90257bd12e2fee7707afe8e359bc774a9f_480.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "T7Safina"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://firebasestorage.googleapis.com/v0/b/combokings-fd623.appspot.com/o/Tekken7-console-logo.png?alt=media&token=5e7feabd-00ff-427b-a5b2-0078eb23c310",
+                        "Information": "",
+                        "Name": "Tekken 7"
+                    }
+                }
+            ]
         }
     ]
 }
