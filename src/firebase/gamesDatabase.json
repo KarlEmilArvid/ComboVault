@@ -4227,6 +4227,151 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b5/P4U2_Margaret_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Margaret"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/30/P4U2_Sho_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4SHO Minazuki"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/e9/P4U_Naoto_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Naoto Shirogane"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b8/P4U_Teddie_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Teddie"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/42/P4U_Yukiko_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Yukiko Amagi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/34/P4U_Yu_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Yu Narukami"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/e/eb/P4U_Yosuke_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Yosuke Hanamura"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5b/P4U_Chie_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Chie Satonaka"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c5/P4U_Kanji_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Kanji Tatsumi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d1/P4U2_Minazuki_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Sho MINAZUKI"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/52/P4U2_Marie_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Marie"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5f/P4U2_Ken_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Ken Amada"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1c/P4U2_Yukari_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Yukari Takeba"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/0b/P4U_Labrys_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Labrys"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/54/P4U_Mitsuru_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Mitsuru Kirijo"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/2e/P4U_Aigis_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Aigis"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/81/P4U2_Adachi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Tohru Adachi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/5f/P4U_Elizabeth_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Elizabeth"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/63/P4U_Akihiko_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Akihiko Sanada"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c5/P4U_Shadow_Labrys_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Shadow Labrys"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/61/P4U2_Junpei_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Junpei Iori"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/5/59/P4U2_Rise_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "P4Rise Kujikawa"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/c/c3/P4U2_Logo.png",
+                        "Information": "Final version of Persona 4 Arena",
+                        "Name": "Persona 4 Arena Ultimax"
+                    }
+                }
+            ]
         }
     ]
 }
