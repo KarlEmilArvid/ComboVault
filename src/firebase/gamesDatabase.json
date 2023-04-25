@@ -4372,6 +4372,337 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d0/BBTag_Ragna_the_Bloodedge_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTRagna the Bloodedge"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7d/BBTag_Jin_Kisaragi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTJin Kisaragi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/22/BBTag_Noel_Vermillion_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTNoel Vermillion"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c7/BBTag_Rachel_Alucard_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTRachel Alucard"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/6f/BBTag_Iron_Tager_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTIron Tager"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/02/BBTag_Hakumen_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTHakumen"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/22/BBTag_Nu-13_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTNu-13"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/aa/BBTag_Hazama_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTHazama"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7b/BBTag_Makoto_Nanaya_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTMakoto Nanaya"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/90/BBTag_Platinum_the_Trinity_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTPlatinum the Trinity"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/9b/BBTag_Izayoi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTIzayoi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d7/BBTag_Azrael_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTAzrael"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/35/BBTag_Celica_A._Mercury_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTCelica A. Mercury"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b7/BBTag_Nine_the_Phantom_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTNine the Phantom"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7f/BBTag_Naoto_Kurogane_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTNaoto Kurogane"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c4/BBTag_Susano%27o_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTSusano'o"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1e/BBTag_Es_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTEs"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/08/BBTag_Mai_Natsume_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTMai Natsume"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/db/BBTag_Jubei_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTJubei"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/bc/BBTag_Yu_Narukami_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTYu Narukami"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/2b/BBTag_Yosuke_Hanamura_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTYosuke Hanamura"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/7/7e/BBTag_Chie_Satonaka_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTChie Satonaka"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/fd/BBTag_Yukiko_Amagi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTYukiko Amagi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/9a/BBTag_Kanji_Tatsumi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTKanji Tatsumi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d3/BBTag_Teddie_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTTeddie"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/33/BBTag_Naoto_Shirogane_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTNaoto Shirogane"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/2/26/BBTag_Mitsuru_Kirijo_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTMitsuru Kirijo"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1d/BBTag_Akihiko_Sanada_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTAkihiko Sanada"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/11/BBTag_Aegis_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTAegis"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/60/BBTag_Elizabeth_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTElizabeth"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/87/BBTag_Labrys_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTLabrys"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/6e/BBTag_Tohru_Adachi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTTohru Adachi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/cb/BBTag_Hyde_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTHyde"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/a9/BBTag_Linne_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTLinne"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/d/d6/BBTag_Waldstein_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTWaldstein"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/88/BBTag_Carmine_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTCarmine"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/0/05/BBTag_Orie_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTOrie"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/a/aa/BBTag_Gordeau_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTGordeau"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/3b/BBTag_Merkava_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTMerkava"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/81/BBTag_Vatista_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTVatista"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/9/91/BBTag_Seth_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTSeth"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/4/4c/BBTag_Yuzuriha_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTYuzuriha"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/c/c3/BBTag_Hilda_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTHilda"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/b1/BBTag_Mika_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTMika"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/62/BBTag_Ruby_Rose_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTRuby Rose"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/fd/BBTag_Weiss_Schnee_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTWeiss Schnee"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/f/fe/BBTag_Blake_Belladonna_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTBlake Belladonna"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/12/BBTag_Yang_Xiao_Long_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTYang Xiao Long"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/1/1b/BBTag_Neo_Politan_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTNeo Politan"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/b/be/BBTag_Heart_Aino_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTHeart Aino"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/8/8b/BBTag_Yumi_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTYumi"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/30/BBTag_Akatsuki_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTAkatsuki"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/3/31/BBTag_Blitztank_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "CTBlitztank"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.dustloop.com/wiki/images/3/3d/BBTag_Logo.png",
+                        "Information": "",
+                        "Name": "BlazBlue: Cross Tag Battle"
+                    }
+                }
+            ]
         }
     ]
 }
