@@ -5227,6 +5227,283 @@
                     }
                 }
             ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/hakan-ssf4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Hakan"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-dudley.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Dudley"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-ibuki.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Ibuki"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-makoto.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Makoto"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/kof13/1/chunli-ssfiv.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Chun-Li"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-guile.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Guile"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-rose.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Rose"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-vega.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Vega"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-balrog.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Balrog"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/char/char/bison-super4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4M. Bison"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np2/ssf4/thawk-ssf4-art.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4T. Hawk"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np2/ssf4/deejay-ssf4-art.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Dee Jay"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np2/ssf4/juri-ssf4-art.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Juri"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/kof13/1/ryu-ssfiv.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Ryu"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/kof13/1/ken-ssfiv.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Ken"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/game/adon-ssf4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Adon"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/game/cody-ssf4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Cody"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/game/guy-ssf4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Guy"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/game/dan-super4-art.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Dan"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-sakura.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Sakura"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np8/char/honda-ssf4art.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4E. Honda"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/kof13/1/cammy-ssfiv.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Cammy"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/char/char/abel-super4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Abel"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-blanka.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Blanka"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-zangief.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Zangief"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np8/char/yun-ssf4ae-full.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Yun"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np8/char/yang-ssf4ae-full.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Yang"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np7/char/evolryu-ssf4ae-art.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Evil Ryu"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np7/char/oni-ssf4ae.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Oni"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/nz/char/decapre-ultra-streetfighter4-artwork.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Decapre"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/nx6/char/elena-ultrasf4-artwork.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Elena"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/nx6/char/rolento-ultrasf4-artwork.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Rolento"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/nx6/char/hugo-ultrasf4-artwork.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Hugo"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/nx6/char/poison-ultrasf4-artwork.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Poison"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/kof13/1/elfuerte-ssfiv.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4El Fuerte"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np9/characters/gouken-ssf4-sit.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Gouken"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/nx/chars/rufus-ssf4art-bg.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Rufus"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np3/char/char/seth-super4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Seth"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/characters/sf4x-crimson-viper.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Crimson Viper"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np6/char/feilong-ssf4-x.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Fei-Long"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/characters/gen-sf4-style.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Gen"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np6/char/akuma-ssf4-x.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Akuma"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np5/char/super4/ssf4-dhalsim.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Dhalsim"
+                        },
+                        {
+                            "Image": "https://www.fightersgeneration.com/np2/char2/char/sagat-ssf4.jpg",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "U4Sagat"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://wiki.supercombo.gg/images/6/69/USFIV-Header.png",
+                        "Information": "Final version of Street Fighter 4",
+                        "Name": "Ultra Street Fighter 4"
+                    }
+                }
+            ]
         }
     ]
 }
