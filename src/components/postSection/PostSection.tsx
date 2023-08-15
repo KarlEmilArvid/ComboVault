@@ -51,7 +51,6 @@ const PostSection = ({ name, characterName }: Props) => {
             querySnapshot.forEach((doc) => {
                 tempArray.push(doc.data())
             })
-            console.log('här hämtar vi posts', tempArray)
             tempArray.sort((a: any, b: any) => {
                 if (a.CreatedAt <= b.CreatedAt) {
                     return b.CreatedAt <= a.CreatedAt ? -1 : 1

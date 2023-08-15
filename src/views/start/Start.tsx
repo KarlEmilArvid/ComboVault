@@ -17,9 +17,6 @@ const Start = ({ showCharacter, pickGame, availableSearches, foundGames, searchF
     const [games, setGames] = useState<GAME>()
     const dispatchedGames = useSelector((state: any) => state.games)
 
-    //TODO: ska denna bort?
-    console.log(foundGames);
-
     useEffect(() => {
         const gameArray = dispatchedGames.Games
         setGames(gameArray)
