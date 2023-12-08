@@ -424,6 +424,12 @@
                             "Information": "",
                             "Intro": "",
                             "Name": "05Johnny"
+                        },
+                        {
+                            "Image": "https://www.dustloop.com/wiki/images/6/6d/GGST_Elphelt_Valentine_Portrait.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "05Elphelt Valentine"
                         }
                     ],
                     "Game": {
@@ -5718,6 +5724,12 @@
                             "Information": "",
                             "Intro": "",
                             "Name": "01Reiko"
+                        },
+                        {
+                            "Image": "https://cdn-mk1.mortalkombat.com/roster/omni-man/thumb.webp",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "01Omni-man"
                         }
                     ],
                     "Game": {
