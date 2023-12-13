@@ -60,6 +60,12 @@
                 background: rgba(0, 0, 0, 0.5);
             }
         }
+
+        .square-hover {
+            &:hover {
+                background: rgb(133, 155, 235, 0.5);
+            }
+        }
     }
 }
 

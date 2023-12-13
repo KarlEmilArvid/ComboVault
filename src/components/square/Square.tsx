@@ -29,7 +29,7 @@ const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: P
             {window.location.href.includes(`/${gameName}`) ? (
                 <>
                     <figure className='square-border'>
-                        <figure className='square-container' onClick={() => pickCharacter(name, image)}>
+                        <figure className='square-container square-hover' onClick={() => pickCharacter(name, image)}>
                             <img src={image} title={name.slice(2)} />
                         </figure>
                     </figure>
@@ -45,7 +45,7 @@ const Square = ({ gameImage, gameName, name, image, showCharacter, pickGame }: P
             ) : window.location.href.includes('') ? (
                 <>
                     <figure className='square-border'>
-                        <figure className='square-container' onClick={() => pickGame(gameName, gameImage)}>
+                        <figure className='square-container square-hover' onClick={() => pickGame(gameName, gameImage)}>
                             <img src={gameImage} title={gameName} />
                         </figure>
                     </figure>

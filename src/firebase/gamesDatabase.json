@@ -805,6 +805,12 @@
                             "Information": "",
                             "Intro": "",
                             "Name": "06Rashid"
+                        },
+                        {
+                            "Image": "https://www.streetfighter.com/6/assets/images/character/aki/aki.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "06A.K.I."
                         }
                     ],
                     "Game": {
@@ -5917,6 +5923,535 @@
                         "Image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/f9104117-19fa-453f-9ca6-01d9978da4ca/dcqe4dl-4c667308-2d65-4e02-826c-b865808fd81e.png",
                         "Information": "",
                         "Name": "SOULCALIBUR VI"
+                    }
+                }
+            ]
+        },
+        {
+            "GameTitle": [
+                {
+                    "Characters": [
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/4/44/Mario_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMario"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/b/bb/Luigi_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SULuigi"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/7/74/Peach_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPeach"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/4/49/Bowser_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUBowser"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/3/3f/Dr._Mario_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDr. Mario"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/1/16/Rosalina_%26_Luma_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SURosalina & Luma"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/2b/Bowser_Jr._SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUBowser Jr."
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/8d/Yoshi_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUYoshi"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/c9/Donkey_Kong_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDonkey Kong"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/a/a7/Diddy_Kong_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDiddy Kong"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/84/Link_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SULink"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/c8/Zelda_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUZelda"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/00/Sheik_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSheik"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/9/91/Ganondorf_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUGanondorf"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/8a/Young_Link_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUYoung Link"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/5/56/Toon_Link_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUToon Link"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/03/Samus_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSamus"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/f0/Zero_Suit_Samus_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUZero Suit Samus"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/07/Kirby_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUkirby"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/00/Meta_Knight_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMeta Knight"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/f5/King_Dedede_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUKing Dedede"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/2f/Fox_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUFox"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/80/Falco_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUFalco"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/8a/Wolf_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUWolf"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/9/93/Pikachu_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPikachu"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/6/6a/Jigglypuff_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUJigglypuff"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/d/de/Mewtwo_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMewtwo"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/c1/Pichu_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPichu"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/0f/Pok%C3%A9mon_Trainer_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPokémon Trainer"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/08/Lucario_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SULucario"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/d/da/Greninja_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUGreninja"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/d/da/Captain_Falcon_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUCaptain Falcon"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/82/Ness_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUNess"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/81/Lucas_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SULucas"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/1/12/Ice_Climbers_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUIce Climbers"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/e/e9/Marth_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMarth"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/9/9d/Roy_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SURoy"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/86/Ike_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUIke"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/8/82/Robin_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SURobin"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/d/dc/Lucina_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SULucina"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/c4/Corrin_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUCorrin"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/cb/Mr._Game_%26_Watch_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMr. Game & Watch"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/3/38/Pit_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPit"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/6/6b/Palutena_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPalutena"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/09/Dark_Pit_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDark Pit"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/04/Wario_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUWario"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/b/b3/Olimar_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUOlimar"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/3/38/R.O.B._%28JPN%29_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUR.O.B."
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/a/ac/Villager_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUVillager"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/ff/Wii_Fit_Trainer_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUWii Fit Trainer"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/5/53/Little_Mac_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SULittle Mac"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/0f/Shulk_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUShulk"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/d/d8/Duck_Hunt_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDuck Hunt"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/02/Snake_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSnake"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/b/ba/Sonic_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSonic"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/4/46/Mega_Man_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMega Man"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/03/Pac-Man_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPac-Man"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/6/61/Ryu_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SURyu"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/b/b3/Cloud_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUCloud"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/7/7c/Bayonetta_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUBayonetta"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/e/e4/Mii_Brawler_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMii Brawler"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/fa/Mii_Swordfighter_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMii Swordfighter"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/e/e5/Mii_Gunner_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMii Gunner"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/21/Daisy_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDaisy"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/f0/Piranha_Plant_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPiranha Plant"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/b/b6/King_K._Rool_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUKing K. Rool"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/27/Ridley_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SURidley"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/a/a6/Dark_Samus_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUDark Samus"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/c4/Incineroar_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUIncineroar"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/5/57/Chrom_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUChrom"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/7/70/Fighter-byleth.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUByleth"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/2b/Isabelle_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUIsabelle"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/7/76/Pyra_%26_Mythra_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUPyra/Mythra"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/2e/Inkling_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUInkling"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/3/35/Min_Min_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUMin Min"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/f6/Ken_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUKen"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/4/49/Sephiroth_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSephiroth"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/9/95/Simon_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSimon"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/c/c2/Richter_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SURichter"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/5/5c/Joker_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUJoker"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/0/07/Hero_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUHero"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/9/97/Banjo_%26_Kazooie_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUBanjo & Kazooie"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/f/f5/Terry_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUTerry"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/3/3a/Steve_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSteve"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/d/d9/Kazuya_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUKazuya"
+                        },
+                        {
+                            "Image": "https://ssb.wiki.gallery/images/2/2d/Sora_SSBU.png",
+                            "Information": "",
+                            "Intro": "",
+                            "Name": "SUSora"
+                        }
+                    ],
+                    "Game": {
+                        "Image": "https://www.ssbwiki.com/images/5/5b/SSBU-English.png",
+                        "Information": "",
+                        "Name": "Super Smash Bros Ultimate"
                     }
                 }
             ]

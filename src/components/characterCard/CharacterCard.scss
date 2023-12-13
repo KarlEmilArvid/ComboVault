@@ -16,6 +16,12 @@
                 :hover {
                     cursor: default;
                 }
+
+                .square-hover {
+                    &:hover {
+                        background-color: #797C8D;
+                    }
+                }
             }
         }
 
